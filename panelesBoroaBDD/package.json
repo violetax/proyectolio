@@ -1,0 +1,15 @@
+{
+  "name": "node-api-rest-example",
+  "version": "2.0.0",
+  "dependencies": {
+    "npm": "^5.1.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "method-override": "^2.3.9",
+    "mongodb": "^2.2.30",
+    "mongojs": "^2.4.0",
+    "mongoose": "^4.11.1"
+  }
+}

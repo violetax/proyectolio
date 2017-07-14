@@ -1,0 +1,141 @@
+HACE EL POST CORRECTO Y ENVÍA LA INFO TALQUE:
+
+add POST
+{ type: 'Feature',
+  'properties[id]': '',
+  'properties[CP]': '',
+  'properties[capacidad]': '',
+  'geometry[type]': 'Point',
+  'geometry[coordinates][longitud]': '-2.94158935546875                                                           04',
+  'geometry[coordinates][latitud]': '43.28226669230015'                                                            }
+
+
+La bdd no lo rconoce: quizás le falta previo pretty print???
+
+
+**********************
+
+
+AAAAAAAAAAAARGGGGGGGGGGG!!!!!!
+
+LO QUE MANDA ES UN BLOQUE:
+
+En Java: "type: Feature, properties: {id:,CP:,capacidad:}, "	+
+				"geometry: {type: Point, coordinates: {longitud: "  	+ 
+				lngco			+
+				", latitud: "	+
+				latco			+ 
+				"}";
+
+{ '{type: Feature, properties: {id:,CP:,capacidad:}, geometry: {type: Point, coordinates: {longitud: -2.4581909179687504, latitud: 43.2182499932824}}': '' }
+
+LE AÑADE AUTOM EL:
+initial:
+
+{ '{  
+
+y el final:
+
+': '' } 
+
+
+y si lo mando COMO EN PANBORO:
+
+En JAVA:
+
+"type": "Feature",
+				    "properties": {
+				        "id": "",
+				        "CP": "",
+				        "capacidad": ""
+				    },
+				    "geometry": {
+				        "type": "Point",
+				        "coordinates":
+				        		{
+				        	"longitud": lngco,
+				        	"latitud": latco
+				        		}
+				    }
+
+En el server: 
+
+{ type: 'Feature',
+  'properties[id]': '',
+  'properties[CP]': '',
+  'properties[capacidad]': '',
+  'geometry[type]': 'Point',
+  'geometry[coordinates][longitud]': '-2.75482177734375',
+  'geometry[coordinates][latitud]': '43.26826878896206' }
+
+
+
+EN EL PANBOROA MANDA:
+
+En java: {"id":10,"latitud":lat2,"longitud":lng2,"CP":"","capacidad":""};
+
+El server:
+
+ { id: '10',
+  latitud: '43.19422638478923',
+  longitud: '-2.8646850585937504',
+  CP: '',
+  capacidad: '' }
+------------------------------------------------
+
+DOCUMENT BUENO:
+
+{
+    "_id" : ObjectId("5964c40b55b2ca127c4f4f74"),
+    "properties" : {
+        "id" : "5",
+        "CP" : "",
+        "capacidad" : ""
+    },
+    "geometry" : {
+        "coordinates" : {
+            "latitud" : 43.2962613757008,
+            "longitud" : -1.98577880859375
+        }
+    }
+}
+
+MÍO:
+
+{
+    "_id" : ObjectId("5964c428168e0d8dfe1cde20"),
+    "properties[id]" : "6",
+    "properties[CP]" : "",
+    "properties[capacidad]" : "",
+    "geometry[coordinates][longitud]" : "-2.7877807617187504",
+    "geometry[coordinates][latitud]" : "43.272268518475315"
+}
+
+INTENTO:
+
+{ 'properties[id]': '',
+  'properties[CP]': '',
+  'properties[capacidad]': '',
+  'geometry[coordinates][latitud]': '43.272268518475315',
+  'geometry[coordinates][longitud]': '-2.7877807617187504' }
+
+INSERTO:
+
+{
+    "_id" : ObjectId("5964c4f005271c02c0fcace8"),
+    "__v" : 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

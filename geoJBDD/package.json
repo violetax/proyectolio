@@ -1,0 +1,23 @@
+{
+  "name": "node-api-rest-example2",
+  "version": "2.0.0",
+  "dependencies": {
+    "mongoose-geojson-schema": "^2.1.2",
+    "npm": "^5.1.0"
+  },
+  "devDependencies": {
+    "body": "^5.1.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "geojson": "^0.4.1",
+    "json-parser": "^1.1.5",
+    "method-override": "^2.3.9",
+    "mongodb": "^2.2.30",
+    "mongojs": "^2.4.0",
+    "mongoose": "^4.11.1",
+    "mongoose-geojson-schema": "^2.1.2",
+    "parse-json": "^2.2.0",
+    "querystring": "^0.2.0",
+    "request-parse-json": "^1.1.0"
+  }
+}

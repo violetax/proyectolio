@@ -1,0 +1,19 @@
+ReferenceError: layercollection is not defined
+    at C:\Users\vgonzalez\workspace\proyecto\geoJBDD\app.js:63:5
+    at Layer.handle [as handle_request] (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\vgonzalez\workspace\proyecto\geoJBDD\node_modules\express\lib\router\index.js:635:15
+
+
