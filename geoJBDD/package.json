@@ -12,6 +12,7 @@
     "geojson": "^0.4.1",
     "json-parser": "^1.1.5",
     "method-override": "^2.3.9",
+    "mongo-querystring": "^4.1.1",
     "mongodb": "^2.2.30",
     "mongojs": "^2.4.0",
     "mongoose": "^4.11.1",

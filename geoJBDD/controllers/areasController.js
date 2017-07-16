@@ -1,50 +1,117 @@
 var mongoose = require('mongoose');
 var Areas  = mongoose.model('layercollection');
+var Paneles = mongoose.model('geojpaneles');
 var GeoJSON = require('geojson');
+var gjsonTools = require('geojson-tools');
+var MongoQS = require('mongo-querystring')
+
+var convertToGeoJson = function (db_ResultSet) {
+	
+	var anObject = JSON.stringify(db_ResultSet);
+	var jsonObject = JSON.parse(anObject);
+	var prePolygon = jsonObject.features[0].geometry;
+	var properties = jsonObject.features[0].properties;
+	
+	var coorArray = prePolygon.coordinates;
+	
+	var swapArrayElements = function(arr, indexA, indexB) {
+		      var temp = arr[indexA];
+			          arr[indexA] = arr[indexB];
+					            arr[indexB] = temp;
+								          return arr;
+	};
+	
+	var newcoors = []; 
+	var tempCoor;
+	    for (var i =0; i < coorArray.length; i++) {
+			        tempCoor = swapArrayElements(coorArray[i], 0, 1) ;
+							        newcoors.push(tempCoor);
+									    }
+	
+	var polygon = gjsonTools.toGeoJSON(newcoors, 'polygon');
+	var alldataArr = [];
+	var alldata = {};
+	alldata = [{ name: properties.name, style: properties.style, geo: polygon }];
+	
+	var geoJsonObject = GeoJSON.parse(alldata, {GeoJSON: 'geo'});
+
+	return geoJsonObject;
+
+}
+
+//GET something related to a polygon
+ exports.findAllPanelsWithin = function (req, res) {
+	console.log('TRIALS');	
+
+	 Areas.findOne(function(err, areas) {
+		     if(err) return res.send(500, "noooo " + err.message);
+	
+	var area = convertToGeoJson(areas);
+	var mypolygon = area.features[0].geometry;
+
+	Paneles.find({}).where('geometry').within(mypolygon).exec(function (error, paneles) { 
+	if(error) console.log("Error: " + error); 
+		console.log(paneles); 
+res.status(200).jsonp(paneles);
+	});
+
+//my_type_coord_point
+//														my_geojson_poly
+//pointFields
 
 
-//GET - Return all
-//Esto devuelve la coleccion al completo
-/*
- GET /maplayers
-{ _id: 596782624e30849c56796fea,
-  type: 'FeatureCollection',
-  name: 'getxolayer',
-  features: [ { geometry: [Object], properties: [Object], type: 'Feature' } ] }
-*/
+	 });
+ };
+
+//var pointFields = { '_id': 1, 'loc': 1 };
+
+// Areas.find({}).where('my_type_coord_point').within(my_geojson_poly).select(pointFields).lean().exec(function (error, result) { console.log("Error: " + error); console.log(result); }
+
+//GET one polygon
 exports.findAllAreas  = function(req, res) {
-    Areas.findOne(function(err, areas) {
+    // areas es el result de la query findOne
+	Areas.findOne(function(err, areas) {
     if(err) return res.send(500, "noooo " + err.message);
 
 console.log('GET /maplayers')
 
 var obj = JSON.stringify(areas);
 var jobj = JSON.parse(obj);
-var polygon = jobj.features[0].geometry;
+var nopolygon = jobj.features[0].geometry;
 var properties = jobj.features[0].properties;
-  
- console.log(polygon);
-        gjojb = GeoJSON.parse(properties, 
-        			{GeoJSON: polygon});
-       	console.log(gjojb);
 
+var coorArray = nopolygon.coordinates;
 
-//console.log(jobj);
-//console.log(areas);
-//console.log(jobj.features);
-//console.log(jobj.features[0]);
-/**/ // console.log(jobj.features[0].geometry); /**/
-		
+var swapArrayElements = function(arr, indexA, indexB) {
+	  var temp = arr[indexA];
+	    arr[indexA] = arr[indexB];
+		  arr[indexB] = temp;
+		  return arr;
+};
 
-var data = [{name: 'Location A', geo: {"type": "Polygone", "coordinates": [[125.6, 10.1], [129.6, 12.1]]}}];
+var newcoors = [];
+var tempCoor;
+	for (var i =0; i < coorArray.length; i++) {
+		tempCoor = swapArrayElements(coorArray[i], 0, 1) ;
+		console.log(tempCoor);
+		newcoors.push(tempCoor);
+	}
 
-var geojobj = GeoJSON.parse(data, {GeoJSON: 'geo'});
-var feature = jobj.features[0];
-var features = jobj.features;
+var polygon = gjsonTools.toGeoJSON(newcoors, 'polygon');
+var alldataArr = [];
+var alldata = {};
+alldata = [{ name: properties.name, style: properties.style, geo: polygon }];
+console.log(alldata);
+
+var gjojb = GeoJSON.parse(alldata, {GeoJSON: 'geo'});
+
 //	res.send(feature);
-         res.status(200).jsonp(feature);
+    res.status(200).jsonp(gjojb);
     });
 };
+
+
+
 
 
 /*

@@ -3,7 +3,8 @@ var express         = require("express"),
     bodyParser      = require("body-parser"),
     methodOverride  = require("method-override"),
     mongoose        = require('mongoose');
-var qs = require('querystring');
+
+//var qs = require('querystring');
 
 // Connection to DB
 mongoose.connect('mongodb://localhost:27017/geojpanelesDB', function(err, res) {
@@ -58,6 +59,8 @@ var arearouter = express.Router();
 arearouter.route('/maplayers')
 	.get(areasCtrl.findAllAreas);
 
+arearouter.route('/query')
+	.get(areasCtrl.findAllPanelsWithin);
 
 /////////////////////////////////////////////////
 
