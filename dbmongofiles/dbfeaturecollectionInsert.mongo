@@ -1,0 +1,30 @@
+db.layercollection.insert({ 
+    "type": "FeatureCollection", 
+     "name": "NAME", 
+    "features":  
+    [{ 
+    "type": "Feature", 
+    "properties": {"PROP1": "", "PROP2": ""}, 
+    "geometry": { 
+        "type": "", 
+        "coordinates":  
+		[ 
+			[	  
+            	[  LNG, LAT ], [  LNG, LAT ], ... 
+        	] 
+		] 
+    } 
+}, { 
+    "type": "Feature", 
+    "properties": {"PROP1": "", "PROP2": ""}, 
+    "geometry": { 
+        "type": "", 
+        "coordinates":  
+		[ 
+			[	  
+            	[  LNG, LAT ], [  LNG, LAT ], ... 
+        	] 
+		] 
+	}
+}] 
+})

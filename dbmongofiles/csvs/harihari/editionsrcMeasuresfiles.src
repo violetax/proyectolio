@@ -1,0 +1,63 @@
+#!/bin/bash
+
+
+#1º/ get files with coordinates
+#2º/ sed them:
+### bring coors in same line
+## :%s/\([0-9]\),\n/\1,/
+### strip spaces
+## :%s/, \+/,/
+## :%s/^  \+//
+#3º save as .csv:   !!!!!!!!!!!!!!!!!!!!!! que luego pasamos a ;sv
+#grep "[0-9]" ${file.txt} > ${file.csv}
+
+
+#sustituir la coma por ;
+#sustituir el punto decimal por coma decimal
+# :%s/,/;/
+# :%s/\./,/g
+
+
+#find max_x,max_y values in columy
+
+
+#ls *csv
+#echo -e "Filename?\n"
+#read file
+#echo -e "Columya?\n"
+#read col
+
+
+#if [[ ${col} -eq 1 ]]
+#then
+#	coord=x
+#else
+#	coord=y
+#fi
+
+
+for f in $(ls *csv)
+do
+	file=${f}
+
+
+## tail for max_x, would be head for max_y
+#For max_x X value:
+cut -f1 -d";" $file | sort -n | tail -1 | tee ${file%.csv}.x
+
+#For max_x Y value:
+cut -f2 -d";" $file | sort -n | tail -1 | tee ${file%.csv}.y
+
+#paste -d";" ... > ${file%.csv}.porcentajes
+
+#For max_x X value:
+
+max_x=$(cat ${file%.csv}.x)
+max_y=$(cat ${file%.csv}.y)
+
+awk -F";" -v mx=${max_x} -v my=${max_y} '{x=$1*100/mx; y=$2*100/my; printf("%d;%d\n", x,y)}' ${file} > ${file%.csv}.porcentajes
+#awk -F";" -v mx=${max_x} -v my=${max_y} '{x=$1*100/mx; y=$2*100/my; printf("%d;%d\n", $1,$2)}' ${file} 
+
+done
+
+

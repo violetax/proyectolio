@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#1 te 9;
+#2 vi 2;
+#3 hu 63;
+#4 ins 60;
+#5 en 0,285714286
+
+#awk -v min=1 -v max=5 'BEGIN{srand(); print int(min+rand()*(max-min+1))}'
+
+variation1=$((1 + RANDOM % 5))
+variation2=$((1 + RANDOM % 5))
+variation3=$((-1 + RANDOM % 2))
+variation4=$((-1 + RANDOM % 2))
+variation5=$((1 + RANDOM % 5))
+
+
+awk -F";" -v v1=${variation1}  -v v2=${variation2}  -v v3=${variation3}  -v v4=${variation4}  -v v5=${variation5}  '{te=$1+$1*v1;vi=$2+$2*v2;hu=$3+$3*v3;ins=$4+$4*v4;en=$5+$5*v5; printf("%s;%s;%s;%s;%f\n", te,vi,hu,ins,en)}' tevihuinen.base.puntonotcoma
+
+#te=$1*v1;vi=$2*v2;hu=$3*v3;in=$4*v4;en=$5*v5
+
+#awk -F";" -v v1=${variation1}  -v v2=${variation2}  -v v3=${variation3}  -v v4=${variation4}  -v v5=${variation5}  '{te=$1+$1*v1;vi=$2+$2*v2;hu=$3+$3*v3;ins=$4+$4*v4;en=$5+$5*v5; printf("%s;%s;%s;%s;%f\n", te,vi,hu,ins,en)}' tevihuinen.base

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+			panelId: 	{ 
+				compania:	{type: String, required: true},
+				id:			{type: String, required: true}
+			},
+			periodo:	{ type: Number, required: true},
+			inclinacion:{ type: Number, required: true},
+			orientacion:{ type: Number, required: true},
+			energiaMed:	{ type: Number, required: true},
+			energiaMax:	{ type: Number, required: true},
+			energiaMin:	{ type: Number, required: true},
+			insolacMed:	{ type: Number, required: true},
+			insolacMax:	{ type: Number, required: true},
+			insolacMin:	{ type: Number, required: true},
+			tmpAireMed:	{ type: Number, required: true},
+			tmpAireMax:	{ type: Number, required: true},
+			tmpAireMin:	{ type: Number, required: true},
+			velVtoMed:	{ type: Number, required: true},
+			velVtoMax:	{ type: Number, required: true},
+			velVtoMin:	{ type: Number, required: true},
+			humedadMed:	{ type: Number, required: true},
+			humedadMax:	{ type: Number, required: true},
+			humedadMin:	{ type: Number, required: true}
+
+#TEMPERATURAS:
+

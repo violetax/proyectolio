@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+#1º/ get files with coordinates
+#2º/ sed them:
+### bring coors in same line
+## :%s/\([0-9]\),\n/\1,/
+### strip spaces
+## :%s/, \+/,/
+## :%s/^  \+//
+#3º save as .csv: 
+#grep "[0-9]" ${file.txt} > ${file.csv}

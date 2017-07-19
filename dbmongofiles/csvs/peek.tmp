@@ -1,0 +1,44 @@
+#########################
+Montar:
+{ feature }, 
+
+Luego cat *, borrar última ,, y añadir cabezera y footer: 
+db.collection.insert ... [ el_cat ] })
+
+Feature:
+
+	{
+    "type": "Feature",
+    "properties": {"PROP1": "", "PROP2": ""},
+    "geometry": {
+        "type": "",
+        "coordinates":
+        [
+            [
+                [  LNG, LAT ], [  LNG, LAT ], ...
+            ]
+        ]
+    }
+},
+ 		type:                           {type: String, required: true, default: "Feature"},
+        properties:
+                {
+                        panelId:        {
+                                compania:       {type: String, required: true},
+                                id:                     {type: String, required: true}
+                        },
+                        periodo:        { type: Number, required: true},
+                        inclinacion:{ type: Number, required: true},
+                        orientacion:{ type: Number, required: true},
+                        energiaMed:     { type: Number, required: true},
+                        insolacMed:     { type: Number, required: true},
+                        tmpAireMed:     { type: Number, required: true},
+                        velVtoMed:      { type: Number, required: true},
+                        humedadMed:     { type: Number, required: true},
+
+                },
+                geometry:
+                {
+                        coordinates: { type: [Number], default: [0,0], index: '2dsphere'}
+                }
+

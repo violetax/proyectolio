@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#o  i t v h  i  e 
+#1  2 3 4 5  6  7     
+#90;0;9;2;63;60;0,285714286
+
+awk -F";" '{printf("{\"type\":\t\"Feature\",\n\"properties\":\t{\"orientacion\":\t%s,\n\t\t\t\"inclinacion\":\t%s,\n\t\t\t\"temperatura\":\t%s,\n\t\t\t\"velocidadviento\":\t%s,\n\t\t\t\"humedad\":\t%s,\n\t\t\t\"inclinacion\":\t%s,\n\t\t\t\"energia\":\t%s\n},\n\"geometry\": {\n\t\t\t\"type\":\t\"Point\",\n\t\t\t\"coordinates\":[LNG,LAT]},\n", $1,$2,$3,$4,$5,$6,$7)}'  panelbase.csv
+
+
+#awk -F";" '{printf("{\"type\":\t\"Feature\",\n\"properties\":\t{\"orientacion\":\t%s,\n\"inclinacion\":\t%s,\n\"temperatura\":\t%s,\n\"velocidadviento\":\t%s,\n\"humedad\":\t%s,\n\"inclinacion\":\t%s,\n\"energia\":\t%s\n},\n\"geometry\": {\n\"type\":\t\"Point\",\n\"coordinates\":[LNG,LAT]},\n", $1,$2,$3,$4,$5,$6,$7)}'  panelbase.csv

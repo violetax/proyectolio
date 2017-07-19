@@ -1,0 +1,121 @@
+#!/bin/bash
+
+#ARCHIVOS NECESARIOS PARA CONSTRUIR n PANELES:
+## n = pares de coordenadas
+## EL CSV CON LOS VALORES BASE DE LOS 5 CAMPOS VARIABLES:	temperatura, viento, humedad, insolacion, energia
+## EL CSV CON LOS VALORES BASE DE LOS 2 CAMPOS FIJOS: 		orientacion, inclinacion
+## EL CSV CON LAS COORDS
+
+valores_tevihuinen_base=tevihuinen_base_decimalPunto.csv
+valores_orienIncl_fijos=orin_decimalPunto.csv
+
+rm  valoresPaneles_CSV/*
+rm featuresPaneles_GEOJSON/*
+
+
+#ARCHIVOS DE COORDENADAS:
+
+#cooralava_50.csv
+#coorbizkaia_41.csv
+#coorgipuzkoa_50.csv
+#coorscattered_99.csv
+
+#ARCHIVOS TEMPORALES
+# El paste de la combinacion linea a lineas de los 2 csv
+
+
+#ARCHIVOS OUTPUT
+# 100 csv con extension numerica con los valores de los #7# CAMPOS 
+# 100 geoJson con extension numerica con un array de features del mismo panel con los diferentes valores del dia
+
+
+#### GET COORDINATES
+#ls coor*
+#cooralava_50.csv
+#coorbizkaia_41.csv
+#coorgipuzkoa_50.csv
+#coorscattered_99.csv
+
+#echo -e "Coords file: \n"
+#read coordenadasFile
+
+#echo -e "Extension: \n"
+#read extension
+
+for coorfile in `ls coor*`
+do
+	coordenadasFile=${coorfile}
+	ubicacion_tmp=${coordenadasFile%.csv}
+	extension=${ubicacion_tmp#coor}
+
+let panelNro=0
+
+#Construyo un array_de_feature_por_periodo por cada par de coordenadas, que son lo que representa un panel
+for pos in `cat ${coordenadasFile}`
+do
+
+	let panelNro=${panelNro}+1
+
+echo $pos > coord.tmp
+x=`cut -f1 -d";" coord.tmp`
+y=`cut -f2 -d";" coord.tmp`
+rm coord.tmp
+
+#hasta aquí´:
+# cojo un par de coords x,y en el 1/4 files =
+#	AQUI TENGO UN PANEL
+#	QUIERO UN FILE CON .extension DE PERIODO +1
+
+
+#establezco el periodo contando las lineas del file con los valores base, ya que cada linea representa un periodo
+while IFS= read -r record
+do
+	###PERIODO CAMBIA DENTRO DELL AWK, AQUI SE RESETEA let periodo=${periodo}+1
+	let periodo=0
+
+# ESTE FOR INTERIOR PARA GENERAR VALORES PARA MAS DIAS 
+#for i in `seq 1 100`;
+#do
+
+# temperatura, viento, humedad, insolacion, energia
+variation1=$((1 + RANDOM % 5))
+variation2=$((1 + RANDOM % 5))
+variation3=$((-1 + RANDOM % 2))
+variation4=$((-1 + RANDOM % 2))
+variation5=$((1 + RANDOM % 5))
+
+#awk copia el csv de los valores de un panel en un dia, modificados al random
+#produce un archivo de valores con extension de numero
+awk -F";" -v v1=${variation1}  -v v2=${variation2}  -v v3=${variation3}  -v v4=${variation4}  -v v5=${variation5}  '{te=$1+$1*v1;vi=$2+$2*v2;hu=$3+$3*v3;ins=$4+$4*v4;en=$5+$5*v5; printf("%s;%s;%s;%s;%f\n", te,vi,hu,ins,en)}' ${valores_tevihuinen_base} > valores_tevihuinen_del_panel_numero.${panelNro}.${extension}
+
+paste -d";"  ${valores_orienIncl_fijos} valores_tevihuinen_del_panel_numero.${panelNro}.${extension}  > base_para_day_feature_array_de_un_panel
+
+# 2º/ BUILD PANELES
+
+#awk -F";" -v p=${periodo} '{printf("{\"type\":\t\"Feature\",\n\"properties\":\n{\t\t\t\"periodo\":\t%s,\n\t\t\t\"orientacion\":\t%s,\n\t\t\t\"inclinacion\":\t%s,\n\t\t\t\"temperatura\":\t%s,\n\t\t\t\"velocidadviento\":\t%s,\n\t\t\t\"humedad\":\t%s,\n\t\t\t\"insolacion\":\t%s,\n\t\t\t\"energia\":\t%s\n},\n\"geometry\": {\n\t\t\t\"type\":\t\"Point\",\n\t\t\t\"coordinates\":[%f,%f]},\n", p,$1,$2,$3,$4,$5,$6,$7,0.5,0.5)}'  base_para_day_feature_array_de_un_panel >  panel_feature_format.${periodo}.${extension}
+awk -F";" -v p=${periodo} -v xcoord="${x}" -v ycoord="${y}" '{p=p+1;printf("{\"type\":\t\"Feature\",\n\"properties\":\n{\t\t\t\"periodo\":\t%s,\n\t\t\t\"orientacion\":\t%s,\n\t\t\t\"inclinacion\":\t%s,\n\t\t\t\"temperatura\":\t%s,\n\t\t\t\"velocidadviento\":\t%s,\n\t\t\t\"humedad\":\t%s,\n\t\t\t\"insolacion\":\t%s,\n\t\t\t\"energia\":\t%s\n},\n\"geometry\": {\n\t\t\t\"type\":\t\"Point\",\n\t\t\t\"coordinates\":[%f,%f]},\n", p,$1,$2,$3,$4,$5,$6,$7,xcoord,ycoord)}'  base_para_day_feature_array_de_un_panel >  panel_feature_format.${panelNro}.${extension}
+
+	echo "File:		${coordenadasFile}"
+	echo "Panel Nº:	${panelNro}"
+	echo "Periodo:	${periodo}"
+  
+rm base_para_day_feature_array_de_un_panel
+mv valores_tevihuinen_del_panel_numero.${panelNro}.${extension} valoresPaneles_CSV
+mv  panel_feature_format.${panelNro}.${extension} featuresPaneles_GEOJSON
+
+
+echo "DONE WHILE ######"
+#end of while read valores_tevihuinen_base
+done < ${valores_tevihuinen_base}
+
+#done
+
+echo "DONE FOR COORDS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+#end of for pair of coords
+done
+
+echo "DONE FOR FILE###############################################"
+#end of for each file
+done
+
+exit 0
