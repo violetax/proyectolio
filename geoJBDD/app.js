@@ -18,18 +18,37 @@ app.use(bodyParser.json());
 app.use(methodOverride());
 
 // Import Models and controllers
-var models     = require('./models/panelesModel')(app, mongoose);
-var areamodel =  require('./models/areas')(app, mongoose);
-var panelesCtrl = require('./controllers/panelesController');
-var areasCtrl = require('./controllers/areasController');
+var simuladay	=	require('./models/simuladay')(app, mongoose);
+var models		=	require('./models/panelesModel')(app, mongoose);
+var areamodel	=	require('./models/areas')(app, mongoose);
 
-// Example Route
-var router = express.Router();
-router.get('/', function(req, res) {
-  res.send("Hello boot!");
-});
+var simuladayCtrl	=	require('./controllers/simuladayController.js');
+var panelesCtrl			=	require('./controllers/panelesController');
+var areasCtrl			=	require('./controllers/areasController');
 
-// API routes
+// FEATURE PANELES routes
+var featurepaneles = express.Router();
+
+featurepaneles.route('/getallPanelesOnePeriod')
+  .get(simuladayCtrl.findAllPaneles)
+
+/*
+featurepaneles.route('/getClass1')
+	.get(simuladayCtrl.findPanelesClass1)
+featurepaneles.route('/getClass2')
+	.get(simuladayCtrl.findPanelesClass2)
+featurepaneles.route('/getClass3')
+	.get(simuladayCtrl.findPanelesClass3)
+featurepaneles.route('/getClass4')
+	.get(simuladayCtrl.findPanelesClass4)
+featurepaneles.route('/getClass5')
+	.get(simuladayCtrl.findPanelesClass5)
+featurepaneles.route('/getClass6')
+	.get(simuladayCtrl.findPanelesClass6)
+*/
+
+
+// PANELES routes
 var paneles = express.Router();
 
 paneles.route('/paneles')
@@ -41,19 +60,7 @@ paneles.route('/paneles/:id')
   .put(panelesCtrl.updatePaneles)
   .delete(panelesCtrl.deletePaneles);
 
-/////////////////////////////////////////////////
-////GET - Return all
-/*
-exports.findAllPaneles = function(req, res) {
-    Paneles.find(function(err, paneles) {
-    if(err) return res.send(500, "noooo " + err.message);
-    console.log('GET /paneles')
-    console.log(paneles);
-        res.status(200).jsonp(paneles);
-    });
-};
-// routes/index.js
-/* GET layers json data. */
+// AREAS routes 
 var arearouter = express.Router();
 
 arearouter.route('/maplayers')
@@ -64,11 +71,15 @@ arearouter.route('/query')
 
 /////////////////////////////////////////////////
 
+app.use(featurepaneles);
+app.use('/api', featurepaneles);
+
 app.use(arearouter);
 app.use('/api', arearouter);
 
-app.use(router);
+app.use(paneles);
 app.use('/api', paneles);
+
 
 // Start server
 app.listen(3000, function() {

@@ -10,6 +10,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "geojson": "^0.4.1",
+    "geojson-tools": "^0.2.2",
     "json-parser": "^1.1.5",
     "method-override": "^2.3.9",
     "mongo-querystring": "^4.1.1",
