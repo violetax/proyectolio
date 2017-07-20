@@ -12,7 +12,7 @@ valores_tevihuinen_base=tevihuinen_base_decimalPunto.csv
 valores_orienIncl_fijos=orin_decimalPunto.csv
 
 rm  valoresPaneles_CSV/*
-rm featuresPaneles_GEOJSON/*
+rm featurespaneles_GEOJSON/*
 
 #ARCHIVOS DE COORDENADAS:
 
@@ -69,6 +69,7 @@ rm coord.tmp
 
 
 #establezco el periodo contando las lineas del file con los valores base, ya que cada linea representa un periodo
+#1 PERIODO == 1 VUELTA WHILE
 while IFS= read -r record
 do
 ###PERIODO CAMBIA DENTRO DELL AWK, AQUI SE RESETEA let periodo=${periodo}+1
@@ -85,6 +86,13 @@ variation3=$((-1 + RANDOM % 2))
 variation4=$((-1 + RANDOM % 2))
 variation5=$((1 + RANDOM % 5))
 
+
+#VALORES PARA EL PANEL ID:
+companias=(IBDR IBDR IBDR IBDR IBDR IBDR IBDR IBDR IBDR IBDR IBDR IBDR IBDR IBDR IBDR IBDR ENDS ENDS ENDS ENDS ENDS ENDS ENDS ENDS ENDS ENDS ENDS ENDS ENDS ENDS ENDS HCEN HCEN HCEN HCEN HCEN HCEN HCEN HCEN HCEN HCEN HCEN HCEN HCEN HCEN GDFS GDFS GDFS GDFS GNFE GNFE GNFE GNFE GNFE SHEL SHEL SHEL SHEL SHEL NTRG NTRG EONE EONE EONE EONE EONE IMPN VMPN ACCE ACCE ACCE ACCE ACCE NXPN HLPN SYPN AUPN GEPN FLPN EEPN PEPN EOPN)
+
+compaID=${companias[$RANDOM % ${#companias[@]} ]}
+
+
 #awk copia el csv de los valores de un panel en un dia, modificados al random
 #produce un archivo de valores con extension de numero
 awk -F";" -v v1=${variation1}  -v v2=${variation2}  -v v3=${variation3}  -v v4=${variation4}  -v v5=${variation5}  '{te=$1+$1*v1;vi=$2+$2*v2;hu=$3+$3*v3;ins=$4+$4*v4;en=$5+$5*v5; printf("%s;%s;%s;%s;%f\n", te,vi,hu,ins,en)}' ${valores_tevihuinen_base} > valores_tevihuinen_del_panel_numero.${panelNro}.${extension}
@@ -93,17 +101,17 @@ paste -d";"  ${valores_orienIncl_fijos} valores_tevihuinen_del_panel_numero.${pa
 
 # 2º/ BUILD PANELES
 
-#awk -F";" -v p=${periodo} '{printf("{\"type\":\t\"Feature\",\n\"properties\":\n{\t\t\t\"periodo\":\t%s,\n\t\t\t\"orientacion\":\t%s,\n\t\t\t\"inclinacion\":\t%s,\n\t\t\t\"temperatura\":\t%s,\n\t\t\t\"velocidadviento\":\t%s,\n\t\t\t\"humedad\":\t%s,\n\t\t\t\"insolacion\":\t%s,\n\t\t\t\"energia\":\t%s\n},\n\"geometry\": {\n\t\t\t\"type\":\t\"Point\",\n\t\t\t\"coordinates\":[%f,%f]},\n", p,$1,$2,$3,$4,$5,$6,$7,0.5,0.5)}'  base_para_day_feature_array_de_un_panel >  panel_feature_format.${periodo}.${extension}
-awk -F";" -v p=${periodo} -v xcoord="${x}" -v ycoord="${y}" '{p=p+1;printf("{\n\"type\":\t\"Feature\",\n\"properties\": {\n\t\t\t\"periodo\":\t%s,\n\t\t\t\"orientacion\":\t%s,\n\t\t\t\"inclinacion\":\t%s,\n\t\t\t\"temperatura\":\t%s,\n\t\t\t\"velocidadviento\":\t%s,\n\t\t\t\"humedad\":\t%s,\n\t\t\t\"insolacion\":\t%s,\n\t\t\t\"energia\":\t%s\n}, \"geometry\": {\n\t\t\t\"type\":\t\"Point\",\n\t\t\t\"coordinates\":[%f,%f]}\n},\n", p,$1,$2,$3,$4,$5,$6,$7,xcoord,ycoord)}' base_para_day_feature_array_de_un_panel >  panel_feature_format.${panelNro}.${extension}
+awk -F";" -v p=${periodo} -v xcoord="${x}" -v ycoord="${y}" -v coid="${compaID}" -v paid="${panelNro}" '{p=p+1;printf("{\n\"type\":\t\"Feature\",\n\"properties\": {\n\t\t\t\"panelId\": {\n\t\t\t\t\t\t\"compania\":\t%s,\n\t\t\t\t\t\t\"id\":\t%s\n\t\t\t},\n\t\t\t\"periodo\":\t%s,\n\t\t\t\"orientacion\":\t%s,\n\t\t\t\"inclinacion\":\t%s,\n\t\t\t\"temperatura\":\t%s,\n\t\t\t\"velocidadviento\":\t%s,\n\t\t\t\"humedad\":\t%s,\n\t\t\t\"insolacion\":\t%s,\n\t\t\t\"energia\":\t%s\n}, \"geometry\": {\n\t\t\t\"type\":\t\"Point\",\n\t\t\t\"coordinates\":[%f,%f]}\n},\n", coid, paid, p,$1,$2,$3,$4,$5,$6,$7,xcoord,ycoord)}' base_para_day_feature_array_de_un_panel >  panel_feature_format.${panelNro}.${extension}
 
 echo "Panel Nº:	${panelNro}.${extension}"
   
 rm base_para_day_feature_array_de_un_panel
 mv valores_tevihuinen_del_panel_numero.${panelNro}.${extension} valoresPaneles_CSV
-mv  panel_feature_format.${panelNro}.${extension} featuresPaneles_GEOJSON
+mv  panel_feature_format.${panelNro}.${extension} featurespaneles_GEOJSON
 
 
 #end of while read valores_tevihuinen_base
+#cada vuelta del while es un periodo
 done < ${valores_tevihuinen_base}
 
 #done

@@ -1,12 +1,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	1,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	63,
 			"insolacion":	0,
 			"energia":	1.142857
 }, "geometry": {
@@ -16,12 +20,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	2,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	63,
 			"insolacion":	0,
 			"energia":	1.190476
 }, "geometry": {
@@ -31,12 +39,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	3,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	63,
 			"insolacion":	0,
 			"energia":	1.238095
 }, "geometry": {
@@ -46,12 +58,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	4,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	63,
 			"insolacion":	0,
 			"energia":	1.285714
 }, "geometry": {
@@ -61,12 +77,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	5,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	63,
 			"insolacion":	0,
 			"energia":	1.333333
 }, "geometry": {
@@ -76,12 +96,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	6,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	63,
 			"insolacion":	0,
 			"energia":	1.380952
 }, "geometry": {
@@ -91,12 +115,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	7,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	63,
 			"insolacion":	0,
 			"energia":	1.428571
 }, "geometry": {
@@ -106,12 +134,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	8,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	63,
 			"insolacion":	0,
 			"energia":	1.476190
 }, "geometry": {
@@ -121,12 +153,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	9,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	63,
 			"insolacion":	0,
 			"energia":	1.523810
 }, "geometry": {
@@ -136,12 +172,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	10,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	63,
 			"insolacion":	0,
 			"energia":	1.571429
 }, "geometry": {
@@ -151,12 +191,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	11,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	18,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	54,
+			"velocidadviento":	12,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	1.619048
 }, "geometry": {
@@ -166,12 +210,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	12,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	12,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	1.666667
 }, "geometry": {
@@ -181,12 +229,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	13,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	12,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	1.714286
 }, "geometry": {
@@ -196,12 +248,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	14,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	13.5,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	27,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	1.761905
 }, "geometry": {
@@ -211,12 +267,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	15,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	13.5,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	27,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	1.809524
 }, "geometry": {
@@ -226,12 +286,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	16,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	13.5,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	27,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	1.857143
 }, "geometry": {
@@ -241,12 +305,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	17,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	12,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	1.904762
 }, "geometry": {
@@ -256,12 +324,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	18,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	12,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	1.952381
 }, "geometry": {
@@ -271,12 +343,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	19,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	12,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	2.000000
 }, "geometry": {
@@ -286,12 +362,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	20,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	12,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	2.047619
 }, "geometry": {
@@ -301,12 +381,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	21,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	12,
+			"humedad":	64,
 			"insolacion":	0,
 			"energia":	2.095238
 }, "geometry": {
@@ -316,12 +400,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	22,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	6,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	12,
+			"humedad":	65,
 			"insolacion":	0,
 			"energia":	2.142857
 }, "geometry": {
@@ -331,12 +419,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	23,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	19.8,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	39.6,
+			"humedad":	65,
 			"insolacion":	0,
 			"energia":	2.190476
 }, "geometry": {
@@ -346,12 +438,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	24,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	20,
-			"velocidadviento":	19.8,
-			"humedad":	0,
+			"temperatura":	60,
+			"velocidadviento":	39.6,
+			"humedad":	65,
 			"insolacion":	0,
 			"energia":	2.238095
 }, "geometry": {
@@ -361,12 +457,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	25,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	22,
-			"velocidadviento":	19.8,
-			"humedad":	0,
+			"temperatura":	66,
+			"velocidadviento":	39.6,
+			"humedad":	65,
 			"insolacion":	0,
 			"energia":	2.285714
 }, "geometry": {
@@ -376,12 +476,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	26,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	22,
-			"velocidadviento":	9,
-			"humedad":	0,
+			"temperatura":	66,
+			"velocidadviento":	18,
+			"humedad":	65,
 			"insolacion":	0,
 			"energia":	2.333333
 }, "geometry": {
@@ -391,12 +495,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	27,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	22,
-			"velocidadviento":	9,
-			"humedad":	0,
+			"temperatura":	66,
+			"velocidadviento":	18,
+			"humedad":	65,
 			"insolacion":	0,
 			"energia":	2.380952
 }, "geometry": {
@@ -406,12 +514,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	28,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	22,
+			"temperatura":	66,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	65,
 			"insolacion":	0,
 			"energia":	2.428571
 }, "geometry": {
@@ -421,12 +533,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	29,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	22,
+			"temperatura":	66,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	65,
 			"insolacion":	0,
 			"energia":	2.476190
 }, "geometry": {
@@ -436,12 +552,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	30,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	22,
+			"temperatura":	66,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	66,
 			"insolacion":	0,
 			"energia":	2.523810
 }, "geometry": {
@@ -451,12 +571,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	31,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	22,
+			"temperatura":	66,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	66,
 			"insolacion":	0,
 			"energia":	2.571429
 }, "geometry": {
@@ -466,12 +590,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	32,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	22,
+			"temperatura":	66,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	66,
 			"insolacion":	0,
 			"energia":	2.619048
 }, "geometry": {
@@ -481,12 +609,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	33,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	22,
+			"temperatura":	66,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	66,
 			"insolacion":	0,
 			"energia":	2.666667
 }, "geometry": {
@@ -496,12 +628,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	34,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	22,
+			"temperatura":	66,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	66,
 			"insolacion":	0,
 			"energia":	2.714286
 }, "geometry": {
@@ -511,12 +647,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	35,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	22,
+			"temperatura":	66,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	66,
 			"insolacion":	0,
 			"energia":	2.761905
 }, "geometry": {
@@ -526,12 +666,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	36,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	24,
+			"temperatura":	72,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	67,
 			"insolacion":	0,
 			"energia":	2.809524
 }, "geometry": {
@@ -541,12 +685,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	37,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	26,
+			"temperatura":	78,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	67,
 			"insolacion":	0,
 			"energia":	2.857143
 }, "geometry": {
@@ -556,12 +704,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	38,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	28,
+			"temperatura":	84,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	67,
 			"insolacion":	0,
 			"energia":	2.904762
 }, "geometry": {
@@ -571,12 +723,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	39,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	28,
+			"temperatura":	84,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	67,
 			"insolacion":	0,
 			"energia":	2.952381
 }, "geometry": {
@@ -586,12 +742,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	40,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	28,
+			"temperatura":	84,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	67,
 			"insolacion":	0,
 			"energia":	3.000000
 }, "geometry": {
@@ -601,12 +761,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	41,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	28,
+			"temperatura":	84,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	3.047619
 }, "geometry": {
@@ -616,12 +780,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	42,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	28,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	84,
+			"velocidadviento":	15,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	3.095238
 }, "geometry": {
@@ -631,12 +799,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	43,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	28,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	84,
+			"velocidadviento":	15,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	3.142857
 }, "geometry": {
@@ -646,12 +818,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	44,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	28,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	84,
+			"velocidadviento":	15,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	3.190476
 }, "geometry": {
@@ -661,12 +837,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	45,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	28,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	84,
+			"velocidadviento":	15,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	3.238095
 }, "geometry": {
@@ -676,12 +856,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	46,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	28,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	84,
+			"velocidadviento":	15,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	3.285714
 }, "geometry": {
@@ -691,12 +875,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	47,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	28,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	84,
+			"velocidadviento":	15,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	3.333333
 }, "geometry": {
@@ -706,12 +894,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	48,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	30,
+			"temperatura":	90,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	3.380952
 }, "geometry": {
@@ -721,12 +913,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	49,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	30,
+			"temperatura":	90,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	3.428571
 }, "geometry": {
@@ -736,12 +932,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	50,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	30,
+			"temperatura":	90,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.476190
 }, "geometry": {
@@ -751,12 +951,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	51,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	30,
+			"temperatura":	90,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.523810
 }, "geometry": {
@@ -766,12 +970,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	52,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	32,
+			"temperatura":	96,
 			"velocidadviento":	0,
-			"humedad":	0,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.571429
 }, "geometry": {
@@ -781,12 +989,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	53,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	32,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	96,
+			"velocidadviento":	15,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.619048
 }, "geometry": {
@@ -796,12 +1008,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	54,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	32,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	96,
+			"velocidadviento":	15,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.666667
 }, "geometry": {
@@ -811,12 +1027,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	55,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	32,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	96,
+			"velocidadviento":	15,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.714286
 }, "geometry": {
@@ -826,12 +1046,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	56,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	32,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	96,
+			"velocidadviento":	15,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.761905
 }, "geometry": {
@@ -841,12 +1065,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	57,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	32,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	96,
+			"velocidadviento":	15,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.809524
 }, "geometry": {
@@ -856,12 +1084,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	58,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	32,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	96,
+			"velocidadviento":	15,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.857143
 }, "geometry": {
@@ -871,12 +1103,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	59,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.904762
 }, "geometry": {
@@ -886,12 +1122,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	60,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	3.952381
 }, "geometry": {
@@ -901,12 +1141,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	61,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	4.000000
 }, "geometry": {
@@ -916,12 +1160,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	62,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	4.000000
 }, "geometry": {
@@ -931,12 +1179,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	63,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	4.000000
 }, "geometry": {
@@ -946,12 +1198,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	64,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	4.000000
 }, "geometry": {
@@ -961,12 +1217,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	65,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	4.000000
 }, "geometry": {
@@ -976,12 +1236,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	66,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	4.000000
 }, "geometry": {
@@ -991,12 +1255,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	67,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	3.904762
 }, "geometry": {
@@ -1006,12 +1274,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	68,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	71,
 			"insolacion":	0,
 			"energia":	3.809524
 }, "geometry": {
@@ -1021,12 +1293,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	69,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	71,
 			"insolacion":	0,
 			"energia":	3.714286
 }, "geometry": {
@@ -1036,12 +1312,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	70,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	71,
 			"insolacion":	0,
 			"energia":	3.619048
 }, "geometry": {
@@ -1051,12 +1331,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	71,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	71,
 			"insolacion":	0,
 			"energia":	3.523810
 }, "geometry": {
@@ -1066,12 +1350,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	72,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	72,
 			"insolacion":	0,
 			"energia":	3.428571
 }, "geometry": {
@@ -1081,12 +1369,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	73,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	72,
 			"insolacion":	0,
 			"energia":	3.333333
 }, "geometry": {
@@ -1096,12 +1388,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	74,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	34,
-			"velocidadviento":	7.5,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	15,
+			"humedad":	72,
 			"insolacion":	0,
 			"energia":	3.238095
 }, "geometry": {
@@ -1111,12 +1407,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	75,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	34,
-			"velocidadviento":	39,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	78,
+			"humedad":	72,
 			"insolacion":	0,
 			"energia":	3.142857
 }, "geometry": {
@@ -1126,12 +1426,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	76,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	34,
-			"velocidadviento":	39,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	78,
+			"humedad":	72,
 			"insolacion":	0,
 			"energia":	3.047619
 }, "geometry": {
@@ -1141,12 +1445,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	77,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	34,
-			"velocidadviento":	39,
-			"humedad":	0,
+			"temperatura":	102,
+			"velocidadviento":	78,
+			"humedad":	72,
 			"insolacion":	0,
 			"energia":	2.952381
 }, "geometry": {
@@ -1156,12 +1464,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	78,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	33.8,
-			"velocidadviento":	39,
-			"humedad":	0,
+			"temperatura":	101.4,
+			"velocidadviento":	78,
+			"humedad":	71,
 			"insolacion":	0,
 			"energia":	2.857143
 }, "geometry": {
@@ -1171,12 +1483,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	79,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	33,
-			"velocidadviento":	15,
-			"humedad":	0,
+			"temperatura":	99,
+			"velocidadviento":	30,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	2.761905
 }, "geometry": {
@@ -1186,12 +1502,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	80,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	32.6,
-			"velocidadviento":	15,
-			"humedad":	0,
+			"temperatura":	97.8,
+			"velocidadviento":	30,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	2.666667
 }, "geometry": {
@@ -1201,12 +1521,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	81,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	32,
-			"velocidadviento":	15,
-			"humedad":	0,
+			"temperatura":	96,
+			"velocidadviento":	30,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	2.571429
 }, "geometry": {
@@ -1216,12 +1540,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	82,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	30,
-			"velocidadviento":	15,
-			"humedad":	0,
+			"temperatura":	90,
+			"velocidadviento":	30,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	2.476190
 }, "geometry": {
@@ -1231,12 +1559,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	83,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	28,
-			"velocidadviento":	15,
-			"humedad":	0,
+			"temperatura":	84,
+			"velocidadviento":	30,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	2.380952
 }, "geometry": {
@@ -1246,12 +1578,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	84,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	26,
-			"velocidadviento":	15,
-			"humedad":	0,
+			"temperatura":	78,
+			"velocidadviento":	30,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	2.285714
 }, "geometry": {
@@ -1261,12 +1597,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	85,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	26,
-			"velocidadviento":	15,
-			"humedad":	0,
+			"temperatura":	78,
+			"velocidadviento":	30,
+			"humedad":	70,
 			"insolacion":	0,
 			"energia":	2.190476
 }, "geometry": {
@@ -1276,12 +1616,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	86,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	26,
-			"velocidadviento":	15,
-			"humedad":	0,
+			"temperatura":	78,
+			"velocidadviento":	30,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	2.095238
 }, "geometry": {
@@ -1291,12 +1635,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	87,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	26,
-			"velocidadviento":	15,
-			"humedad":	0,
+			"temperatura":	78,
+			"velocidadviento":	30,
+			"humedad":	69,
 			"insolacion":	0,
 			"energia":	2.000000
 }, "geometry": {
@@ -1306,12 +1654,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	88,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	26,
-			"velocidadviento":	15,
-			"humedad":	0,
+			"temperatura":	78,
+			"velocidadviento":	30,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	1.904762
 }, "geometry": {
@@ -1321,12 +1673,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	89,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	26,
-			"velocidadviento":	12,
-			"humedad":	0,
+			"temperatura":	78,
+			"velocidadviento":	24,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	1.809524
 }, "geometry": {
@@ -1336,12 +1692,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	90,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	26,
-			"velocidadviento":	12,
-			"humedad":	0,
+			"temperatura":	78,
+			"velocidadviento":	24,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	1.714286
 }, "geometry": {
@@ -1351,12 +1711,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	91,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	24,
-			"velocidadviento":	12,
-			"humedad":	0,
+			"temperatura":	72,
+			"velocidadviento":	24,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	1.619048
 }, "geometry": {
@@ -1366,12 +1730,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	92,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	24,
-			"velocidadviento":	12,
-			"humedad":	0,
+			"temperatura":	72,
+			"velocidadviento":	24,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	1.523810
 }, "geometry": {
@@ -1381,12 +1749,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	93,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	24,
-			"velocidadviento":	12,
-			"humedad":	0,
+			"temperatura":	72,
+			"velocidadviento":	24,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	1.428571
 }, "geometry": {
@@ -1396,12 +1768,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	94,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	24,
-			"velocidadviento":	12,
-			"humedad":	0,
+			"temperatura":	72,
+			"velocidadviento":	24,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	1.333333
 }, "geometry": {
@@ -1411,12 +1787,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	95,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	24,
-			"velocidadviento":	12,
-			"humedad":	0,
+			"temperatura":	72,
+			"velocidadviento":	24,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	1.238095
 }, "geometry": {
@@ -1426,12 +1806,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	96,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	24,
-			"velocidadviento":	12,
-			"humedad":	0,
+			"temperatura":	72,
+			"velocidadviento":	24,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	1.142857
 }, "geometry": {
@@ -1441,12 +1825,16 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	EONE,
+						"id":	40
+			},
 			"periodo":	97,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	22,
-			"velocidadviento":	12,
-			"humedad":	0,
+			"temperatura":	66,
+			"velocidadviento":	24,
+			"humedad":	68,
 			"insolacion":	0,
 			"energia":	1.047619
 }, "geometry": {

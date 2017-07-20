@@ -1,193 +1,17 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
 			"periodo":	1,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	63,
-			"insolacion":	0,
-			"energia":	0.571429
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	2,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	63,
-			"insolacion":	0,
-			"energia":	0.595238
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	3,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	63,
-			"insolacion":	0,
-			"energia":	0.619048
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	4,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	63,
-			"insolacion":	0,
-			"energia":	0.642857
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	5,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	63,
-			"insolacion":	0,
-			"energia":	0.666667
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	6,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	63,
-			"insolacion":	0,
-			"energia":	0.690476
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	7,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	63,
-			"insolacion":	0,
-			"energia":	0.714286
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	8,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	63,
-			"insolacion":	0,
-			"energia":	0.738095
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	9,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	63,
-			"insolacion":	0,
-			"energia":	0.761905
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	10,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	63,
-			"insolacion":	0,
-			"energia":	0.785714
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	11,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	8,
-			"humedad":	64,
-			"insolacion":	0,
-			"energia":	0.809524
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	12,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	8,
-			"humedad":	64,
-			"insolacion":	0,
-			"energia":	0.833333
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	13,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	8,
-			"humedad":	64,
-			"insolacion":	0,
+			"temperatura":	18,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	60,
 			"energia":	0.857143
 }, "geometry": {
 			"type":	"Point",
@@ -196,14 +20,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	14,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	2,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	18,
-			"humedad":	64,
-			"insolacion":	0,
-			"energia":	0.880952
+			"temperatura":	18,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	62.5,
+			"energia":	0.892857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -211,28 +39,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	15,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	3,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	18,
-			"humedad":	64,
-			"insolacion":	0,
-			"energia":	0.904762
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	16,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	18,
-			"humedad":	64,
-			"insolacion":	0,
+			"temperatura":	18,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	65,
 			"energia":	0.928571
 }, "geometry": {
 			"type":	"Point",
@@ -241,14 +58,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	17,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	4,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	8,
-			"humedad":	64,
-			"insolacion":	0,
-			"energia":	0.952381
+			"temperatura":	18,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	67.5,
+			"energia":	0.964286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -256,28 +77,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	18,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	5,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	8,
-			"humedad":	64,
-			"insolacion":	0,
-			"energia":	0.976190
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	19,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	8,
-			"humedad":	64,
-			"insolacion":	0,
+			"temperatura":	18,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	70,
 			"energia":	1.000000
 }, "geometry": {
 			"type":	"Point",
@@ -286,14 +96,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	20,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	6,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	8,
-			"humedad":	64,
-			"insolacion":	0,
-			"energia":	1.023810
+			"temperatura":	18,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	72.5,
+			"energia":	1.035714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -301,28 +115,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	21,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	7,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	8,
-			"humedad":	64,
-			"insolacion":	0,
-			"energia":	1.047619
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	22,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	8,
-			"humedad":	65,
-			"insolacion":	0,
+			"temperatura":	18,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	75,
 			"energia":	1.071429
 }, "geometry": {
 			"type":	"Point",
@@ -331,14 +134,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	23,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	8,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	26.4,
-			"humedad":	65,
-			"insolacion":	0,
-			"energia":	1.095238
+			"temperatura":	18,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	77.5,
+			"energia":	1.107143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -346,28 +153,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	24,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	9,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	26.4,
-			"humedad":	65,
-			"insolacion":	0,
-			"energia":	1.119048
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	25,
-			"orientacion":	90,
-			"inclinacion":	0,
-			"temperatura":	33,
-			"velocidadviento":	26.4,
-			"humedad":	65,
-			"insolacion":	0,
+			"temperatura":	18,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	80,
 			"energia":	1.142857
 }, "geometry": {
 			"type":	"Point",
@@ -376,14 +172,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	26,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	33,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	10,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	18,
 			"velocidadviento":	12,
-			"humedad":	65,
-			"insolacion":	0,
-			"energia":	1.166667
+			"humedad":	0,
+			"insolacion":	82.5,
+			"energia":	1.178571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -391,28 +191,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	27,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	33,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	11,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	18,
 			"velocidadviento":	12,
-			"humedad":	65,
-			"insolacion":	0,
-			"energia":	1.190476
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	28,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	33,
-			"velocidadviento":	0,
-			"humedad":	65,
-			"insolacion":	0,
+			"humedad":	0,
+			"insolacion":	85,
 			"energia":	1.214286
 }, "geometry": {
 			"type":	"Point",
@@ -421,14 +210,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	29,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	33,
-			"velocidadviento":	0,
-			"humedad":	65,
-			"insolacion":	0,
-			"energia":	1.238095
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	12,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	87.5,
+			"energia":	1.250000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -436,28 +229,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	30,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	33,
-			"velocidadviento":	0,
-			"humedad":	66,
-			"insolacion":	0,
-			"energia":	1.261905
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	31,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	33,
-			"velocidadviento":	0,
-			"humedad":	66,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	13,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	90,
 			"energia":	1.285714
 }, "geometry": {
 			"type":	"Point",
@@ -466,14 +248,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	32,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	33,
-			"velocidadviento":	0,
-			"humedad":	66,
-			"insolacion":	0,
-			"energia":	1.309524
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	14,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	27,
+			"humedad":	0,
+			"insolacion":	92.5,
+			"energia":	1.321429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -481,28 +267,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	33,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	33,
-			"velocidadviento":	0,
-			"humedad":	66,
-			"insolacion":	0,
-			"energia":	1.333333
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	34,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	33,
-			"velocidadviento":	0,
-			"humedad":	66,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	15,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	27,
+			"humedad":	0,
+			"insolacion":	95,
 			"energia":	1.357143
 }, "geometry": {
 			"type":	"Point",
@@ -511,14 +286,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	35,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	33,
-			"velocidadviento":	0,
-			"humedad":	66,
-			"insolacion":	0,
-			"energia":	1.380952
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	16,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	27,
+			"humedad":	0,
+			"insolacion":	97.5,
+			"energia":	1.392857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -526,28 +305,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	36,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	36,
-			"velocidadviento":	0,
-			"humedad":	67,
-			"insolacion":	0,
-			"energia":	1.404762
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	37,
-			"orientacion":	67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	0,
-			"humedad":	67,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	17,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	100,
 			"energia":	1.428571
 }, "geometry": {
 			"type":	"Point",
@@ -556,14 +324,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	38,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	0,
-			"humedad":	67,
-			"insolacion":	0,
-			"energia":	1.452381
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	18,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	102.5,
+			"energia":	1.464286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -571,28 +343,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	39,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	0,
-			"humedad":	67,
-			"insolacion":	0,
-			"energia":	1.476190
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	40,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	0,
-			"humedad":	67,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	19,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	105,
 			"energia":	1.500000
 }, "geometry": {
 			"type":	"Point",
@@ -601,14 +362,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	41,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	0,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	1.523810
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	20,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	107.5,
+			"energia":	1.535714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -616,28 +381,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	42,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	10,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	1.547619
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	43,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	10,
-			"humedad":	68,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	21,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	110,
 			"energia":	1.571429
 }, "geometry": {
 			"type":	"Point",
@@ -646,14 +400,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	44,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	10,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	1.595238
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	22,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	12,
+			"humedad":	0,
+			"insolacion":	112.5,
+			"energia":	1.607143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -661,28 +419,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	45,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	10,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	1.619048
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	46,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	10,
-			"humedad":	68,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	23,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	39.6,
+			"humedad":	0,
+			"insolacion":	115,
 			"energia":	1.642857
 }, "geometry": {
 			"type":	"Point",
@@ -691,14 +438,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	47,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	10,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	1.666667
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	24,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	20,
+			"velocidadviento":	39.6,
+			"humedad":	0,
+			"insolacion":	117.5,
+			"energia":	1.678571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -706,28 +457,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	48,
-			"orientacion":	45,
-			"inclinacion":	47,
-			"temperatura":	45,
-			"velocidadviento":	0,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	1.690476
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	49,
-			"orientacion":	22.5,
-			"inclinacion":	62,
-			"temperatura":	45,
-			"velocidadviento":	0,
-			"humedad":	68,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	25,
+			"orientacion":	90,
+			"inclinacion":	0,
+			"temperatura":	22,
+			"velocidadviento":	39.6,
+			"humedad":	0,
+			"insolacion":	120,
 			"energia":	1.714286
 }, "geometry": {
 			"type":	"Point",
@@ -736,14 +476,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	50,
-			"orientacion":	22.5,
-			"inclinacion":	62,
-			"temperatura":	45,
-			"velocidadviento":	0,
-			"humedad":	69,
-			"insolacion":	0,
-			"energia":	1.738095
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	26,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	22,
+			"velocidadviento":	18,
+			"humedad":	0,
+			"insolacion":	122.5,
+			"energia":	1.750000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -751,28 +495,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	51,
-			"orientacion":	22.5,
-			"inclinacion":	62,
-			"temperatura":	45,
-			"velocidadviento":	0,
-			"humedad":	69,
-			"insolacion":	0,
-			"energia":	1.761905
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	52,
-			"orientacion":	22.5,
-			"inclinacion":	62,
-			"temperatura":	48,
-			"velocidadviento":	0,
-			"humedad":	69,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	27,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	22,
+			"velocidadviento":	18,
+			"humedad":	0,
+			"insolacion":	125,
 			"energia":	1.785714
 }, "geometry": {
 			"type":	"Point",
@@ -781,14 +514,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	53,
-			"orientacion":	22.5,
-			"inclinacion":	62,
-			"temperatura":	48,
-			"velocidadviento":	10,
-			"humedad":	69,
-			"insolacion":	0,
-			"energia":	1.809524
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	28,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	22,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	127.5,
+			"energia":	1.821429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -796,28 +533,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	54,
-			"orientacion":	22.5,
-			"inclinacion":	62,
-			"temperatura":	48,
-			"velocidadviento":	10,
-			"humedad":	69,
-			"insolacion":	0,
-			"energia":	1.833333
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	55,
-			"orientacion":	22.5,
-			"inclinacion":	62,
-			"temperatura":	48,
-			"velocidadviento":	10,
-			"humedad":	69,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	29,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	22,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	130,
 			"energia":	1.857143
 }, "geometry": {
 			"type":	"Point",
@@ -826,14 +552,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	56,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	48,
-			"velocidadviento":	10,
-			"humedad":	69,
-			"insolacion":	0,
-			"energia":	1.880952
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	30,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	22,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	132.5,
+			"energia":	1.892857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -841,28 +571,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	57,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	48,
-			"velocidadviento":	10,
-			"humedad":	69,
-			"insolacion":	0,
-			"energia":	1.904762
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	58,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	48,
-			"velocidadviento":	10,
-			"humedad":	69,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	31,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	22,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	135,
 			"energia":	1.928571
 }, "geometry": {
 			"type":	"Point",
@@ -871,14 +590,531 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	32,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	22,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	137.5,
+			"energia":	1.964286
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	33,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	22,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	140,
+			"energia":	2.000000
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	34,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	22,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	142.5,
+			"energia":	2.035714
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	35,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	22,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	145,
+			"energia":	2.071429
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	36,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	24,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	147.5,
+			"energia":	2.107143
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	37,
+			"orientacion":	67.5,
+			"inclinacion":	32,
+			"temperatura":	26,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	150,
+			"energia":	2.142857
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	38,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	152.5,
+			"energia":	2.178571
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	39,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	155,
+			"energia":	2.214286
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	40,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	157.5,
+			"energia":	2.250000
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	41,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	160,
+			"energia":	2.285714
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	42,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	162.5,
+			"energia":	2.321429
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	43,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	165,
+			"energia":	2.357143
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	44,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	167.5,
+			"energia":	2.392857
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	45,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	170,
+			"energia":	2.428571
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	46,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	172.5,
+			"energia":	2.464286
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	47,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	175,
+			"energia":	2.500000
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	48,
+			"orientacion":	45,
+			"inclinacion":	47,
+			"temperatura":	30,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	177.5,
+			"energia":	2.535714
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	49,
+			"orientacion":	22.5,
+			"inclinacion":	62,
+			"temperatura":	30,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	180,
+			"energia":	2.571429
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	50,
+			"orientacion":	22.5,
+			"inclinacion":	62,
+			"temperatura":	30,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	182.5,
+			"energia":	2.607143
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	51,
+			"orientacion":	22.5,
+			"inclinacion":	62,
+			"temperatura":	30,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	185,
+			"energia":	2.642857
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	52,
+			"orientacion":	22.5,
+			"inclinacion":	62,
+			"temperatura":	32,
+			"velocidadviento":	0,
+			"humedad":	0,
+			"insolacion":	187.5,
+			"energia":	2.678571
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	53,
+			"orientacion":	22.5,
+			"inclinacion":	62,
+			"temperatura":	32,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	190,
+			"energia":	2.714286
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	54,
+			"orientacion":	22.5,
+			"inclinacion":	62,
+			"temperatura":	32,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	192.5,
+			"energia":	2.750000
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	55,
+			"orientacion":	22.5,
+			"inclinacion":	62,
+			"temperatura":	32,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	195,
+			"energia":	2.785714
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	56,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	32,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	197.5,
+			"energia":	2.821429
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	57,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	32,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	200,
+			"energia":	2.857143
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	58,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	32,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	202.5,
+			"energia":	2.892857
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
 			"periodo":	59,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	69,
-			"insolacion":	0,
-			"energia":	1.952381
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	205,
+			"energia":	2.928571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -886,14 +1122,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
 			"periodo":	60,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	69,
-			"insolacion":	0,
-			"energia":	1.976190
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	207.5,
+			"energia":	2.964286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -901,14 +1141,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
 			"periodo":	61,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	2.000000
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	210,
+			"energia":	3.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -916,14 +1160,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
 			"periodo":	62,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	2.000000
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	210,
+			"energia":	3.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -931,14 +1179,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
 			"periodo":	63,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	2.000000
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	210,
+			"energia":	3.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -946,14 +1198,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
 			"periodo":	64,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	2.000000
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	210,
+			"energia":	3.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -961,14 +1217,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
 			"periodo":	65,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	2.000000
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	210,
+			"energia":	3.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -976,13 +1236,283 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
 			"periodo":	66,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	70,
-			"insolacion":	0,
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	210,
+			"energia":	3.000000
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	67,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	205,
+			"energia":	2.928571
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	68,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	200,
+			"energia":	2.857143
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	69,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	195,
+			"energia":	2.785714
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	70,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	190,
+			"energia":	2.714286
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	71,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	185,
+			"energia":	2.642857
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	72,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	180,
+			"energia":	2.571429
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	73,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	175,
+			"energia":	2.500000
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	74,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	34,
+			"velocidadviento":	15,
+			"humedad":	0,
+			"insolacion":	170,
+			"energia":	2.428571
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	75,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	34,
+			"velocidadviento":	78,
+			"humedad":	0,
+			"insolacion":	165,
+			"energia":	2.357143
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	76,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	34,
+			"velocidadviento":	78,
+			"humedad":	0,
+			"insolacion":	160,
+			"energia":	2.285714
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	77,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	34,
+			"velocidadviento":	78,
+			"humedad":	0,
+			"insolacion":	155,
+			"energia":	2.214286
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	78,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	33.8,
+			"velocidadviento":	78,
+			"humedad":	0,
+			"insolacion":	150,
+			"energia":	2.142857
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	79,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	33,
+			"velocidadviento":	30,
+			"humedad":	0,
+			"insolacion":	145,
+			"energia":	2.071429
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.606506,42.994603]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	80,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	32.6,
+			"velocidadviento":	30,
+			"humedad":	0,
+			"insolacion":	140,
 			"energia":	2.000000
 }, "geometry": {
 			"type":	"Point",
@@ -991,14 +1521,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	67,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	1.952381
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	81,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	32,
+			"velocidadviento":	30,
+			"humedad":	0,
+			"insolacion":	135,
+			"energia":	1.928571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -1006,28 +1540,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	68,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	71,
-			"insolacion":	0,
-			"energia":	1.904762
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	69,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	71,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	82,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	30,
+			"velocidadviento":	30,
+			"humedad":	0,
+			"insolacion":	130,
 			"energia":	1.857143
 }, "geometry": {
 			"type":	"Point",
@@ -1036,14 +1559,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	70,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	71,
-			"insolacion":	0,
-			"energia":	1.809524
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	83,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	28,
+			"velocidadviento":	30,
+			"humedad":	0,
+			"insolacion":	125,
+			"energia":	1.785714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -1051,28 +1578,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	71,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	71,
-			"insolacion":	0,
-			"energia":	1.761905
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	72,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	72,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	84,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	26,
+			"velocidadviento":	30,
+			"humedad":	0,
+			"insolacion":	120,
 			"energia":	1.714286
 }, "geometry": {
 			"type":	"Point",
@@ -1081,14 +1597,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	73,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	72,
-			"insolacion":	0,
-			"energia":	1.666667
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	85,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	26,
+			"velocidadviento":	30,
+			"humedad":	0,
+			"insolacion":	115,
+			"energia":	1.642857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -1096,28 +1616,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	74,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	51,
-			"velocidadviento":	10,
-			"humedad":	72,
-			"insolacion":	0,
-			"energia":	1.619048
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	75,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	51,
-			"velocidadviento":	52,
-			"humedad":	72,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	86,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	26,
+			"velocidadviento":	30,
+			"humedad":	0,
+			"insolacion":	110,
 			"energia":	1.571429
 }, "geometry": {
 			"type":	"Point",
@@ -1126,14 +1635,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	76,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	51,
-			"velocidadviento":	52,
-			"humedad":	72,
-			"insolacion":	0,
-			"energia":	1.523810
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	87,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	26,
+			"velocidadviento":	30,
+			"humedad":	0,
+			"insolacion":	105,
+			"energia":	1.500000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -1141,28 +1654,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	77,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	51,
-			"velocidadviento":	52,
-			"humedad":	72,
-			"insolacion":	0,
-			"energia":	1.476190
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	78,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	50.7,
-			"velocidadviento":	52,
-			"humedad":	71,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	88,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	26,
+			"velocidadviento":	30,
+			"humedad":	0,
+			"insolacion":	100,
 			"energia":	1.428571
 }, "geometry": {
 			"type":	"Point",
@@ -1171,14 +1673,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	79,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	49.5,
-			"velocidadviento":	20,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	1.380952
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	89,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	26,
+			"velocidadviento":	24,
+			"humedad":	0,
+			"insolacion":	95,
+			"energia":	1.357143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -1186,28 +1692,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	80,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	48.9,
-			"velocidadviento":	20,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	1.333333
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	81,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	48,
-			"velocidadviento":	20,
-			"humedad":	70,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	90,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	26,
+			"velocidadviento":	24,
+			"humedad":	0,
+			"insolacion":	90,
 			"energia":	1.285714
 }, "geometry": {
 			"type":	"Point",
@@ -1216,14 +1711,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	82,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	45,
-			"velocidadviento":	20,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	1.238095
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	91,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	24,
+			"velocidadviento":	24,
+			"humedad":	0,
+			"insolacion":	85,
+			"energia":	1.214286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -1231,28 +1730,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	83,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	20,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	1.190476
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	84,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	39,
-			"velocidadviento":	20,
-			"humedad":	70,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	92,
+			"orientacion":	-90,
+			"inclinacion":	0,
+			"temperatura":	24,
+			"velocidadviento":	24,
+			"humedad":	0,
+			"insolacion":	80,
 			"energia":	1.142857
 }, "geometry": {
 			"type":	"Point",
@@ -1261,14 +1749,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	85,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	39,
-			"velocidadviento":	20,
-			"humedad":	70,
-			"insolacion":	0,
-			"energia":	1.095238
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	93,
+			"orientacion":	-90,
+			"inclinacion":	0,
+			"temperatura":	24,
+			"velocidadviento":	24,
+			"humedad":	0,
+			"insolacion":	75,
+			"energia":	1.071429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -1276,28 +1768,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	86,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	20,
-			"humedad":	69,
-			"insolacion":	0,
-			"energia":	1.047619
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	87,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	20,
-			"humedad":	69,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	94,
+			"orientacion":	-90,
+			"inclinacion":	0,
+			"temperatura":	24,
+			"velocidadviento":	24,
+			"humedad":	0,
+			"insolacion":	70,
 			"energia":	1.000000
 }, "geometry": {
 			"type":	"Point",
@@ -1306,14 +1787,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	88,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	20,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	0.952381
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	95,
+			"orientacion":	-90,
+			"inclinacion":	0,
+			"temperatura":	24,
+			"velocidadviento":	24,
+			"humedad":	0,
+			"insolacion":	65,
+			"energia":	0.928571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}
@@ -1321,28 +1806,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	89,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	16,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	0.904762
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	90,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	16,
-			"humedad":	68,
-			"insolacion":	0,
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
+			"periodo":	96,
+			"orientacion":	-90,
+			"inclinacion":	0,
+			"temperatura":	24,
+			"velocidadviento":	24,
+			"humedad":	0,
+			"insolacion":	60,
 			"energia":	0.857143
 }, "geometry": {
 			"type":	"Point",
@@ -1351,104 +1825,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	91,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	36,
-			"velocidadviento":	16,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	0.809524
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	92,
-			"orientacion":	-90,
-			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	16,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	0.761905
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	93,
-			"orientacion":	-90,
-			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	16,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	0.714286
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	94,
-			"orientacion":	-90,
-			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	16,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	0.666667
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	95,
-			"orientacion":	-90,
-			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	16,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	0.619048
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	96,
-			"orientacion":	-90,
-			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	16,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	0.571429
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.606506,42.994603]}
-},
-{
-"type":	"Feature",
-"properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	79
+			},
 			"periodo":	97,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	33,
-			"velocidadviento":	16,
-			"humedad":	68,
-			"insolacion":	0,
-			"energia":	0.523810
+			"temperatura":	22,
+			"velocidadviento":	24,
+			"humedad":	0,
+			"insolacion":	55,
+			"energia":	0.785714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.606506,42.994603]}

@@ -1,11 +1,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	1,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	63,
 			"insolacion":	60,
 			"energia":	0.857143
@@ -16,11 +20,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	2,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	63,
 			"insolacion":	62.5,
 			"energia":	0.892857
@@ -31,11 +39,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	3,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	63,
 			"insolacion":	65,
 			"energia":	0.928571
@@ -46,11 +58,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	4,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	63,
 			"insolacion":	67.5,
 			"energia":	0.964286
@@ -61,11 +77,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	5,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	63,
 			"insolacion":	70,
 			"energia":	1.000000
@@ -76,11 +96,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	6,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	63,
 			"insolacion":	72.5,
 			"energia":	1.035714
@@ -91,11 +115,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	7,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	63,
 			"insolacion":	75,
 			"energia":	1.071429
@@ -106,11 +134,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	8,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	63,
 			"insolacion":	77.5,
 			"energia":	1.107143
@@ -121,11 +153,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	9,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	63,
 			"insolacion":	80,
 			"energia":	1.142857
@@ -136,11 +172,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	10,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	63,
 			"insolacion":	82.5,
 			"energia":	1.178571
@@ -151,11 +191,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	11,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
+			"temperatura":	54,
+			"velocidadviento":	12,
 			"humedad":	64,
 			"insolacion":	85,
 			"energia":	1.214286
@@ -166,11 +210,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	12,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	8,
+			"temperatura":	60,
+			"velocidadviento":	12,
 			"humedad":	64,
 			"insolacion":	87.5,
 			"energia":	1.250000
@@ -181,11 +229,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	13,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	8,
+			"temperatura":	60,
+			"velocidadviento":	12,
 			"humedad":	64,
 			"insolacion":	90,
 			"energia":	1.285714
@@ -196,11 +248,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	14,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	18,
+			"temperatura":	60,
+			"velocidadviento":	27,
 			"humedad":	64,
 			"insolacion":	92.5,
 			"energia":	1.321429
@@ -211,11 +267,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	15,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	18,
+			"temperatura":	60,
+			"velocidadviento":	27,
 			"humedad":	64,
 			"insolacion":	95,
 			"energia":	1.357143
@@ -226,11 +286,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	16,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	18,
+			"temperatura":	60,
+			"velocidadviento":	27,
 			"humedad":	64,
 			"insolacion":	97.5,
 			"energia":	1.392857
@@ -241,11 +305,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	17,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	8,
+			"temperatura":	60,
+			"velocidadviento":	12,
 			"humedad":	64,
 			"insolacion":	100,
 			"energia":	1.428571
@@ -256,11 +324,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	18,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	8,
+			"temperatura":	60,
+			"velocidadviento":	12,
 			"humedad":	64,
 			"insolacion":	102.5,
 			"energia":	1.464286
@@ -271,11 +343,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	19,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	8,
+			"temperatura":	60,
+			"velocidadviento":	12,
 			"humedad":	64,
 			"insolacion":	105,
 			"energia":	1.500000
@@ -286,11 +362,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	20,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	8,
+			"temperatura":	60,
+			"velocidadviento":	12,
 			"humedad":	64,
 			"insolacion":	107.5,
 			"energia":	1.535714
@@ -301,11 +381,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	21,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	8,
+			"temperatura":	60,
+			"velocidadviento":	12,
 			"humedad":	64,
 			"insolacion":	110,
 			"energia":	1.571429
@@ -316,11 +400,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	22,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	8,
+			"temperatura":	60,
+			"velocidadviento":	12,
 			"humedad":	65,
 			"insolacion":	112.5,
 			"energia":	1.607143
@@ -331,11 +419,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	23,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	26.4,
+			"temperatura":	60,
+			"velocidadviento":	39.6,
 			"humedad":	65,
 			"insolacion":	115,
 			"energia":	1.642857
@@ -346,11 +438,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	24,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	40,
-			"velocidadviento":	26.4,
+			"temperatura":	60,
+			"velocidadviento":	39.6,
 			"humedad":	65,
 			"insolacion":	117.5,
 			"energia":	1.678571
@@ -361,11 +457,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	25,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	44,
-			"velocidadviento":	26.4,
+			"temperatura":	66,
+			"velocidadviento":	39.6,
 			"humedad":	65,
 			"insolacion":	120,
 			"energia":	1.714286
@@ -376,11 +476,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	26,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	44,
-			"velocidadviento":	12,
+			"temperatura":	66,
+			"velocidadviento":	18,
 			"humedad":	65,
 			"insolacion":	122.5,
 			"energia":	1.750000
@@ -391,11 +495,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	27,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	44,
-			"velocidadviento":	12,
+			"temperatura":	66,
+			"velocidadviento":	18,
 			"humedad":	65,
 			"insolacion":	125,
 			"energia":	1.785714
@@ -406,10 +514,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	28,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	44,
+			"temperatura":	66,
 			"velocidadviento":	0,
 			"humedad":	65,
 			"insolacion":	127.5,
@@ -421,10 +533,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	29,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	44,
+			"temperatura":	66,
 			"velocidadviento":	0,
 			"humedad":	65,
 			"insolacion":	130,
@@ -436,10 +552,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	30,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	44,
+			"temperatura":	66,
 			"velocidadviento":	0,
 			"humedad":	66,
 			"insolacion":	132.5,
@@ -451,10 +571,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	31,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	44,
+			"temperatura":	66,
 			"velocidadviento":	0,
 			"humedad":	66,
 			"insolacion":	135,
@@ -466,10 +590,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	32,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	44,
+			"temperatura":	66,
 			"velocidadviento":	0,
 			"humedad":	66,
 			"insolacion":	137.5,
@@ -481,10 +609,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	33,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	44,
+			"temperatura":	66,
 			"velocidadviento":	0,
 			"humedad":	66,
 			"insolacion":	140,
@@ -496,10 +628,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	34,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	44,
+			"temperatura":	66,
 			"velocidadviento":	0,
 			"humedad":	66,
 			"insolacion":	142.5,
@@ -511,10 +647,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	35,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	44,
+			"temperatura":	66,
 			"velocidadviento":	0,
 			"humedad":	66,
 			"insolacion":	145,
@@ -526,10 +666,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	36,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	48,
+			"temperatura":	72,
 			"velocidadviento":	0,
 			"humedad":	67,
 			"insolacion":	147.5,
@@ -541,10 +685,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	37,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	52,
+			"temperatura":	78,
 			"velocidadviento":	0,
 			"humedad":	67,
 			"insolacion":	150,
@@ -556,10 +704,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	38,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	56,
+			"temperatura":	84,
 			"velocidadviento":	0,
 			"humedad":	67,
 			"insolacion":	152.5,
@@ -571,10 +723,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	39,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	56,
+			"temperatura":	84,
 			"velocidadviento":	0,
 			"humedad":	67,
 			"insolacion":	155,
@@ -586,10 +742,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	40,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	56,
+			"temperatura":	84,
 			"velocidadviento":	0,
 			"humedad":	67,
 			"insolacion":	157.5,
@@ -601,10 +761,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	41,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	56,
+			"temperatura":	84,
 			"velocidadviento":	0,
 			"humedad":	68,
 			"insolacion":	160,
@@ -616,11 +780,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	42,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	56,
-			"velocidadviento":	10,
+			"temperatura":	84,
+			"velocidadviento":	15,
 			"humedad":	68,
 			"insolacion":	162.5,
 			"energia":	2.321429
@@ -631,11 +799,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	43,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	56,
-			"velocidadviento":	10,
+			"temperatura":	84,
+			"velocidadviento":	15,
 			"humedad":	68,
 			"insolacion":	165,
 			"energia":	2.357143
@@ -646,11 +818,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	44,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	56,
-			"velocidadviento":	10,
+			"temperatura":	84,
+			"velocidadviento":	15,
 			"humedad":	68,
 			"insolacion":	167.5,
 			"energia":	2.392857
@@ -661,11 +837,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	45,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	56,
-			"velocidadviento":	10,
+			"temperatura":	84,
+			"velocidadviento":	15,
 			"humedad":	68,
 			"insolacion":	170,
 			"energia":	2.428571
@@ -676,11 +856,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	46,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	56,
-			"velocidadviento":	10,
+			"temperatura":	84,
+			"velocidadviento":	15,
 			"humedad":	68,
 			"insolacion":	172.5,
 			"energia":	2.464286
@@ -691,11 +875,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	47,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	56,
-			"velocidadviento":	10,
+			"temperatura":	84,
+			"velocidadviento":	15,
 			"humedad":	68,
 			"insolacion":	175,
 			"energia":	2.500000
@@ -706,10 +894,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	48,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	60,
+			"temperatura":	90,
 			"velocidadviento":	0,
 			"humedad":	68,
 			"insolacion":	177.5,
@@ -721,10 +913,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	49,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	60,
+			"temperatura":	90,
 			"velocidadviento":	0,
 			"humedad":	68,
 			"insolacion":	180,
@@ -736,10 +932,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	50,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	60,
+			"temperatura":	90,
 			"velocidadviento":	0,
 			"humedad":	69,
 			"insolacion":	182.5,
@@ -751,10 +951,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	51,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	60,
+			"temperatura":	90,
 			"velocidadviento":	0,
 			"humedad":	69,
 			"insolacion":	185,
@@ -766,10 +970,14 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	52,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	64,
+			"temperatura":	96,
 			"velocidadviento":	0,
 			"humedad":	69,
 			"insolacion":	187.5,
@@ -781,11 +989,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	53,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	64,
-			"velocidadviento":	10,
+			"temperatura":	96,
+			"velocidadviento":	15,
 			"humedad":	69,
 			"insolacion":	190,
 			"energia":	2.714286
@@ -796,11 +1008,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	54,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	64,
-			"velocidadviento":	10,
+			"temperatura":	96,
+			"velocidadviento":	15,
 			"humedad":	69,
 			"insolacion":	192.5,
 			"energia":	2.750000
@@ -811,11 +1027,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	55,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	64,
-			"velocidadviento":	10,
+			"temperatura":	96,
+			"velocidadviento":	15,
 			"humedad":	69,
 			"insolacion":	195,
 			"energia":	2.785714
@@ -826,11 +1046,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	56,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	64,
-			"velocidadviento":	10,
+			"temperatura":	96,
+			"velocidadviento":	15,
 			"humedad":	69,
 			"insolacion":	197.5,
 			"energia":	2.821429
@@ -841,11 +1065,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	57,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	64,
-			"velocidadviento":	10,
+			"temperatura":	96,
+			"velocidadviento":	15,
 			"humedad":	69,
 			"insolacion":	200,
 			"energia":	2.857143
@@ -856,11 +1084,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	58,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	64,
-			"velocidadviento":	10,
+			"temperatura":	96,
+			"velocidadviento":	15,
 			"humedad":	69,
 			"insolacion":	202.5,
 			"energia":	2.892857
@@ -871,11 +1103,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	59,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	69,
 			"insolacion":	205,
 			"energia":	2.928571
@@ -886,11 +1122,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	60,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	69,
 			"insolacion":	207.5,
 			"energia":	2.964286
@@ -901,11 +1141,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	61,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	70,
 			"insolacion":	210,
 			"energia":	3.000000
@@ -916,11 +1160,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	62,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	70,
 			"insolacion":	210,
 			"energia":	3.000000
@@ -931,11 +1179,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	63,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	70,
 			"insolacion":	210,
 			"energia":	3.000000
@@ -946,11 +1198,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	64,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	70,
 			"insolacion":	210,
 			"energia":	3.000000
@@ -961,11 +1217,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	65,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	70,
 			"insolacion":	210,
 			"energia":	3.000000
@@ -976,11 +1236,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	66,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	70,
 			"insolacion":	210,
 			"energia":	3.000000
@@ -991,11 +1255,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	67,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	70,
 			"insolacion":	205,
 			"energia":	2.928571
@@ -1006,11 +1274,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	68,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	71,
 			"insolacion":	200,
 			"energia":	2.857143
@@ -1021,11 +1293,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	69,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	71,
 			"insolacion":	195,
 			"energia":	2.785714
@@ -1036,11 +1312,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	70,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	71,
 			"insolacion":	190,
 			"energia":	2.714286
@@ -1051,11 +1331,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	71,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	71,
 			"insolacion":	185,
 			"energia":	2.642857
@@ -1066,11 +1350,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	72,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	72,
 			"insolacion":	180,
 			"energia":	2.571429
@@ -1081,11 +1369,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	73,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	72,
 			"insolacion":	175,
 			"energia":	2.500000
@@ -1096,11 +1388,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	74,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	68,
-			"velocidadviento":	10,
+			"temperatura":	102,
+			"velocidadviento":	15,
 			"humedad":	72,
 			"insolacion":	170,
 			"energia":	2.428571
@@ -1111,11 +1407,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	75,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	68,
-			"velocidadviento":	52,
+			"temperatura":	102,
+			"velocidadviento":	78,
 			"humedad":	72,
 			"insolacion":	165,
 			"energia":	2.357143
@@ -1126,11 +1426,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	76,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	68,
-			"velocidadviento":	52,
+			"temperatura":	102,
+			"velocidadviento":	78,
 			"humedad":	72,
 			"insolacion":	160,
 			"energia":	2.285714
@@ -1141,11 +1445,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	77,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	68,
-			"velocidadviento":	52,
+			"temperatura":	102,
+			"velocidadviento":	78,
 			"humedad":	72,
 			"insolacion":	155,
 			"energia":	2.214286
@@ -1156,11 +1464,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	78,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	67.6,
-			"velocidadviento":	52,
+			"temperatura":	101.4,
+			"velocidadviento":	78,
 			"humedad":	71,
 			"insolacion":	150,
 			"energia":	2.142857
@@ -1171,11 +1483,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	79,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
-			"temperatura":	66,
-			"velocidadviento":	20,
+			"temperatura":	99,
+			"velocidadviento":	30,
 			"humedad":	70,
 			"insolacion":	145,
 			"energia":	2.071429
@@ -1186,11 +1502,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	80,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	65.2,
-			"velocidadviento":	20,
+			"temperatura":	97.8,
+			"velocidadviento":	30,
 			"humedad":	70,
 			"insolacion":	140,
 			"energia":	2.000000
@@ -1201,11 +1521,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	81,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	64,
-			"velocidadviento":	20,
+			"temperatura":	96,
+			"velocidadviento":	30,
 			"humedad":	70,
 			"insolacion":	135,
 			"energia":	1.928571
@@ -1216,11 +1540,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	82,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	60,
-			"velocidadviento":	20,
+			"temperatura":	90,
+			"velocidadviento":	30,
 			"humedad":	70,
 			"insolacion":	130,
 			"energia":	1.857143
@@ -1231,11 +1559,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	83,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	56,
-			"velocidadviento":	20,
+			"temperatura":	84,
+			"velocidadviento":	30,
 			"humedad":	70,
 			"insolacion":	125,
 			"energia":	1.785714
@@ -1246,11 +1578,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	84,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	52,
-			"velocidadviento":	20,
+			"temperatura":	78,
+			"velocidadviento":	30,
 			"humedad":	70,
 			"insolacion":	120,
 			"energia":	1.714286
@@ -1261,11 +1597,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	85,
 			"orientacion":	-45,
 			"inclinacion":	47,
-			"temperatura":	52,
-			"velocidadviento":	20,
+			"temperatura":	78,
+			"velocidadviento":	30,
 			"humedad":	70,
 			"insolacion":	115,
 			"energia":	1.642857
@@ -1276,11 +1616,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	86,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	52,
-			"velocidadviento":	20,
+			"temperatura":	78,
+			"velocidadviento":	30,
 			"humedad":	69,
 			"insolacion":	110,
 			"energia":	1.571429
@@ -1291,11 +1635,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	87,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	52,
-			"velocidadviento":	20,
+			"temperatura":	78,
+			"velocidadviento":	30,
 			"humedad":	69,
 			"insolacion":	105,
 			"energia":	1.500000
@@ -1306,11 +1654,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	88,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	52,
-			"velocidadviento":	20,
+			"temperatura":	78,
+			"velocidadviento":	30,
 			"humedad":	68,
 			"insolacion":	100,
 			"energia":	1.428571
@@ -1321,11 +1673,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	89,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	52,
-			"velocidadviento":	16,
+			"temperatura":	78,
+			"velocidadviento":	24,
 			"humedad":	68,
 			"insolacion":	95,
 			"energia":	1.357143
@@ -1336,11 +1692,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	90,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	52,
-			"velocidadviento":	16,
+			"temperatura":	78,
+			"velocidadviento":	24,
 			"humedad":	68,
 			"insolacion":	90,
 			"energia":	1.285714
@@ -1351,11 +1711,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	91,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
-			"temperatura":	48,
-			"velocidadviento":	16,
+			"temperatura":	72,
+			"velocidadviento":	24,
 			"humedad":	68,
 			"insolacion":	85,
 			"energia":	1.214286
@@ -1366,11 +1730,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	92,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	48,
-			"velocidadviento":	16,
+			"temperatura":	72,
+			"velocidadviento":	24,
 			"humedad":	68,
 			"insolacion":	80,
 			"energia":	1.142857
@@ -1381,11 +1749,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	93,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	48,
-			"velocidadviento":	16,
+			"temperatura":	72,
+			"velocidadviento":	24,
 			"humedad":	68,
 			"insolacion":	75,
 			"energia":	1.071429
@@ -1396,11 +1768,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	94,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	48,
-			"velocidadviento":	16,
+			"temperatura":	72,
+			"velocidadviento":	24,
 			"humedad":	68,
 			"insolacion":	70,
 			"energia":	1.000000
@@ -1411,11 +1787,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	95,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	48,
-			"velocidadviento":	16,
+			"temperatura":	72,
+			"velocidadviento":	24,
 			"humedad":	68,
 			"insolacion":	65,
 			"energia":	0.928571
@@ -1426,11 +1806,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	96,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	48,
-			"velocidadviento":	16,
+			"temperatura":	72,
+			"velocidadviento":	24,
 			"humedad":	68,
 			"insolacion":	60,
 			"energia":	0.857143
@@ -1441,11 +1825,15 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	IBDR,
+						"id":	2
+			},
 			"periodo":	97,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	44,
-			"velocidadviento":	16,
+			"temperatura":	66,
+			"velocidadviento":	24,
 			"humedad":	68,
 			"insolacion":	55,
 			"energia":	0.785714

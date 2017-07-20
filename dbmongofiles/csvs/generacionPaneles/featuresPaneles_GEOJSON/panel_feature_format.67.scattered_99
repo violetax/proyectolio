@@ -1,6 +1,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	1,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -16,6 +20,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	2,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -31,6 +39,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	3,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -46,6 +58,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	4,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -61,6 +77,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	5,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -76,6 +96,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	6,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -91,6 +115,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	7,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -106,6 +134,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	8,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -121,6 +153,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	9,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -136,6 +172,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	10,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -151,6 +191,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	11,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -166,6 +210,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	12,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -181,6 +229,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	13,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -196,6 +248,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	14,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -211,6 +267,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	15,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -226,6 +286,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	16,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -241,6 +305,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	17,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -256,6 +324,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	18,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -271,6 +343,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	19,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -286,6 +362,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	20,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -301,6 +381,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	21,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -316,6 +400,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	22,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -331,6 +419,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	23,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -346,6 +438,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	24,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -361,6 +457,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	25,
 			"orientacion":	90,
 			"inclinacion":	0,
@@ -376,6 +476,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	26,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -391,6 +495,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	27,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -406,6 +514,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	28,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -421,6 +533,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	29,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -436,6 +552,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	30,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -451,6 +571,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	31,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -466,6 +590,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	32,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -481,6 +609,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	33,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -496,6 +628,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	34,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -511,6 +647,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	35,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -526,6 +666,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	36,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -541,6 +685,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	37,
 			"orientacion":	67.5,
 			"inclinacion":	32,
@@ -556,6 +704,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	38,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -571,6 +723,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	39,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -586,6 +742,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	40,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -601,6 +761,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	41,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -616,6 +780,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	42,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -631,6 +799,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	43,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -646,6 +818,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	44,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -661,6 +837,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	45,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -676,6 +856,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	46,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -691,6 +875,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	47,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -706,6 +894,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	48,
 			"orientacion":	45,
 			"inclinacion":	47,
@@ -721,6 +913,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	49,
 			"orientacion":	22.5,
 			"inclinacion":	62,
@@ -736,6 +932,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	50,
 			"orientacion":	22.5,
 			"inclinacion":	62,
@@ -751,6 +951,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	51,
 			"orientacion":	22.5,
 			"inclinacion":	62,
@@ -766,6 +970,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	52,
 			"orientacion":	22.5,
 			"inclinacion":	62,
@@ -781,6 +989,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	53,
 			"orientacion":	22.5,
 			"inclinacion":	62,
@@ -796,6 +1008,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	54,
 			"orientacion":	22.5,
 			"inclinacion":	62,
@@ -811,6 +1027,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	55,
 			"orientacion":	22.5,
 			"inclinacion":	62,
@@ -826,6 +1046,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	56,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -841,6 +1065,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	57,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -856,6 +1084,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	58,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -871,6 +1103,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	59,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -886,6 +1122,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	60,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -901,6 +1141,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	61,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -916,6 +1160,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	62,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -931,6 +1179,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	63,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -946,6 +1198,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	64,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -961,6 +1217,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	65,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -976,6 +1236,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	66,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -991,6 +1255,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	67,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -1006,6 +1274,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	68,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -1021,6 +1293,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	69,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -1036,6 +1312,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	70,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -1051,6 +1331,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	71,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -1066,6 +1350,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	72,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -1081,6 +1369,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	73,
 			"orientacion":	0,
 			"inclinacion":	90,
@@ -1096,6 +1388,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	74,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
@@ -1111,6 +1407,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	75,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
@@ -1126,6 +1426,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	76,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
@@ -1141,6 +1445,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	77,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
@@ -1156,6 +1464,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	78,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
@@ -1171,6 +1483,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	79,
 			"orientacion":	-22.5,
 			"inclinacion":	62,
@@ -1186,6 +1502,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	80,
 			"orientacion":	-45,
 			"inclinacion":	47,
@@ -1201,6 +1521,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	81,
 			"orientacion":	-45,
 			"inclinacion":	47,
@@ -1216,6 +1540,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	82,
 			"orientacion":	-45,
 			"inclinacion":	47,
@@ -1231,6 +1559,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	83,
 			"orientacion":	-45,
 			"inclinacion":	47,
@@ -1246,6 +1578,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	84,
 			"orientacion":	-45,
 			"inclinacion":	47,
@@ -1261,6 +1597,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	85,
 			"orientacion":	-45,
 			"inclinacion":	47,
@@ -1276,6 +1616,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	86,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
@@ -1291,6 +1635,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	87,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
@@ -1306,6 +1654,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	88,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
@@ -1321,6 +1673,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	89,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
@@ -1336,6 +1692,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	90,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
@@ -1351,6 +1711,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	91,
 			"orientacion":	-67.5,
 			"inclinacion":	32,
@@ -1366,6 +1730,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	92,
 			"orientacion":	-90,
 			"inclinacion":	0,
@@ -1381,6 +1749,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	93,
 			"orientacion":	-90,
 			"inclinacion":	0,
@@ -1396,6 +1768,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	94,
 			"orientacion":	-90,
 			"inclinacion":	0,
@@ -1411,6 +1787,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	95,
 			"orientacion":	-90,
 			"inclinacion":	0,
@@ -1426,6 +1806,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	96,
 			"orientacion":	-90,
 			"inclinacion":	0,
@@ -1441,6 +1825,10 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	GNFE,
+						"id":	67
+			},
 			"periodo":	97,
 			"orientacion":	-90,
 			"inclinacion":	0,

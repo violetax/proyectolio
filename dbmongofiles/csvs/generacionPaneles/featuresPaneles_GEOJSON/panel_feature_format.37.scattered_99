@@ -1,14 +1,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	1,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	0.857143
+			"insolacion":	60,
+			"energia":	1.714286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -16,14 +20,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	2,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	0.892857
+			"insolacion":	62.5,
+			"energia":	1.785714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -31,14 +39,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	3,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	0.928571
+			"insolacion":	65,
+			"energia":	1.857143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -46,14 +58,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	4,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	0.964286
+			"insolacion":	67.5,
+			"energia":	1.928571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -61,14 +77,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	5,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.000000
+			"insolacion":	70,
+			"energia":	2.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -76,14 +96,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	6,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.035714
+			"insolacion":	72.5,
+			"energia":	2.071429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -91,14 +115,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	7,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.071429
+			"insolacion":	75,
+			"energia":	2.142857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -106,14 +134,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	8,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.107143
+			"insolacion":	77.5,
+			"energia":	2.214286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -121,14 +153,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	9,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.142857
+			"insolacion":	80,
+			"energia":	2.285714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -136,14 +172,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	10,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.178571
+			"insolacion":	82.5,
+			"energia":	2.357143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -151,14 +191,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	11,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	27,
-			"velocidadviento":	4,
+			"temperatura":	36,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.214286
+			"insolacion":	85,
+			"energia":	2.428571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -166,14 +210,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	12,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	4,
+			"temperatura":	40,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.250000
+			"insolacion":	87.5,
+			"energia":	2.500000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -181,14 +229,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	13,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	4,
+			"temperatura":	40,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.285714
+			"insolacion":	90,
+			"energia":	2.571429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -196,14 +248,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	14,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	9,
+			"temperatura":	40,
+			"velocidadviento":	22.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.321429
+			"insolacion":	92.5,
+			"energia":	2.642857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -211,14 +267,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	15,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	9,
+			"temperatura":	40,
+			"velocidadviento":	22.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.357143
+			"insolacion":	95,
+			"energia":	2.714286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -226,14 +286,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	16,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	9,
+			"temperatura":	40,
+			"velocidadviento":	22.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.392857
+			"insolacion":	97.5,
+			"energia":	2.785714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -241,14 +305,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	17,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	4,
+			"temperatura":	40,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.428571
+			"insolacion":	100,
+			"energia":	2.857143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -256,14 +324,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	18,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	4,
+			"temperatura":	40,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.464286
+			"insolacion":	102.5,
+			"energia":	2.928571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -271,14 +343,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	19,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	4,
+			"temperatura":	40,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.500000
+			"insolacion":	105,
+			"energia":	3.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -286,14 +362,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	20,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	4,
+			"temperatura":	40,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.535714
+			"insolacion":	107.5,
+			"energia":	3.071429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -301,14 +381,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	21,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	4,
+			"temperatura":	40,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.571429
+			"insolacion":	110,
+			"energia":	3.142857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -316,14 +400,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	22,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	4,
+			"temperatura":	40,
+			"velocidadviento":	10,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.607143
+			"insolacion":	112.5,
+			"energia":	3.214286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -331,14 +419,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	23,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	13.2,
+			"temperatura":	40,
+			"velocidadviento":	33,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.642857
+			"insolacion":	115,
+			"energia":	3.285714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -346,14 +438,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	24,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	30,
-			"velocidadviento":	13.2,
+			"temperatura":	40,
+			"velocidadviento":	33,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.678571
+			"insolacion":	117.5,
+			"energia":	3.357143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -361,14 +457,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	25,
 			"orientacion":	90,
 			"inclinacion":	0,
-			"temperatura":	33,
-			"velocidadviento":	13.2,
+			"temperatura":	44,
+			"velocidadviento":	33,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.714286
+			"insolacion":	120,
+			"energia":	3.428571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -376,14 +476,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	26,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	33,
-			"velocidadviento":	6,
+			"temperatura":	44,
+			"velocidadviento":	15,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.750000
+			"insolacion":	122.5,
+			"energia":	3.500000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -391,14 +495,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	27,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	33,
-			"velocidadviento":	6,
+			"temperatura":	44,
+			"velocidadviento":	15,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.785714
+			"insolacion":	125,
+			"energia":	3.571429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -406,14 +514,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	28,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	33,
+			"temperatura":	44,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.821429
+			"insolacion":	127.5,
+			"energia":	3.642857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -421,14 +533,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	29,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	33,
+			"temperatura":	44,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.857143
+			"insolacion":	130,
+			"energia":	3.714286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -436,14 +552,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	30,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	33,
+			"temperatura":	44,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.892857
+			"insolacion":	132.5,
+			"energia":	3.785714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -451,14 +571,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	31,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	33,
+			"temperatura":	44,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.928571
+			"insolacion":	135,
+			"energia":	3.857143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -466,14 +590,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	32,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	33,
+			"temperatura":	44,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.964286
+			"insolacion":	137.5,
+			"energia":	3.928571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -481,14 +609,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	33,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	33,
+			"temperatura":	44,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.000000
+			"insolacion":	140,
+			"energia":	4.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -496,14 +628,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	34,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	33,
+			"temperatura":	44,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.035714
+			"insolacion":	142.5,
+			"energia":	4.071429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -511,14 +647,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	35,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	33,
+			"temperatura":	44,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.071429
+			"insolacion":	145,
+			"energia":	4.142857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -526,14 +666,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	36,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	36,
+			"temperatura":	48,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.107143
+			"insolacion":	147.5,
+			"energia":	4.214286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -541,14 +685,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	37,
 			"orientacion":	67.5,
 			"inclinacion":	32,
-			"temperatura":	39,
+			"temperatura":	52,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.142857
+			"insolacion":	150,
+			"energia":	4.285714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -556,14 +704,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	38,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	42,
+			"temperatura":	56,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.178571
+			"insolacion":	152.5,
+			"energia":	4.357143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -571,14 +723,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	39,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	42,
+			"temperatura":	56,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.214286
+			"insolacion":	155,
+			"energia":	4.428571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -586,14 +742,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	40,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	42,
+			"temperatura":	56,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.250000
+			"insolacion":	157.5,
+			"energia":	4.500000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -601,14 +761,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	41,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	42,
+			"temperatura":	56,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.285714
+			"insolacion":	160,
+			"energia":	4.571429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -616,14 +780,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	42,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	5,
+			"temperatura":	56,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.321429
+			"insolacion":	162.5,
+			"energia":	4.642857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -631,14 +799,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	43,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	5,
+			"temperatura":	56,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.357143
+			"insolacion":	165,
+			"energia":	4.714286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -646,14 +818,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	44,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	5,
+			"temperatura":	56,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.392857
+			"insolacion":	167.5,
+			"energia":	4.785714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -661,14 +837,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	45,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	5,
+			"temperatura":	56,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.428571
+			"insolacion":	170,
+			"energia":	4.857143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -676,14 +856,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	46,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	5,
+			"temperatura":	56,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.464286
+			"insolacion":	172.5,
+			"energia":	4.928571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -691,14 +875,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	47,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	5,
+			"temperatura":	56,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.500000
+			"insolacion":	175,
+			"energia":	5.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -706,14 +894,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	48,
 			"orientacion":	45,
 			"inclinacion":	47,
-			"temperatura":	45,
+			"temperatura":	60,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.535714
+			"insolacion":	177.5,
+			"energia":	5.071429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -721,14 +913,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	49,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	45,
+			"temperatura":	60,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.571429
+			"insolacion":	180,
+			"energia":	5.142857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -736,14 +932,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	50,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	45,
+			"temperatura":	60,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.607143
+			"insolacion":	182.5,
+			"energia":	5.214286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -751,14 +951,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	51,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	45,
+			"temperatura":	60,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.642857
+			"insolacion":	185,
+			"energia":	5.285714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -766,14 +970,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	52,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	48,
+			"temperatura":	64,
 			"velocidadviento":	0,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.678571
+			"insolacion":	187.5,
+			"energia":	5.357143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -781,14 +989,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	53,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	48,
-			"velocidadviento":	5,
+			"temperatura":	64,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.714286
+			"insolacion":	190,
+			"energia":	5.428571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -796,14 +1008,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	54,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	48,
-			"velocidadviento":	5,
+			"temperatura":	64,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.750000
+			"insolacion":	192.5,
+			"energia":	5.500000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -811,14 +1027,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	55,
 			"orientacion":	22.5,
 			"inclinacion":	62,
-			"temperatura":	48,
-			"velocidadviento":	5,
+			"temperatura":	64,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.785714
+			"insolacion":	195,
+			"energia":	5.571429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -826,14 +1046,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	56,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	48,
-			"velocidadviento":	5,
+			"temperatura":	64,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.821429
+			"insolacion":	197.5,
+			"energia":	5.642857
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -841,14 +1065,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	57,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	48,
-			"velocidadviento":	5,
+			"temperatura":	64,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.857143
+			"insolacion":	200,
+			"energia":	5.714286
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -856,14 +1084,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	58,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	48,
-			"velocidadviento":	5,
+			"temperatura":	64,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.892857
+			"insolacion":	202.5,
+			"energia":	5.785714
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -871,14 +1103,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	59,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.928571
+			"insolacion":	205,
+			"energia":	5.857143
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -886,14 +1122,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	60,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.964286
+			"insolacion":	207.5,
+			"energia":	5.928571
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -901,14 +1141,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	61,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	3.000000
+			"insolacion":	210,
+			"energia":	6.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -916,14 +1160,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	62,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	3.000000
+			"insolacion":	210,
+			"energia":	6.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -931,14 +1179,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	63,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	3.000000
+			"insolacion":	210,
+			"energia":	6.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -946,14 +1198,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	64,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	3.000000
+			"insolacion":	210,
+			"energia":	6.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -961,14 +1217,18 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	65,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	3.000000
+			"insolacion":	210,
+			"energia":	6.000000
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
@@ -976,13 +1236,416 @@
 {
 "type":	"Feature",
 "properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	66,
 			"orientacion":	0,
 			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
 			"humedad":	0,
-			"insolacion":	0,
+			"insolacion":	210,
+			"energia":	6.000000
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	67,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
+			"humedad":	0,
+			"insolacion":	205,
+			"energia":	5.857143
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	68,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
+			"humedad":	0,
+			"insolacion":	200,
+			"energia":	5.714286
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	69,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
+			"humedad":	0,
+			"insolacion":	195,
+			"energia":	5.571429
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	70,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
+			"humedad":	0,
+			"insolacion":	190,
+			"energia":	5.428571
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	71,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
+			"humedad":	0,
+			"insolacion":	185,
+			"energia":	5.285714
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	72,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
+			"humedad":	0,
+			"insolacion":	180,
+			"energia":	5.142857
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	73,
+			"orientacion":	0,
+			"inclinacion":	90,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
+			"humedad":	0,
+			"insolacion":	175,
+			"energia":	5.000000
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	74,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	68,
+			"velocidadviento":	12.5,
+			"humedad":	0,
+			"insolacion":	170,
+			"energia":	4.857143
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	75,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	68,
+			"velocidadviento":	65,
+			"humedad":	0,
+			"insolacion":	165,
+			"energia":	4.714286
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	76,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	68,
+			"velocidadviento":	65,
+			"humedad":	0,
+			"insolacion":	160,
+			"energia":	4.571429
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	77,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	68,
+			"velocidadviento":	65,
+			"humedad":	0,
+			"insolacion":	155,
+			"energia":	4.428571
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	78,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	67.6,
+			"velocidadviento":	65,
+			"humedad":	0,
+			"insolacion":	150,
+			"energia":	4.285714
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	79,
+			"orientacion":	-22.5,
+			"inclinacion":	62,
+			"temperatura":	66,
+			"velocidadviento":	25,
+			"humedad":	0,
+			"insolacion":	145,
+			"energia":	4.142857
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	80,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	65.2,
+			"velocidadviento":	25,
+			"humedad":	0,
+			"insolacion":	140,
+			"energia":	4.000000
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	81,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	64,
+			"velocidadviento":	25,
+			"humedad":	0,
+			"insolacion":	135,
+			"energia":	3.857143
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	82,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	60,
+			"velocidadviento":	25,
+			"humedad":	0,
+			"insolacion":	130,
+			"energia":	3.714286
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	83,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	56,
+			"velocidadviento":	25,
+			"humedad":	0,
+			"insolacion":	125,
+			"energia":	3.571429
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	84,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	52,
+			"velocidadviento":	25,
+			"humedad":	0,
+			"insolacion":	120,
+			"energia":	3.428571
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	85,
+			"orientacion":	-45,
+			"inclinacion":	47,
+			"temperatura":	52,
+			"velocidadviento":	25,
+			"humedad":	0,
+			"insolacion":	115,
+			"energia":	3.285714
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	86,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	52,
+			"velocidadviento":	25,
+			"humedad":	0,
+			"insolacion":	110,
+			"energia":	3.142857
+}, "geometry": {
+			"type":	"Point",
+			"coordinates":[-2.765808,43.221190]}
+},
+{
+"type":	"Feature",
+"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	87,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	52,
+			"velocidadviento":	25,
+			"humedad":	0,
+			"insolacion":	105,
 			"energia":	3.000000
 }, "geometry": {
 			"type":	"Point",
@@ -991,28 +1654,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	67,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	88,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	52,
+			"velocidadviento":	25,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.928571
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	68,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
-			"humedad":	0,
-			"insolacion":	0,
+			"insolacion":	100,
 			"energia":	2.857143
 }, "geometry": {
 			"type":	"Point",
@@ -1021,28 +1673,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	69,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	89,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	52,
+			"velocidadviento":	20,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.785714
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	70,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
-			"humedad":	0,
-			"insolacion":	0,
+			"insolacion":	95,
 			"energia":	2.714286
 }, "geometry": {
 			"type":	"Point",
@@ -1051,28 +1692,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	71,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	90,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	52,
+			"velocidadviento":	20,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.642857
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	72,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
-			"humedad":	0,
-			"insolacion":	0,
+			"insolacion":	90,
 			"energia":	2.571429
 }, "geometry": {
 			"type":	"Point",
@@ -1081,28 +1711,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	73,
-			"orientacion":	0,
-			"inclinacion":	90,
-			"temperatura":	51,
-			"velocidadviento":	5,
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	91,
+			"orientacion":	-67.5,
+			"inclinacion":	32,
+			"temperatura":	48,
+			"velocidadviento":	20,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.500000
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	74,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	51,
-			"velocidadviento":	5,
-			"humedad":	0,
-			"insolacion":	0,
+			"insolacion":	85,
 			"energia":	2.428571
 }, "geometry": {
 			"type":	"Point",
@@ -1111,28 +1730,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	75,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	51,
-			"velocidadviento":	26,
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	92,
+			"orientacion":	-90,
+			"inclinacion":	0,
+			"temperatura":	48,
+			"velocidadviento":	20,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.357143
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	76,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	51,
-			"velocidadviento":	26,
-			"humedad":	0,
-			"insolacion":	0,
+			"insolacion":	80,
 			"energia":	2.285714
 }, "geometry": {
 			"type":	"Point",
@@ -1141,28 +1749,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	77,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	51,
-			"velocidadviento":	26,
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	93,
+			"orientacion":	-90,
+			"inclinacion":	0,
+			"temperatura":	48,
+			"velocidadviento":	20,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.214286
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	78,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	50.7,
-			"velocidadviento":	26,
-			"humedad":	0,
-			"insolacion":	0,
+			"insolacion":	75,
 			"energia":	2.142857
 }, "geometry": {
 			"type":	"Point",
@@ -1171,28 +1768,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	79,
-			"orientacion":	-22.5,
-			"inclinacion":	62,
-			"temperatura":	49.5,
-			"velocidadviento":	10,
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	94,
+			"orientacion":	-90,
+			"inclinacion":	0,
+			"temperatura":	48,
+			"velocidadviento":	20,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	2.071429
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	80,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	48.9,
-			"velocidadviento":	10,
-			"humedad":	0,
-			"insolacion":	0,
+			"insolacion":	70,
 			"energia":	2.000000
 }, "geometry": {
 			"type":	"Point",
@@ -1201,28 +1787,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	81,
-			"orientacion":	-45,
-			"inclinacion":	47,
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	95,
+			"orientacion":	-90,
+			"inclinacion":	0,
 			"temperatura":	48,
-			"velocidadviento":	10,
+			"velocidadviento":	20,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.928571
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	82,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	45,
-			"velocidadviento":	10,
-			"humedad":	0,
-			"insolacion":	0,
+			"insolacion":	65,
 			"energia":	1.857143
 }, "geometry": {
 			"type":	"Point",
@@ -1231,28 +1806,17 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	83,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	42,
-			"velocidadviento":	10,
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
+			"periodo":	96,
+			"orientacion":	-90,
+			"inclinacion":	0,
+			"temperatura":	48,
+			"velocidadviento":	20,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.785714
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	84,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	39,
-			"velocidadviento":	10,
-			"humedad":	0,
-			"insolacion":	0,
+			"insolacion":	60,
 			"energia":	1.714286
 }, "geometry": {
 			"type":	"Point",
@@ -1261,194 +1825,18 @@
 {
 "type":	"Feature",
 "properties": {
-			"periodo":	85,
-			"orientacion":	-45,
-			"inclinacion":	47,
-			"temperatura":	39,
-			"velocidadviento":	10,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.642857
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	86,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	10,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.571429
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	87,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	10,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.500000
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	88,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	10,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.428571
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	89,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	8,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.357143
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	90,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	39,
-			"velocidadviento":	8,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.285714
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	91,
-			"orientacion":	-67.5,
-			"inclinacion":	32,
-			"temperatura":	36,
-			"velocidadviento":	8,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.214286
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	92,
-			"orientacion":	-90,
-			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.142857
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	93,
-			"orientacion":	-90,
-			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.071429
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	94,
-			"orientacion":	-90,
-			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	1.000000
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	95,
-			"orientacion":	-90,
-			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	0.928571
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
-			"periodo":	96,
-			"orientacion":	-90,
-			"inclinacion":	0,
-			"temperatura":	36,
-			"velocidadviento":	8,
-			"humedad":	0,
-			"insolacion":	0,
-			"energia":	0.857143
-}, "geometry": {
-			"type":	"Point",
-			"coordinates":[-2.765808,43.221190]}
-},
-{
-"type":	"Feature",
-"properties": {
+			"panelId": {
+						"compania":	HCEN,
+						"id":	37
+			},
 			"periodo":	97,
 			"orientacion":	-90,
 			"inclinacion":	0,
-			"temperatura":	33,
-			"velocidadviento":	8,
+			"temperatura":	44,
+			"velocidadviento":	20,
 			"humedad":	0,
-			"insolacion":	0,
-			"energia":	0.785714
+			"insolacion":	55,
+			"energia":	1.571429
 }, "geometry": {
 			"type":	"Point",
 			"coordinates":[-2.765808,43.221190]}
