@@ -22,7 +22,7 @@ var simuladay	=	require('./models/simuladay')(app, mongoose);
 var models		=	require('./models/panelesModel')(app, mongoose);
 var areamodel	=	require('./models/areas')(app, mongoose);
 
-var simuladayCtrl	=	require('./controllers/simuladayController.js');
+var simuladayCtrl		=	require('./controllers/simuladayController.js');
 var panelesCtrl			=	require('./controllers/panelesController');
 var areasCtrl			=	require('./controllers/areasController');
 

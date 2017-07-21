@@ -1,0 +1,37 @@
+#!/bin/bash 
+
+#VARS
+periodo=0
+fcoldir=featurescollection_GEOJSON
+outfile=dbfcinserts.mongo
+
+##PREPS:
+#if  [ -e ${outfile} ] then rm ${outfile} fi
+
+rm dbfcinserts.mongo*
+
+for file in $(ls ${fcoldir} | sort -k2 -t. -n)
+do
+
+let periodo=${periodo}+1
+
+name="Periodo ${periodo}"
+features=$(cat ${fcoldir}/${file})
+
+if [ ${periodo} -lt 3 ]
+then 
+	echo "db.simuladay.insert({ \"type\": \"FeatureCollection\", \"name\": \"$name\", \"features\":  [ $features ] })" >>  ${outfile}.1
+elif [ ${periodo} -lt 61 ]
+then
+	echo "db.simuladay.insert({ \"type\": \"FeatureCollection\", \"name\": \"$name\", \"features\":  [ $features ] })" >>  ${outfile}.2
+else
+	echo "db.simuladay.insert({ \"type\": \"FeatureCollection\", \"name\": \"$name\", \"features\":  [ $features ] })" >>  ${outfile}.3
+fi
+
+
+
+##PENDIENTE DE PROBAR EN CASA ##############
+#mongo --eval 'db.simuladay.insert({ "type": "FeatureCollection", "name": $name, "features":  [ $features ] })'
+############################################
+
+done

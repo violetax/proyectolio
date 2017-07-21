@@ -24,6 +24,14 @@ exports.findAllPaneles = function (req, res) {
 
 	//con findOne le llega un item de la bdd que es una FC
 
+	// ON HOLD:
+	//  WHY IS SIMULADAY A CIRCULAR OBJECT???????????????
+	//  WHY DOES A NEW COLLECTION SIMULADAYSSSS GET CREATED??
+	//  AND IT IS EMPTY!!!
+	//  daydata.find().toArray(function(err, dbfc_periodo)
+		     //if(err) { return callback(err, null); } //res.send(500, "noooo " + err.message);
+		//callback(null, users);
+	//  from <div class="referencia"> https://stackoverflow.com/questions/40396308/why-dose-the-mongodb-returns-circular-object-even-though-the-inserted-object-is</div>
 	 daydata.findOne(function(err, dbfc_periodo) {
 		     if(err) return res.send(500, "noooo " + err.message);
 	
@@ -33,7 +41,7 @@ exports.findAllPaneles = function (req, res) {
 //	Paneles.find({}).where('geometry').within(mypolygon).exec(function (error, paneles) { if(error) console.log("Error: " + error); 
 		console.log(dbfc_periodo); 
 
-		 res.status(200).jsonp(dbfc_periodo);
+//		 res.status(200).jsonp(dbfc_periodo);
 	});
 
 //	 });

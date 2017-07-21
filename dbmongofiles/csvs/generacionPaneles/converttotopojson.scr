@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+#INOUTS
+in_dir=featurecollections_GEOJSON
+out_dir=featurecollections_TOPOJSON
+
+
+#PREPS
+if [ "$(ls -A $out_dir)" ]
+then
+        rm $out_dir/*
+fi
+
+
+for in_file in $(ls ${in_dir})
+do
+
+	out_file=${in_file%geojson}topo.json
+
+	geo2topo ${in_dir}/${in_file} > ${out_dir}/${out_file} 
+
+done

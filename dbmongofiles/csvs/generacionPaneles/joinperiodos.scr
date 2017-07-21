@@ -1,0 +1,63 @@
+#!/bin/bash
+
+
+#por cada periodo se reunen todos los paneles separados por coma en un archivo 
+#hay un periodo por linea con medidas:
+
+##vars de nombres de files y folders
+out_dir=comaseparatedFeaturesByPeriodos_GEOJSON
+out_filebasename=periodo
+out_fileextension=panfeatcollection.geojson
+in_files="featuresPaneles_GEOJSON/*"
+periodo=0
+##
+
+##var contadoras
+valores_tevihuinen_base=tevihuinen_base_decimalPunto.csv
+##
+
+
+##Preparations
+#Empty out_dir if not empty
+if [ "$(ls -A $out_dir)" ]
+then
+	rm ${out_dir}/*
+fi
+
+
+while IFS= read -r record
+do
+
+let periodo=${periodo}+1
+pattern="\"periodo\":	${periodo},"
+
+#Una opcion es añadir un RS artificial con:
+# sed -e '/^{$/i\^M##########^M' ${in_files}
+#awk -v p="${pattern}" 'BEGIN{RS="##########"; FS="\n" } match($0, p){print $0}' ${in_files} > ${out_dir}/${out_filebasename}.${periodo}.${out_fileextension}
+
+#Otra opcion: RS == ORS, y solo queda editar la primera linea
+awk -v p="${pattern}" 'BEGIN{RS="Feature"; ORS="Feature"; FS="\n" } match($0, p){print $0}' ${in_files} > ${out_dir}/${out_filebasename}.${periodo}.${out_fileextension}
+
+awk '{a[NR]=$0}END{print a[NR-1];print a[NR];for(i=0;i<NR-1;i++){print a[i]}}'  ${out_dir}/${out_filebasename}.${periodo}.${out_fileextension} > ${out_dir}/tmpfc
+
+mv ${out_dir}/tmpfc ${out_dir}/${out_filebasename}.${periodo}.${out_fileextension}
+
+#QUEDA PENDIENTE RM LAST CHAR OF LAS TLINE
+#sed  '$ s/.$//' ${out_dir}/tmpfc > ${out_dir}/${out_filebasename}.${periodo}.${out_fileextension}
+###De momento funciona desde la cli:
+# sed -i ' $ s/.$//' featurescollection_GEOJSON/*
+####Y retoco tambien las 1as lineas desde la cli:
+# sed -i -e '2,4d' -e '1a\
+#"type": "Feature",
+#' featurescollection_GEOJSON/*
+
+#Parapruebas:
+#awk -v p="${pattern}" 'BEGIN{RS="Feature"; ORS="Feature"} match($0, p) {print $0}' ${in_files}
+
+echo "(:s) Periodo: ${periodo}"
+
+done < ${valores_tevihuinen_base}
+
+#Editar la primera linea:
+#mover las ultimas 2 a bajo la 0
+

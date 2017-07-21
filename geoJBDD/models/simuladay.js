@@ -9,16 +9,16 @@ var featureSchema = new mongoose.Schema ({
 	[{
 		"type":				{type: String, default: "Feature"},
 		geometry:
-		[{
+		{
 			type:			{type: String, default: "Point"},
 			coordinates:	{type: [Number], default: [0,0], index: '2dsphere'}
-		}],		
+		},		
 		properties:
-		[{
-			panelId: 	[{ 
+		{
+			panelId: 	{ 
 				compania:	{type: String, required: true},
 				id:			{type: String, required: true}
-			}],
+			},
 			periodo:	{ type: Number, required: true},
 			inclinacion:{ type: Number, required: true},
 			orientacion:{ type: Number, required: true},
@@ -28,7 +28,7 @@ var featureSchema = new mongoose.Schema ({
 			velVtoMed:	{ type: Number, required: true},
 			humedadMed:	{ type: Number, required: true}
 
-		}],
+		},
 	}]
 });
 

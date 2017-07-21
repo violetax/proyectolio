@@ -101,6 +101,9 @@ paste -d";"  ${valores_orienIncl_fijos} valores_tevihuinen_del_panel_numero.${pa
 
 # 2º/ BUILD PANELES
 
+####QUE FALLO SIN CUOTAR LA COMPNAME
+# :%s/\(compania...\)\(.*\),/\1"\2",/
+
 awk -F";" -v p=${periodo} -v xcoord="${x}" -v ycoord="${y}" -v coid="${compaID}" -v paid="${panelNro}" '{p=p+1;printf("{\n\"type\":\t\"Feature\",\n\"properties\": {\n\t\t\t\"panelId\": {\n\t\t\t\t\t\t\"compania\":\t%s,\n\t\t\t\t\t\t\"id\":\t%s\n\t\t\t},\n\t\t\t\"periodo\":\t%s,\n\t\t\t\"orientacion\":\t%s,\n\t\t\t\"inclinacion\":\t%s,\n\t\t\t\"temperatura\":\t%s,\n\t\t\t\"velocidadviento\":\t%s,\n\t\t\t\"humedad\":\t%s,\n\t\t\t\"insolacion\":\t%s,\n\t\t\t\"energia\":\t%s\n}, \"geometry\": {\n\t\t\t\"type\":\t\"Point\",\n\t\t\t\"coordinates\":[%f,%f]}\n},\n", coid, paid, p,$1,$2,$3,$4,$5,$6,$7,xcoord,ycoord)}' base_para_day_feature_array_de_un_panel >  panel_feature_format.${panelNro}.${extension}
 
 echo "Panel Nº:	${panelNro}.${extension}"
