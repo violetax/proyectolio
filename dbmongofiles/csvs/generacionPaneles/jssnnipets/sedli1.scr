@@ -1,0 +1,17 @@
+#!/bin/bash
+
+file=$1
+
+ll=4
+ul=9
+co=0
+
+for (( x = 1; x <21; x++ )); do
+
+#echo $x
+let xp=$x-1
+
+sed -i "${x}s/icon_[1-9][1-9]\?/icon_co_${xp}/g"  $file #vars.js
+
+
+done

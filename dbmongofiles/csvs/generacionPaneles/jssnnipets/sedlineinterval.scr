@@ -1,0 +1,24 @@
+#!/bin/bash
+
+file=$1
+
+ll=-7
+ul=0
+co=0
+
+for (( x = 0; x <156; x=x+8  )); do
+
+#echo $x
+
+let ll=$ll+8
+let ul=$ul+8
+let co=$co+1
+
+echo "$ll $ul $co"
+
+sed -i "${ll},${ul}s/INPUTID/inputid${co}/g" $file #treepanelesOnthefly.js
+#sed -i "${ll},${ul}s/PanSolar_NEGRO/co_${co}/" $file
+
+
+
+done

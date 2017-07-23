@@ -21,6 +21,7 @@ app.use(methodOverride());
 var simuladay	=	require('./models/simuladay')(app, mongoose);
 var models		=	require('./models/panelesModel')(app, mongoose);
 var areamodel	=	require('./models/areas')(app, mongoose);
+var parquemodel	=	require('./models/parques')(app, mongoose);
 
 var simuladayCtrl		=	require('./controllers/simuladayController.js');
 var panelesCtrl			=	require('./controllers/panelesController');
@@ -65,6 +66,8 @@ var arearouter = express.Router();
 
 arearouter.route('/maplayers')
 	.get(areasCtrl.findAllAreas);
+arearouter.route('/parques')
+	.get(areasCtrl.findAllParques);
 
 arearouter.route('/query')
 	.get(areasCtrl.findAllPanelsWithin);
