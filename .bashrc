@@ -125,5 +125,6 @@ fi
 #export CDPATH=/home/violeta/studying/JAVALUF/proyectojac/finalpro/
 export VIMRUNTIME=/usr/share/vim/vim80
 
-PATH=$PATH:/cygdrive/c/home/vgonzalez/useful_scripts
+PATH=$PATH:/cygdrive/c/home/vgonzalez/useful_scripts:/cygdrive/c/Users/vgonzalez/AppData/Roaming/npm
+
 #export $PATH

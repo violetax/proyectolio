@@ -1,0 +1,16 @@
+#!/bin/bash
+
+dir=$(pwd)
+
+echo $dir
+
+echo -e "Quitar sufijo: \n"
+read remove
+
+echo -e "Añadir sufijo: \n"
+read extension
+
+for file in `ls $dir`
+do
+	mv $file ${file%$remove}$extension
+done

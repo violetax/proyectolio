@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tareas de Entelgy - CONTROLLERS</title>
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<main class="container-fluid">
+
+	<div class="descgral index-dd5 notas_controllers"> Controllers:
+</div>
+
+<section class="1"> 
+<header><h2>Descripción general de un archivo controller</h2></header>
+
+</section>
+
+<section class="2">
+	<header><h2>Y32AVoluntariosBean y3207s00</h2></header>
+
+	<div class="descgral">
+
+	<dl><dt>Stats sobr los métodos:</dt>
+		<dd> Hay 11 @RequestMapping</dd>
+		<dd> Hay 6 RequestMethod.GET</dd>
+		<dd> Hay 1 RequestMethod.DELETE</dd>
+		<dd> Hay 1 RequestMethod.PUT</dd>
+		<dd> Hay 2 RequestMethod.POST</dd>
+		<dd> 4 GETs, el PUT, un POST y un @ExceptionHandler son public @ResponseBody</dd>
+	</dl>
+
+	<dl><dt>Métodos:</dt>
+		<dd> GET ModelAndView getCreateForm</dd>
+		<dd> GET @ResponseBody Y32AVoluntariosBean getById</dd>
+		<dd> GET @ResponseBody Object getAll</dd>
+		<dd> GET @ResponseBody Long getAllCount</dd>
+		<dd> PUT @ResponseBody void edit</dd>
+		<dd> POST @ResponseBody  void add</dd>
+		<dd> DELETE void remove</dd>
+		<dd> POST void removeMultiple</dd>
+		<dd> GET @ResponseBody List<Y32AVoluntariosBean> getRemoteComboAnyos</dd>
+	</dl>
+
+	<div class="definicion"> @ResponseBody:  the returned value of the method will constitute the body of the HTTP response. Of course, an HTTP response can't contain Java objects. So a java list of something is transformed to a format suitable for REST applications, typically JSON or XML. 
+		<div class="referencia">  @ResponseBody: https://stackoverflow.com/questions/28646332/how-exactly-works-the-spring-responsebody-annotation-in-this-restful-applicatio </div></div>
+	
+	El primer método es un GET, y supongo que es la entada principal, value:"maint".
+	value en requestmapping creo que es un pattern for which handler method will be used.
+	<div class="referencia">  value en requestmapping: http://www.journaldev.com/3358/spring-requestmapping-requestparam-pathvariable-example</div>
+
+	maint:
+		  getCreateForm(Model model)
+		  addAtts:
+		  	y32aEmergenciasWar.default.language
+		  	appConfiguration.get("y32aEmergenciasWar.default.layout")
+	
+	</div>
+
+El controller usa un POJO - como yo usaba un persistence.class - (que es la XClassBean en Classes/src/com/ejie/y32a/model), y un Service asociado.
+
+Hay un método getAll que tira de un paquete de seguridad en sWar/src/com/ejie/y32a/security. También usa algo muy moqueante:  com.ejie.x38.dto.JQGridJSONModel relacionado con JQuery.
+
+<div class="nota"> Los métodos con  @RequestBody (al menos a alguno que veo) toman un HttpServletResponse como arg, y se le pasan headers tipo:  response.setHeader("Pragma", "cache");</div>
+
+</section>
+
+<section class="3">
+	<header><h2>Problema: Constructor undefined en el getAll</h2></header>
+
+	<article class="tarea1 problema">
+	<div class="descgral"> The constructor Y32AVoluntariosBean is undefined al arrancar el ordenador. Ayer al irme no veía este error.
+	Ayer cambié el Bean y le añadí tres privates por los extras de la bdd para la tarea1. También se los añadí al costructor general. Pero la reparación que ofrece Uda no reconoce las nuevas propedades:
+	-- ¡A diferencia del resto! faltan como @RequestParam(value = "", required = ?)  DataType
+	</div>
+	</article>
+</section>
+
+<section class="4">
+	<header><h2>Qué hace un controller</h2></header>
+	<div class="pendiente">Me da palillo ponerme aquí a buscar algo tan básico... prefiero centrarme en el objetivo de "búsqueda por fecha"</div>
+</section>
+
+<section class="5">
+	<header><h2>Imports del controller</h2></header>
+
+	<ul>
+		<li> java.io </li>
+		<li> java.util.</li>
+		<li> javax.annotation.</li> 
+		<li> javax..servlet.http.</li>
+		<li>  org.apac.  </li>
+		<li> org.springframework.</li>
+		<li>  com.ejie.x38. control, dto y util</li>
+		<li>  com.ejie.y32a </li>
+	</ul>
+	Una serie de java. (java.io y java.util.), de javax: javax.annotation. y javax..servlet.http., de  org.apache., org.springframework., y  com.ejie..
+</section>
+<section class="6">
+	<header><h2>Annotations: autowireds y resources del controller</h2></header>
+	<div class="descgral"> <dl><dt> @Autowired</dt>
+			<dd> Servicios:
+			<ul><li> XClassBean</li>
+				<li> NoraCalle </li>
+			</ul></dd>
+			<dd> Preexisting classes
+			<ul><li> Properties</li>
+			</dd>
+		</dl>
+		<dl><dt> @Resources </dt>
+			<ul><li> ReloadableResourceBundleMessageSource</li></ul>
+		
+		</dl>
+	</div>
+</section>
+<section class="7">
+	<header><h2>com.ejie.x38</h2></header>
+	<div class="descgral"> Son biblioteca de UDA.</div>
+</section>
+
+</main>
+</body>
+</html>
+

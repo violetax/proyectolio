@@ -1,0 +1,7 @@
+#!/bin/bash
+
+dir=`pwd | xargs -i basename {}`
+
+file=${dir}.notes
+
+vim ${file}

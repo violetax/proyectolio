@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#importar funcion que crea los files
+source creaFile.fu
+
+#asignar las variables de la funcion, del header, del dest dir
+pref=wo
+ext=scr
+header="/home/violeta/.vim/sourceText/scr_files"
+cold="/home/violeta/filecollections/scrfiles"
+
+creaFile.fu $1

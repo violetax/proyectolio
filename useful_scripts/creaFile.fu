@@ -1,0 +1,39 @@
+function Creafile ()
+{
+	file=${pref}_${1}_${dir}.${ext}
+	touch $file
+}
+
+function creaFile.fu ()
+{
+#tomar dir name de origen
+dir=`pwd | xargs -i basename {}`
+#tomar nombre del file con prefijo
+file=`ls ${pref}_*_*${ext} 2>/dev/null` 
+
+#si el file existe
+if [[ -e ${file} ]]; then
+	#si hay argumento quitarle el prefijo y mandarlo a la coleccion, y crear nuevo file 
+	if [[ $1 ]]; then
+		mv $file $cold/${file#$pref_} 2>/dev/null
+		Creafile $1
+	#si no hay argumento, abrir el file
+	else
+		vim ${file}
+		exit
+	fi
+#si no existe file, y no hay argumento, avisar
+elif [[ $1 == '' ]]; then
+	echo "Give the script a name!"
+	exit
+#si no existe y si hay argumento, crearlo
+else
+	Creafile $1
+fi
+
+chmod u+x $file 
+
+vim -c "so ${header} | wq" $file 
+
+vim $file 
+}

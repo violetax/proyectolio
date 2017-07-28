@@ -1,4 +1,5 @@
 alias lnm='vim  ~/notashtml/lnm-tutorial.html'
+alias cgp='cd /cygdrive/c/Users/vgonzalez/workspace/proyecto/dbmongofiles/csvs/generacionPaneles'
 
 
 alias n=node
@@ -159,3 +160,12 @@ alias cutf='cut -f'
 alias cute='cut -d " " -f'
 alias sortu='sort | uniq'
 alias ccmg="cd /cygdrive/c/Program\ Files/MongoDB/Server/3.4/bin/"
+
+
+#GIT
+alias ginit='git init'
+alias gitad='git add .'
+alias graor='git remote add origin git@github.com:violetax/'
+alias gicom='git commit -m "'
+alias gpuom='git push -u origin master'
+alias gpom='git pull origin master'

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+del=$1
+if [[ $1 == e ]]; then
+	del=" "
+fi
+
+_file=${@: -1}
+length=$(( $# - 1 ))
+
+if [[ -f $_file ]]; then
+	file=$_file
+	forfields=${@:2: length -1}
+else
+	forfields=${@:2: length}
+fi
+
+for f in $forfields
+do
+	fields=$(echo -ne "${fields} \$${f}")
+done
+
+
+#echo -e "del: $del\n_file: $_file\nlength: $length\nfile= $file\nforfields: $forfields\nfields: $fields"
+
+awk -F${del} "{print ${fields}}" $file	

@@ -1,0 +1,468 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>BLOG</title>
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+	<div class="descgral notas_xmls index-dd5"> </div>
+
+<section class="1"> 
+<header><h2>Acciones día uno</h2></header>
+
+<p>
+- montado entorno:
+
+-- creadas rutas y copy/paste:
+
+en c:/
+
+aplic
+bea
+config
+datos
+dominio_wls1
+Entel
+Helios UDA-1.2.0
+proyectos
+sqldeveloper
+
+</p>
+
+<p>
+En sqldeveloper hay un servidor de sql workbench de oracle.
+
+En bea hay un web logic:  servidor de aplicaciones Java EE (J2EE) y también un servidor web HTTP, desarrollado por BEA Systems, posteriormente adquirida por Oracle Corporation.
+
+En Helios Uda, un eclipse de UDA, al que añadí un jar a su build path Y32A).
+
+En proyectos están:
+
+- jars 
+- el propio proyecto: 2011EMER
+- el workspace for UDA con elproyecto
+
+
+TODA LA ESTRUCTURA ESTÁ COPIADA PATAH-A-PATH DE L ORDNADOR DE ARKAITZ, PARA QUE NO TENGA CONFLICTOS.
+</p>
+
+</section>
+
+<section class="2"> 
+<header><h2>Estado inicial del proyecto y lista de xmls</h2></header>
+
+<p> 
+Aparecen 35 Errors el en módulo war, todos en controller, sobre un method o un constructor undefined.
+</p>
+
+<p> lista de xml files:
+
+
+y32aEAR/build.xml
+y32aEAR/EarContent/META-INF/application.xml
+y32aEAR/EarContent/META-INF/weblogic-application.xml
+y32aEAR/pom.xml
+
+y32aEARClasses/build/classes/beanRefContext.xml
+y32aEARClasses/build/classes/spring/dao-config.xml
+y32aEARClasses/build/classes/spring/log-config.xml
+y32aEARClasses/build/classes/spring/security-config.xml
+y32aEARClasses/build/classes/spring/service-config.xml
+y32aEARClasses/build/classes/spring/tx-config.xml
+y32aEARClasses/src/beanRefContext.xml
+y32aEARClasses/src/spring/dao-config.xml
+y32aEARClasses/src/spring/log-config.xml
+y32aEARClasses/src/spring/security-config.xml
+y32aEARClasses/src/spring/service-config.xml
+y32aEARClasses/src/spring/tx-config.xml
+
+y32aEmergenciasWar/build/weboutput/WEB-INF/weblogic.xml
+y32aEmergenciasWar/WebContent/WEB-INF/spring/app-config.xml
+y32aEmergenciasWar/WebContent/WEB-INF/spring/log-config.xml
+y32aEmergenciasWar/WebContent/WEB-INF/spring/mvc-config.xml
+y32aEmergenciasWar/WebContent/WEB-INF/spring/security-config.xml
+y32aEmergenciasWar/WebContent/WEB-INF/spring/security-core-config.xml
+y32aEmergenciasWar/WebContent/WEB-INF/spring/validation-config.xml
+y32aEmergenciasWar/WebContent/WEB-INF/views/tiles.xml
+y32aEmergenciasWar/WebContent/WEB-INF/web.xml
+y32aEmergenciasWar/WebContent/WEB-INF/weblogic.xml
+
+y32aStatics/build/weboutput/WEB-INF/weblogic.xml
+y32aStatics/WebContent/WEB-INF/web.xml
+y32aStatics/WebContent/WEB-INF/weblogic.xml
+
+</p>
+
+</section>
+
+<section class="3">
+<header><h2>Descripción del proyecto mod a mod, xml a xml</h2></header>
+
+<article id="descEAR">
+<h3>EAR xmls</h3> 
+<p>CUATRO xmls:
+
+build.xml
+EarContent/META-INF/application.xml
+EarContent/META-INF/weblogic-application.xml
+pom.xml
+
+</p>
+
+<h4> build.xml </h4>
+<div class="descgral">build.xml: 
+It contains information necessary to build the project to produce the desired output, be it Javadocs, a compiled project, or a JAR file
+Apache Ant's buildfiles are written in XML. Each buildfile contains one project and at least one (default) target. Targets contain task elements. Each task element of the buildfile can have an id attribute and can later be referred to by the value supplied to this. The value has to be unique.
+Typically, Ant's build file, called build.xml should reside in the base directory of the project. However there is no restriction on the file name or its location.
+</div>
+<h5>Estructura  build.xml</h5> 
+<div class="referencia"> https://ant.apache.org/manual/using.html </div>
+<p> 
+
+<?xml
+<!DOCTYPE
+<project
+<target
+<path
+<typedef
+<artifact:dependencies
+<artifact:mvn
+<arg
+
+</p>
+
+<p> 
+<?xml
+Version=
+Encoding=
+</p>
+
+<p> 
+<!DOCTYPE
+DOCTYPE project, pero NO especifica DTD
+A ojo:
+Solo tiene un elemento: target, que tiene un path, un typedef, un artifact:dependencies y un artifact:mvn con un arg.
+</p>
+
+<p> 
+<project
+name= y32aEAR - the name of the project.
+default= mavenRunDependencies - since Ant 1.6.0, every project includes an implicit target that contains any and all top-level tasks and/or types. This target will always be executed as part of the project's initialization, even when Ant is run with the -projecthelp option. 
+</p>
+
+<p> 
+<div class="referencia">https://ant.apache.org/manual/targets.html</div>
+<target - <div class="definicion">A target is a container of tasks that cooperate to reach a desired state during the build process.</div>
+<div class="definicion"> A task is a piece of code that can be executed.</div>
+name= mavenRunDependencies
+description= "Resuelve las dependencias del proyecto desde Maven
+</p>
+<p> 
+<path -  If you want to use the same path-like structure for several tasks, you can define them with a <path> element at the same level as targets, and reference them via their id attribute.
+id= maven-ant-tasks.classpath
+path= ${ant.home}/lib/maven-ant-tasks-2.1.1.jar
+<div class="definicion"> a path being itself a resource collection -- where to look for files like jars </div>
+</p>
+<p> 
+<div class="referencia"> https://ant.apache.org/manual/Tasks/typedef.html</div>
+<typedef - <div class="definicion"> typedef adds a task or a data type definition to the current project such that this new type or task can be used in the current project. </div>
+resource="org/apache/maven/artifact/ant/antlib.xml -- Name of the resource to load definitions from.
+uri="antlib:org.apache.maven.artifact.ant" -- The uri that this definition should live in.
+classpathref="maven-ant-tasks.classpath" -- a reference to a classpath to use when looking up classname. 
+</p>
+<p> 
+<div class="referencia"> http://ant.apache.org/ivy/history/latest-milestone/terminology.html#artifact</div>
+<div class="definicion"> artifact: An artifact is a single file ready for delivery with the publication of a module revision, as a product of development.</div>
+<artifact:dependencies -- this is a task <div class="definicion"> <artifact:dependencies task: Maven's dependency management features is achieved with the dependencies task</div>
+settingsFile=C:\apache-maven-2.2.1\conf\settings.xml -- <div class="definicion"> Information that are user or environment specific, such as the authentication tag, are specified in the settings.xml file in Maven, and can also be accessed from the Ant tasks.</div>
+<div class="referencia"> http://maven.apache.org/ant-tasks/usage.html</div>
+</p>
+<p> 
+<artifact:mvn --  this is a task <div class="definicion">  The mvn task is a subclass of the Ant java task and supports all of its options such as args, fork, resultproperty, etc. </div> 
+pom="pom.xml" - If the pom file is not located in the current directory, an alternate path to the pom can be specified.
+mavenHome="C:\apache-maven-2.2.1" -- If Maven is already installed on the local system, the Maven build can be called using this local installation by specifying the mavenHome parameter.
+fork="true" ????????????????????
+</p>
+<p> 
+<arg - 
+value="package" ????????????????????
+</p>
+
+<h4>application.xml</h4> 
+<div class="descgral"> application.xml
+ is the deployment descriptor for Enterprise Application Archives.
+<div class="definicion"> A deployment descriptor (DD) refers to a configuration file for an artifact that is deployed to some container/engine. In the Java Platform, Enterprise Edition, a deployment descriptor describes how a component, module or application (such as a web application or enterprise application) should be deployed.</div>
+</div>
+
+<h5>structura application.xml</h5> 
+
+<p>
+<?xml
+<application
+<display-name
+<module>
+<web>
+<web-uri
+<context-root
+</p>
+
+<p> 
+<?xml
+</p>
+<p> 
+<application -  is the root element of the application deployment descriptor.
+</p>
+<p> 
+<display-name -  specifies the application display name, a short name that is intended to be displayed by GUI tools.
+</p>
+<p> 
+<module> - one module element for each module in the Enterprise Archive file. Each module element contains an ejb, java, or web element that indicates the module type and location of the module within the application. An optional alt-dd element specifies an optional URI to the post-assembly version of the deployment descriptor. 
+<p> Este proyecto solo tiene un modulo, y es web.</p>
+</p>
+<p> 
+<web> - Defines a Web application module in the application file.
+</p>
+<p> 
+<web-uri - Defines the location of a Web module in the application file. This is the name of the .war file. 
+</p>
+<p> 
+<context-root - Specifies a context root for the Web application.
+**Debería empezar por /, pero no!!!*** <div class="pregunta"> ¿por qué el context-root no empieza por /?</div>
+</p>
+<div class="definicion"> identifies a web application in a Java EE server. You specify the context root when you deploy a web module. A context root must start with a forward slash (/) and end with a string.</div>
+
+<h4>weblogic-application.xml</h4> 
+<div class="descgral">weblogic-application.xml
+WebLogic-specific application deployment descriptor.
+Optional if you are not using any WebLogic Server extensions.
+</div>
+
+<h5>Estructura weblogic-application.xml:</h5> 
+<p>
+
+<?xml
+<wls:weblogic-application
+<wls:application-param
+<wls:param-name
+<wls:param-value
+<wls:prefer-application-packages
+<wls:package-name
+
+</p>
+
+<p> 
+<wls:weblogic-application - root element.
+</p>
+<div class="referencia"> https://docs.oracle.com/cd/E23943_01/web.1111/e13706/app_xml.htm#WLPRG443</div>
+<p> 
+<wls:application-param -- parameters that affect the behavior of container instances related to the application.
+like ENCODING: parameters that affect the behavior of container instances related to the application.
+</p>
+
+<p> 
+<wls:param-name 
+</p>
+
+<p> 
+<wls:param-value
+</p>
+
+<p> 
+<wls:prefer-application-packages --  for filtering ClassLoader configuration. Specifies a list of resources that must always be loaded from the application, even if the resources are found in the system classloader. Application resources get a preference over system resources. The resources captured in this element are never looked up in the system classloader.
+</p>
+
+<p> 
+<wls:package-name
+</p>
+
+<h4> (ear) pom.xml </h4> 
+<div class="descgral"> El pom de este ear no carga ningún módulo y usa selenium y opera driver...</div>
+
+</article>
+
+<article id="descCLASSES">
+<h3>CLASSES xmls</h3> 
+<p> 
+beanRefContext.xml
+dao-config.xml
+log-config.xml
+security-config.xml
+service-config.xml
+tx-config.xml
+beanRefContext.xml
+dao-config.xml
+log-config.xml
+security-config.xml
+service-config.xml
+tx-config.xml
+</p>
+
+<h4>beanRefContext.xml</h4> 
+<div class="descgral"> beanRefContext.xml
+ contains a single application context definition: it is a bean of class org.springframework.context.support.ClassPathXmlApplicationContext with a list of constructor args, which are xml files for:
+- dao-config
+- log-config
+- service-config
+- security-config
+tx-config
+Can be used as Spring's Native Support for EJB Integration.
+<div class="referencia"> https://access.redhat.com/documentation/en-US/JBoss_Web_Framework_Kit/1.2/html/Spring_Developer_Guide/ch07s05.html</div>
+</div>
+
+<h4> dao-config.xml </h4> 
+<div class="descgral"> dao-config.xml
+Description of datasource as jee:jndi-lookup, with context:component-scan base-package="com.ejie.y32a.dao"
+</div>
+
+<h4> log-config.xml</h4> 
+<div class="descgral"> log-config.xml
+Aparecen logging clasess de cuño propio, como com.ejie.x38.log.IncidenceLoggingAdviceImpl.
+Hay tags de aop. <div class="pregunta"> tags de aop en un xml </div>
+</div>
+
+<h4> security-config.xml </h4> 
+<div class="descgral"> security-config.xml 
+Está commented out.
+</div>
+
+<h4> service-config.xml</h4> 
+<div class="descgral"> service-config.xml
+Define:  Application Message Bundle for i18n, defaultEncoding, classpath for Application Configuration Properties, y context:component-scan  base-package="com.ejie.y32a.service to scan  the classpath of this application for @Service to deploy as beans.
+</div>
+
+<h4> tx-config.xml</h4> 
+<div class="descgral"> tx-config.xml
+<div class="pregunta"> What is tx-config.xml? what for?</div>
+Tiene: <context:load-time-weaver, <bean of  class="org.springframework.transaction.jta.WebLogicJtaTransactionManager", tx:annotation-driven transaction-manager="transactionManager"/>
+    <aop:aspectj-autoproxy
+</div>
+
+</article>
+
+<article id="descWAR">
+<h3> WAR xmls </h3> 
+<p> 
+build/weboutput/WEB-INF/weblogic.xml
+app-config.xml
+mvc-config.xml
+log-config.xml
+security-core-config.xml
+security-config.xml
+validation-config.xml
+tiles.xml
+web.xml
+weblogic.xml
+</p>
+
+<h4> build/weboutput/WEB-INF/weblogic.xml </h4> 
+<div class="descgral"> build/weboutput/WEB-INF/weblogic.xml
+Define web-logic version, war file name for context-root??? y un dir para algo relacionado con jsps.
+En el /weblogic.xml que no está en la ruta build, no aparece el dir relacionado con jsps, que parece un autogenerado para outputs.
+</div>
+
+<h4> app-config.xml </h4> 
+<div class="descgral"> app-config.xml
+<import tags for el resto de xmls de /WEB-INF/spring as resource=
+mvc-config.xml
+log-config.xml
+validation-config.xml
+security-core-config.xml
+security-config.xml
+
+También bean to upload files.
+
+</div>
+
+<h4> mvc-config.xml </h4> 
+<div class="descgral"> mvc-config.xml
+Beans para:
+ Scans the classpath of this application for @Components to deploy as beans, context:component-scan base-package="com.ejie.y32a.control.
+ Maps requests to @Controllers based on @RequestMapping("path") annotation values (user class: com.ejie.y32a.security.Y32AFiltroPermisoUsuario)
+ Enables annotated @Controllers; responsible for invoking an annotated POJO @Controller when one is mapped (messageConverters y jacksonJsonObjectMapper)
+ Interceptors for i18n
+It is  <mvc:annotation-driven/>
+ Un montón de:
+	<mvc:view-controller
+	Con un path= que es una uri tipo  path="/voluntarios" view-name="inicio" 
+	
+ Bean for viewResolver
+ Bean for jacksonJsonCustomSerializerFactory
+ <property name="serializers">
+            <map>
+ Un montón de: 
+	 <entry key="com.ejie.y32a.model.... value-ref="customSerializer" />
+</div>
+
+<h4> log-config.xml </h4> 
+<div class="descgral"> log-config.xml </div>
+<div class="pregunta"> qué es esto de com.ejie.x38.UdaFilter en el log-config.xml ????</div>
+
+<h4> security-config.xml </h4> 
+<div class="descgral"> security-config.xml 
+Spring security
+</div>
+
+<h4> security-core-config.xml </h4> 
+<div class="descgral"> security-core-config.xml
+More of Spring Security.
+</div>
+
+<h4> validation-config.xml </h4> 
+<div class="descgral"> validation-config.xml
+Bean to: Manages UDA´s Validation API
+Bean to:  Filter that Validates Required Request Bodies
+Bean to:  Servlet that Validates Required Request Parameters
+
+</div>
+
+<h4> tiles.xml </h4> 
+<div class="descgral"> tiles.xml 
+Tiles...
+</div>
+
+<h4> web.xml </h4> 
+<div class="descgral"> web.xml 
+Listeners, filters, servlets and JSP encoding...
+</div>
+
+<h4> weblogic.xml </h4> 
+<div class="descgral"> weblogic.xml 
+Version y conext:rot as war file name??? y32aEmergenciasWar.
+</div>
+
+</article>
+
+<article id="descSTATICS"></article>
+<h3> STATICS xmls </h3> 
+<p> 
+weblogic.xml
+web.xml
+</p>
+
+<h4> weblogic.xml </h4> 
+<div class="descgral"> weblogic.xml
+ Version y context:root which is NAME OF THE PROJECT?? <div class="pregunta"> what is context-root in apserver.xml?? </div>
+La versión de weblogic.xml en build tiene un working dir...
+</div>
+
+<h4> web.xml </h4>
+<div class="descgral"> web.xml
+Lista de welcome-files
+index.html, index.htm. index.jsp, ... 
+</div>
+
+
+</section>
+
+
+</body>
+</html>

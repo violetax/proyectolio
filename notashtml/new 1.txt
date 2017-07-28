@@ -1,0 +1,87 @@
+///////////////////////////////
+///ORIGINAL ///////////////////
+		for (var x = 0; x < result.length; x++) {
+			lng = result[x].geometry.coordinates[0];
+			lat = result[x].geometry.coordinates[1];
+			marker = new L.marker([lat, lng],{icon: icon_PanSolar_1});//.addTo(mymap);
+			mymap.addLayer(marker);
+			markerArr.push(marker);	
+		}
+////////////////////////////////
+////////////////////////////////
+
+////////////////////////////////
+/// res to GEOJSON FEATURE /////
+	for (var x = 0; x < result.length; x++) {							
+				var panel;
+				var geojsonPanel = [];
+				geojsonPanel = {
+					id: result[i].properties.id, 
+					CP: result[i].properties.CP, 
+					capacidad:  result[i].properties.capacidad, 
+					lat:  result[i].geometry.coordinates[0], 
+					lng: result[i].geometry.coordinates[1]};
+				
+				panel = GeoJSON.parse(geojsonPanel, {Point: ['lat', 'lng']});
+				paneles.push(panel);
+				
+			}
+			
+			for ( var p=0; p<paneles.length; p++) {
+				latitud: paneles[p].geometry.coordinates[0];
+				longitud: paneles[p].geometry.coordinates[1];
+				console.log();
+			}
+////////////////////////////////
+////////////////////////////////
+
+////////////////////////////////
+/// GEOJSON FEATURECOLLECTION /////
+			
+			var featCollArr = [];
+			var featCollItem = {};
+			
+			for (var x = 0; x < result.length; x++) {
+
+				featCollItem = [{
+					id:			result[x].properties.id, 
+					CP:			result[x].properties.CP, 
+					capacidad:	result[x].properties.capacidad, 
+					lat:		result[x].geometry.coordinates[1], 
+					lng:		result[x].geometry.coordinates[0]
+				}];	
+				featCollArr.push(featCollItem);
+			}
+			
+			panelesFC = GeoJSON.parse(featCollArr, {Point: ['lat', 'lng']});	
+			console.log(panelesFC);
+				
+			var panelesString = JSON.stringify(panelesFC);
+			//console.log(panelesString);
+			
+/////////////////////////////////////////
+			
+///STYLES ...		
+			/*
+			 , {style: myStyle} //// 
+			 , {
+				style: function(feature) {
+					 switch (feature.properties.capacidad) {
+					 case 'XXXXX': 	return 	L.marker([lat, lng],{icon: icon_PanSolar_1}).addTo(mymap)	;//{color: "#ff0000"};
+					 case 'YYYYY':	return 	L.marker([lat, lng],{icon: icon_PanSolar_2}).addTo(mymap)	;//{color: "#0000ff"};
+					 }
+				}
+			} */
+	
+			/*		var geoJPanelesLayer = L.geoJSON(panel, 
+					{pointToLayer: function () {
+						L.marker([lat, lng],{icon: icon_PanSolar_1}).addTo(mymap)
+					}
+			}).addTo(mymap);*/
+			
+			///////////////////////////////////
+
+			
+	
+			
+			

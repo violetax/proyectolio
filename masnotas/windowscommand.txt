@@ -1,0 +1,2 @@
+Equivalente a ´which java´
+for %i in (java.exe) do @echo. %~$PATH:i

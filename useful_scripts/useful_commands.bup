@@ -1,0 +1,17 @@
+dd if=/dev/urandom of=series.tmp bs=1000 count=1; od series.tmp
+apc 'wc -l' ldp* | awk -var=pre 'BEFORE{pre=0}{pre=pre+$1}END{print pre/NR}'
+vimrc
+python -c 'import sys; print(sys.version_info[:])'
+for file in `ls *`; do if [ ! -s $file ] ; then ls -l $file; fi; done
+grep -E "^#.*[^\bEND\b]$" ldp_1 | awk -F: '{print $2}' 
+grep -E -A 2  "^[1-9]" ldp_1 
+grepoh '="T.[^"]\?"' xml_derechoALAinformacion.fodt |sort | uniq 
+grepoh '="T.[^"]\?"[^<]\{100\}' xml_derechoALAinformacion.fodt |sort | uniq 
+grepoh '="T\(9\|12\)"[^<]\{100\}' xml_derechoALAinformacion.fodt 
+grepoh '="T\(9\|12\)"[^<]\{100\}' xml_derechoALAinformacion.fodt | awk -F">" '{print $2}'
+grepoh '="T\(9\|12\)">[^>]*' xml_derechoALAinformacion.fodt  
+top -c -p $(pgrep -d',' -f a-command-to-see)
+find $DIR -not -path '*/\.*' -type f \( ! -iname ".*" \)
+find studying/ ! -perm -g+w -not -path '*/\.*' -type f \( ! -iname ".*" \) | grep -Ev "^\s*\(|png|html|pdf|odt|jpg|ods|odb|hitzak|gif|tgz|gz|ldp_[1-9]|ldp_[1-9][1-9]|cap|htm|rdp|deb|xlsx|txt|py|ld\)"
+http://stackoverflow.com/questions/1444406/how-can-i-delete-duplicate-lines-in-a-file-in-unix
+sed '$!N; /^\(.*\)\n\1$/!P; D'

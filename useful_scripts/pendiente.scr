@@ -1,0 +1,1 @@
+grepini  2>/dev/null | vawk : 1 | sortu | grep -v svn

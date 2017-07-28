@@ -1,0 +1,105 @@
+#!/bin/bash
+
+#script para crear una aplicación de android
+
+#DECLARACIÓN DE VARIABLES
+
+#PARA CREAR PROYECTO
+echo "Creando..."
+
+PROYECTO_NOMBRE=permisoAccesoInternet
+PROYECTO_PATH=/home/violeta/practicaBastionado/${PROYECTO_NOMBRE}
+TARGET=1
+ACTIVITY=practica
+DOM1=com
+DOM2=mipractica
+DOM3=miandroid
+
+#PARA CREAR KEYSTORE CON RSA
+VALIDITY=10000
+CN=violeta
+L=leon
+S=spain
+C=ES
+STOREPASS=111111
+KEYPASS=222222
+ALIAS=${PROYECTO_NOMBRE}_Key
+
+#NOMBRES ARCHIVOS DE LA APLICACIÓN
+MANIFEST=AndroidManifest.xml
+MAIN=main.xml
+WEBVIEW=webview.xml
+MAIN_AC=MainActivity.java
+WEBVI_AC=WebViewActivity.java
+
+#PARA CREAR R.java
+
+ANDROID_DIRECTORIO=/home/violeta/android-sdk-linux
+ANDROID_PLATFORM=android-23
+
+#PARA COMPILAR
+SEP=\:
+
+#*************************************************
+#LANZAR LOS COMANDOS 
+
+#CREAR PROYECTO_PATH
+android create project --target ${TARGET} --name ${PROYECTO_NOMBRE} --path ${PROYECTO_PATH} --activity ${ACTIVITY} --package ${DOM1}.${DOM2}.${DOM3}
+
+#ENTRAR EN EL DIRECTORIO DEL PROYECTO Y AÑADIR DIRECTORIO /obj 
+cd ${PROYECTO_PATH}
+mkdir obj
+
+#EDITAR MAIN
+echo "Importar archivos: AndroidManifest.xml, main.xml, webview.xml"
+
+cp ${PROYECTO_PATH}/../archivos/$MANIFEST ${PROYECTO_PATH}
+cp ${PROYECTO_PATH}/../archivos/$MAIN ${PROYECTO_PATH}/res/layout
+cp ${PROYECTO_PATH}/../archivos/$WEBVIEW ${PROYECTO_PATH}/res/layout
+
+#CREAR KEYSTORE
+echo "Generando keystore..."
+
+keytool -genkeypair -validity ${VALIDITY} -dname "CN=${CN},L=${L},S=${S},C=${C}" -keystore ${PROYECTO_NOMBRE}.keystore -storepass ${STOREPASS} -keypass ${KEYPASS} -alias ${ALIAS} -keyalg RSA -v
+
+# -- ESCRIBIR JAVA APPLICATION CODE --
+echo "Importar archivos: MainActivity.java, WebViewActivity.java"
+
+cp ${PROYECTO_PATH}/../archivos/$MAIN_AC ${PROYECTO_PATH}/src/${DOM1}/${DOM2}/${DOM3}
+cp ${PROYECTO_PATH}/../archivos/$WEBVI_AC ${PROYECTO_PATH}/src/${DOM1}/${DOM2}/${DOM3}
+
+#CREAR R.java
+echo "Creando R.java..."
+aapt package -v -f -m -S ${PROYECTO_PATH}/res -J ${PROYECTO_PATH}/src -M ${PROYECTO_PATH}/AndroidManifest.xml -I ${ANDROID_DIRECTORIO}/platforms/${ANDROID_PLATFORM}/android.jar 
+
+#COMPILAR
+echo "Compilando..."
+javac -verbose -d ${PROYECTO_PATH}/obj/ -classpath ${ANDROID_DIRECTORIO}/platforms/${ANDROID_PLATFORM}/android.jar${SEP}${PROYECTO_PATH}/obj -sourcepath ${PROYECTO_PATH}/src ${PROYECTO_PATH}/src/${DOM1}/${DOM2}/${DOM3}/*.java
+
+#CREAR DEX ARCHIVO
+echo "Creando archivo dex..."
+dx --dex --verbose --output=${PROYECTO_PATH}/bin/classes.dex ${PROYECTO_PATH}/obj/ ${PROYECTO_PATH}/libs/
+
+#CREAR APK ARCHIVO 
+echo "Creando archivo apk..."
+aapt package -v -f -M ${PROYECTO_PATH}/AndroidManifest.xml -S ${PROYECTO_PATH}/res -I ${ANDROID_DIRECTORIO}/platforms/${ANDROID_PLATFORM}/android.jar -F ${PROYECTO_PATH}/bin/${PROYECTO_NOMBRE}.unsigned.apk ${PROYECTO_PATH}/bin
+
+#SIGN APK ARCHIVO
+echo "Firmando proyecto..."
+jarsigner -verbose -keystore ${PROYECTO_PATH}/${PROYECTO_NOMBRE}.keystore -storepass $STOREPASS -keypass $KEYPASS -signedjar ${PROYECTO_PATH}/bin/${PROYECTO_NOMBRE}.signed.apk ${PROYECTO_PATH}/bin/${PROYECTO_NOMBRE}.unsigned.apk ${ALIAS}
+
+#ZIP-ALIGN APK ARCHIVO
+echo "Zip-alineando..."
+zipalign -v -f 4 ${PROYECTO_PATH}/bin/${PROYECTO_NOMBRE}.signed.apk ${PROYECTO_PATH}/bin/${PROYECTO_NOMBRE}.apk
+
+#***************
+#CREAR EMULATOR
+#android --verbose create avd --name MySonyEricsson --target ${ANDROID_PLATFORM} --sdcard 2000M --abi default/x86_64
+
+# -- START EMULATOR --
+
+#emulator -wipe-data -avd MySonyEricsson &
+#read 
+
+#INSTALL IN EMULATOR
+#adb -e install bin/${PROYECTO_NOMBRE}.apk

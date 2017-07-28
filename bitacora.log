@@ -1,0 +1,731 @@
+<fecha lun, 19 de jun de 2017 14:43:38 >
+
+- montado entorno:
+
+-- creadas rutas y copy/paste:
+
+en c:/
+
+aplic
+bea
+config
+datos
+dominio_wls1
+Entel
+Helios UDA-1.2.0
+proyectos
+sqldeveloper
+
+--------------------
+
+En sqldeveloper hay un servidor de sql workbench de oracle.
+
+En bea hay un web logic:  servidor de aplicaciones Java EE (J2EE) y también un servidor web HTTP, desarrollado por BEA Systems, posteriormente adquirida por Oracle Corporation.
+
+En Helios Uda, un eclipse de UDA, al que añadí un jar a su build path Y32A).
+
+En proyectos están:
+
+- jars 
+- el propio proyecto: 2011EMER
+- el workspace for UDA con elproyecto
+
+
+TODA LA ESTRUCTURA ESTÁ COPIADA PATAH-A-PATH DE L ORDNADOR DE ARKAITZ, PARA QUE NO TENGA CONFLICTOS.
+
+--------------------------------
+
+
+<fecha lun, 19 de jun de 2017 15:03:25 />
+
+<fecha mar, 20 de jun de 2017  7:57:34 >
+
+
+20 de jun de 2017 14:51:57 > Cambio bitacora.log solo como diario de acciones, y toma notas en notas.html as html5 file.
+
+Acabo de conocera Amaya, que es comercial, y es la que decide si toman a alguien de prácticas o no. 
+
+Fallillos:
+- preguntarle cuál era su relación con coger a gente de prácticas, si ella es comercial: se quedó un poco pillada.
+- ponerme inadecuadamente nerviosa, con poca autoestima.
+CREO que metí dos pifias:
+- confundir a  Jorge con Arkaitz, le dije "ayer estuvo conmigo y me ayudó mucho" por Arkaitz, pero igual estábamos hablando de Jorge...
+- Liarla al decirle "sabía que ni hoy ni mañana (sic) no iba a estar aquí" por Arkaitz pero igual hablábamos de Jorge, y añadir "pero ya tengo una lista de preguntas preparadas para MAÑANA" ¡que escuando dige que Jorge-Arkaitz no está!
+
+
+Qué hice hoy?
+
+ - Mirar los xml del proyecto y anotar teoría en un html
+ - arreglar a lo bruto las aspas del proyecto, copiando bups y bruto-corregidos en el ~
+ - intentar lanzar la app con la conexión desde sqldeveloper lanzada:
+
+	- Classes:
+		- <Failed to initialize the application 'EJIEy32a' due to error weblogic.application.ModuleException:
+		- N38API: No hay XML de sesion que reutilizar
+	- Statics:
+		- Error 403--Forbidden
+
+
+<fecha mar, 20 de jun de 2017 15:05:33 />
+
+<fecha mié, 21 de jun de 2017  9:46:08 >
+b
+Arreglados los problemas de compilación:
+- había incluído en el build path una librería y32a que usa un batch, no la app, y que duplicaba los contenidos del módulo Classes, con lo que la app petaba y me daba unos errores cualesquiera.
+
+- Editado el fichero HOST (en c:/Windows/system32/drivers/etc) para incluir las url de las que tira la app, que son locales del gobvas, pero como no tengo VPN, me es indistinto.
+
+- accedo a la app en la siguiente URL:
+http://desarrollo.jakina.ejiedes.net:7001/y32aEmergenciasWar
+
+Y me conecto como user: JAZAOLA, password: jazaola.
+
+- Accedo a weblogic en:
+
+localhost:7001/console
+
+User: weblogic, password: weblogic11
+
+Quedo en que el curro va a ser trastear. Me recomienda Arkaitz empezar con los jsps de voluntarios, y cambiar cosinas. Voy!
+
+
+<fecha mié, 21 de jun de 2017  9:54:47 />
+
+
+<fecha mié, 21 de jun de 2017 10:55:14 >
+
+Me encuentro el nombre, tipo y3207s00, de las tablas en los siguientes archivos:
+
+Classes/src/com/ejie/y32a/dao
+Classes/src/com/ejie/y32a/daoImp
+Classes/src/com/ejie/y32a/model/Bean
+Classes/src/com/ejie/y32a/service/service
+Classes/src/com/ejie/y32a/service/serviceImpl
+War/src/com/ejie/y32a/control/Controller
+
+PEEERO aparece NO como objeto, sino como String que da nombre a un OBJETO que sí contiene la info de la tabla. En este caso:
+
+public interface Y32AVoluntariosDao {
+
+    /**
+     * Inserts a single row in the Y3207s00 table.
+     *
+     * @param y3207s00
+     *            Y3207s00
+     * @return Y3207s00
+     */
+    Y32AVoluntariosBean add(Y32AVoluntariosBean y3207s00);
+
+<div class="pregunta"> ¿DÓNDE MAPEA/ANOTA EL NOMBRE DE LA TABLA CON NUESTRA CLASE  com.ejie.y32a.model.Y32AVoluntariosBean ???</div>
+
+Por lo que veo, a las clases de persistencia las llaman xClaseBean. <div class="pregunta"> son las XClaseBean clasesde persistencia??? Son POJOs normales y corrientes???  </div>
+Las XClaseBean son serializables, tienen privates, getters and setters, constructor and toString. PERO NO tienen hash ni comparateTo. <div class="pregunta"> para qué hacen falta el hash y el compareTo y por qué estas no lo tienen? </div>
+
+
+<fecha mié, 21 de jun de 2017 14:01:12 />
+
+<fecha mié, 21 de jun de 2017 14:01:24 >
+
+Dejo a medias el  ~/notas_controllers.html, y solo empezado el  ~/notas_jsps.html.
+
+<div class="tarea">
+
+Añadir campos para editar sobre la entidad Y32AVoluntarios.
+
+1º/ Añadirlos en la bdd
+
+2º/ Ajustar: 
+	2.1 - el MODEL (XClassBean)
+	2.2 - el MAPPER (dao)
+	2.3 - optional: el controller (si quiero meter validaciones, por ejemplo)
+
+3º/ Ampliar el js:
+	3.1 - add colName en el jQuery("#GRID_mantVoluntarios").rup_grid
+		3.1.1 - prev add LABEL in rup.i18n.json
+	3.2 - add colModel:
+			- edittype = text or hidden, for user
+			- rupType = datepicker (especial fechas del gobvas), combo o numeric (no más opciones por lo menos en este js).
+	3.3 - y ya? algo me enseñó de grids hijos, pero no hacíamos nada ahí???
+
+4º/ Ampliar el jsp con un SEARCH BY
+
+</div>
+
+
+<fecha mié, 21 de jun de 2017 14:25:14 />
+
+<fecha mié, 21 de jun de 2017 15:08:55 >
+
+Me quedo a mitad de la tarea_1.2.2: 
+
+<div class="pendiente"> 
+- HAY QUE EDITAR LAS QUERIES EN EL DAOIMPL
+- EDIT JS
+- EDIT JSP
+</div>
+
+<fecha mié, 21 de jun de 2017 15:12:13 />
+ 
+<fecha jue, 22 de jun de 2017 12:42:31 >
+
+ <div class="pregunta"> ¿Dónde narices están los logs????  En c:/data/y32a/log</div>
+
+Avancé en usar el debugger: de 8:00 a 17:00 menos 30mins... 9 horas para usar el debugger.
+
+
+<fecha jue, 22 de jun de 2017 17:13:39 />
+
+<fecha lun, 26 de jun de 2017  7:56:49 >
+
+
+Lunes: llego como me fui. Este finde tenía planes de estudiarme el código y hacerme un plan. Nada. Estuve super cansada a todas horas y no hice nada. Lo intenté pero era inútil. Sentimiento de agotamiento.
+Llego hoy con un único plan en mente: estar relajada y a lo mío. Tengo que hacer mi trabajo. 
+Hoy lunes, estudiar el código y sacar teoría de qué hace qué. 
+
+Primero, lo conocido:
+- beans, controllers y service
+Segundo, lo nuevo:
+- javascript y jquery
+
+Próximo objetivo en mente:
+- Web services: REST.
+
+
+<fecha lun, 26 de jun de 2017  8:01:40 />
+
+<fecha lun, 26 de jun de 2017  9:36:37 >
+
+<div class="descgral plan"> Meto un nuevo div clasificado como "paso", que va a ir en bitacora.log, naturalmente ordenado. Y en paso voy metiendo los avances del PLAN=hacer un manual de programacióhacer un manual de programaciónn</div>
+
+<div class="paso">Hecho un index_borrador.html con dl_ de las páginas (htmls) que voy a ir haciendo, de nombre index-ddX igual que el id del dd_ relativo.
+De acuerdo con la tarea1 ya tenía hecho un notas_controller.html. Continúo por ahí porque estoy buscando <div class="nota tarea1 objetivo">por qué el buscador de fecha no funciona.</div>
+</div>
+<fecha lun, 26 de jun de 2017  9:51:22 />
+
+<fecha lun, 26 de jun de 2017 10:17:54 >
+
+<div class="paso"> Abro cada main of a notas*html con un div descral index-ddX name_of_file. Queda rellenar. </div>
+
+<fecha lun, 26 de jun de 2017 15:02:31 />
+
+<fecha lun, 26 de jun de 2017 15:02:35 >
+
+
+Me voy con la tarea3 más o menos hecha. Falta documentarla, testarla y que da el siguiente error: Se ha producido un error al tratar de recuperar los datos.
+
+
+<fecha lun, 26 de jun de 2017 15:03:25 />
+
+<fecha mar, 27 de jun de 2017 17:09:53 />
+
+<fecha mar, 27 de jun de 2017 17:09:56 >
+
+<div class="pendiente"> tarea 3: casi todo preparado, pero falta editar funcicon function obtenerDocumentoRecExternosPDFImagen(rowid,grid){	
+	if (rowid!=""){// si obtenemos documento desde grid, nos llega la fila
+		 rowdata=jQuery("#"+grid).getRowData(rowid);
+		 idDocumento=rowdata['iddocumentoT29'];
+	}
+	var url="../y32aRecursosExternos/descargarDocumento?R01HNoPortal=true&iddocumentoT29="+idDocumento;
+	window.location.href=url;
+	
+	// window.open(url,"_blank");
+	
+}</div>
+
+<fecha mar, 27 de jun de 2017 17:12:00  />
+
+
+<fecha mié, 28 de jun de 2017  9:28:53 >
+
+<div class="nota"> En el bitácora, hcer de fecha a fecha solo... nada de anotar cada vez que enro porque no sirve de nada. </div> 
+<div class="pendiente"> Editar aquellos divs within lis previos a haber hecho la divli class. ***REM: para validación en XHTML, no hay divs inter lis, solo intra!! </div>
+
+<div class="nota"> Llamamos inteligencia a la capacidad de elaborar estrategias con escasa experiencia o por analogía o extrapolación de cualquier experiencia. La incertidumbre en la valoración de la inteligencia está en no distinguirse en qué medida está uno aplicando estrategia o adquiriendo experiencia. </div>
+								<div class="pregunta IMPORTANTE"> ¿Qué implicaciones tiene pasar un arg al mapper como resulset.val o como null? ¿Qué relaciones tiene con la definición del tipo de valor en la bdd? </div>
+									<div class="pregunta IMPORTANTE"> Implicaciones de, limitaciones de, requerimientos para, o relaciones con usar null en un costructor del controller.</div>
+
+<div class="pendiente"> 
+
+<p> En RECEXT ENTERARME DE: </p>
+<ol>
+<li>qué query hace qué</li>
+<li> qué rowmapper se encarga</li>
+<li> POR QUÉ el edit no recoge el file de la bdd</li>
+<li> POR QUÉ el extraDoc no lo sube </li>
+</ol>
+
+<p> En VOLS ENTERARME DE: </p>
+<ol>
+<li>qué query hace qué</li>
+<li> qué rowmapper se encarga</li>
+<li> cómo compara con recExt</li>
+<li> POR QUÉ no sube el file a la bdd</li>
+</ol>
+
+<div class="nota"> El js da mensaje de éxito y recoge el file correctamente. </div>
+
+</div>
+
+
+<fecha mié, 28 de jun de 2017 15:10:26 />
+
+<fecha jue, 29 de jun de 2017 16:41:53 >
+
+<div class="pendiente"> 
+<ul>
+<li> Estudiar ReqBody RespBody, ver: https://stackoverflow.com/questions/11291933/requestbody-and-responsebody-annotations-in-spring</li>
+<li> investigar el rol de existeDocumento </li>
+</ul>
+
+Y me piro porque me están dando mareos del sueño...
+</div>
+
+
+<fecha jue, 29 de jun de 2017 16:43:51 />
+
+<fecha vie, 30 de jun de 2017  9:02:31 >
+
+***En bupsEDITED	está el js que NO funciona
+***En bupsMIDEDITED	está el js que SÍ funciona
+
+¿Por qué el nuevo no va? --> errores tontos.
+
+--  CAMBIO DE TAREA -------
+
+	Me empeciné en subir un documento desde Voluntarios. No conseguido
+
+<fecha lun, 03 de jul de 2017 15:57:28 >
+
+Dominado lo del REST!
+
+<div class="pendiente"> 
+	1º/ Ver por qué no van los links de js y css en copia
+	2º/ jugar con leaflet!
+</div>
+
+<fecha lun, 03 de jul de 2017 15:58:42 />
+
+<fecha mar, 04 de jul de 2017  8:33:01 >
+
+Los links no iban porque estaba metiendo mal el path... yo la observadora.
+
+Ahora leaflet:
+
+Hacer un html con js que llame al rest del webpro con leaflet, y este le devuelva un mapa con aquellas coordenadas que se menten desde el html.
+
+
+Eeeeeeeeee: a ver cómo me imagino yo esto.
+
+Para hacer una llamada por AJAX (?) ¿basta abrir un archivo local en el navegador y este se las apaña?
+
+
+************distracción rápida:
+
+Ayer lunes, salí a las 7:21 de casa, llegué a las 21:30. Recogí la ropa (aun apestosa) del tendal y envié los ficheros firmados al banco. Me acosté a las 22:50. 
+Hoy martes me desperté naturalmente a las 5:50 más o menos (en 59.2Kg); salí de casa a las 7:20 y espero estar de regreso para las 8:45 (habiéndo dejado la pasta ingresada en el banco). Espero acostarme a las 22:00.
+Mañana miércoles: up@6:00, home@21:30; Jueves:  up@6:00, home@20:45. Y así la semana vuela.
+El viernes: up@6:00, home@21:30.
+El sábado: up@6:00, free@14:00!!!! HACER LA COMPRA ****COMPRAR BOLITAS ANTIHUMEDAD***** Y ALGO PARA EL ARMARIO ANTIHUMEDAD; LIMPIAR CASA/HABITACIÓN; ENCONTRAR MÓVIL Y CREDITRANS. Y listo! El domingo descansar y pasear aun habiendo madrugado. Tratar de no tomar café, y de disfrutar el día sin contaminarme de azúcar. Empezar la semana en condiciones ideales para empezar a bajar de peso y a estudiar.
+
+buuuuuuuuuuuuuuuuufff me muero de sueño, stoy espesa, y la gili de mi toméun té sobre la ya alta cantidad e cafeína en sangre. Quiero dormiiiiiiiiiiiiir, y no sé qu tal podré.
+
+
+AAAAAY! Maldita sea! Joder qué voz tan lame tengo por aquí.
+
+<div class="pendiente"> 
+Voy bien aunque sea lenta. Es lo que hay.
+ Ver tarea5.html
+
+</div>
+
+
+<fecha mié, 05 de jul de 2017  8:14:47 />
+
+
+<fecha mié, 05 de jul de 2017  8:17:15 >
+
+ joder: ayer más de media hora, quizás más de una hora, pillada conque por qué no funcionaba jquery en la ṕágina index. Vaya. No había cargado jquery en la página index. Me dí cuenta hoy según llegué.
+
+Bueno, llevo desde las 8 aquí, y son las 14:38:16. He reorganizado el proyecto, creo que me entero, y ahora empiezo con lo que tengo que hacer.
+
+¿Qué descansos he hecho hoy? Recuerdo el de las 11:20, hasta y 40. Me comí un sandwich. Nada más, no? Me tomo ahora otro para zamparme una manzana si bien estoy que poto de tanto comer almendras.
+
+voyme!
+
+<fecha mié, 05 de jul de 2017 16:47:27 />
+
+<fecha jue, 06 de jul de 2017  9:25:34 >
+
+Dpm. Ayer estuve unas 4 horas golpeándome la cabeza porque el resultado de la ajax call era "Exito [Object object] en lugar de lo que yo esperaba: Exito ["Latitud" : ..., "Longitud" : ... ]
+
+Bien, el problema fue no considerar que lo que fallaba era mi expectativa ya que el programa clamramente estaba funcionando. Inadvertidamente me estaba jodiendo el contenido del console.log, donde mezclé un String (Exito) con mi json object. RESULTA que quitando la String, los valores de mi objeto se logueaban perfectamente. También podría habérseme ocurrido usar directamente lo que me llegaba, como en console.log(result.Latitud), que también lo guea a la perfeción.
+
+Aaaay.
+
+Y ahora me desapareció el papel en el que éste me había escrito instrucciones. ¿Pero cómo coño es esto posible?
+
+<div class="nota importante"> MONGODB!!!!!!!!!!!!!!!!!!!! </div>
+
+
+Juer,  empecé el día quedando bien. Me montó Arkaitz un servidor de bdd con rest para que me conectar a él, yo le dije a todo qúe sí, y solo al final del día me dí cuent ade que lo montaba para que lo usar en el momento.
+Bueno. Hoy estaba sopas. Estoy pero como si no estuviera.
+
+
+<div class="nota cosasqueaprendi"> 
+<ol>
+<li> poner librerías tanto en el sector backend, como en la carpeta lib del WebContent (en particular si hay un error de classnotfound que menciona al servidor, y en mi código la clase se usa perfectamente)</li>
+</ol>
+
+</div>
+
+
+
+<fecha jue, 06 de jul de 2017 16:52:09 />
+
+<fecha lun, 10 de jul de 2017 17:17:33 >
+
+
+CASI!!!!!!!!!!!!!!!!!!
+
+AL final he conseguido:
+
+-- tener montada una bdd con geojson.features --> en el model del node.app: schema = mongoose.schema.feature
+-- en el js muestra los datos, pero me da 500 al meter uno, presumiblemente porque no estructuro bien la String, PERO AHÍ ESTOY!!!!! YUHUUUUUUUUUUUUU!!!!!!!!!!!!!!!!!
+
+
+<fecha lun, 10 de jul de 2017 17:19:28 />
+
+<fecha mar, 11 de jul de 2017 12:20:54 >
+
+
+VER ESTO:
+
+https://stackoverflow.com/questions/25187937/loading-geojson-layers-from-geoserver-to-leaflet-map-based-on-the-current-boundi
+
+
+<fecha mar, 11 de jul de 2017 12:21:03 />
+
+<fecha mié, 12 de jul de 2017 11:47:56 />
+
+Ayer fue un día chungo, de los que me tienen sisibeando"vergüenza". Pero seguí, y seguí, y hoy ¡cree untos geojson en la mongodb!!!!
+
+Ahora hago un kit-kat, y sigo el siguiente tutorial:
+
+http://denelius.com/leaflet-node-mongodb/
+
+See lnm-tutorial.html
+dpm!! Hecho el tut con éxito. Queda volver a leerlo para entenderlo. Má o menos es about loading layers defined with points: pretendo, pues, mi data de paneles cargarlo como una layer *** SIN olvidar que la tarea primaria es el MODAL FORM para meter nuevos paneles, si bien quiero guardarlos directamente tal que se unan a la layer de los paneles.
+
+
+CREO QUE VA ASÍ:
+
+1/ Monto una bdd con geoJSON records
+2/  en app.js me conecto a esa bdd <div class="pregunta"> cómo switch de una a otra?? </div>
+3/ en model defino los schemas y modelos... (lo que en el tut hace en el routes)
+4/ en app.js defino los mapeos-routes
+5/ En codigoMapa.js áñado las funciones ... uuuuuu
+
+
+Y mañana sigo pensando, que son las 3, y me voy a la SER.
+
+
+<fecha mié, 12 de jul de 2017 15:03:51 />
+
+
+<fecha jue, 13 de jul de 2017  8:06:10 >
+
+Día de hoy ¡Formulario modal! Yiiiiiiiiialaaaaaaaaaa!!!!!!!
+
+Mirado todo el código en gestion-docente-html5, y vuelta a geoJson (¡que es la p*** ****a!).
+
+Encuentro 3 opciones para representar geospatial data: Shapefiles, geoJSON and KML. 
+<div class="referencia"> http://apprentice.craic.com/tutorials/28</div>
+
+También existe TopoJSON, una extensión de GEoJSON. TopoJSON files are potentially a lot smaller and more efficient to load and render. Unfortunately leaflet doesn't natively support them but it can be extended to support them (<div class="referencia"> https://www.drupal.org/node/2841688</div>).
+<div class="nota"> Existe: GeoRSS for time-sensitive point data, que es xml, gml, aunque tiene opción simple, que está un nivel por encima de csv <div class="referencia"> https://gis.stackexchange.com/questions/144867/alternatives-to-georss-for-time-sensitive-point-data</div></div>
+
+
+<div class="resources"">
+<ul>
+<li>geojson.io allows you to draw features on a map and then save it a GeoJSON - increbidbly useful for 'hand drawn' maps</li>
+<li> Converting between File Formats,  Ogre will convert anything to GeoJSON and GeoJson to Shapefile.
+
+But the best tool for general conversion appears to be GDAL ogr2ogr, a UNIX command line tool which is part of the Geospatial Data Abstraction Library (GDAL) suite of tools.</li>
+</ul>
+
+<div class="nota"> AEMET key
+90 días desde hoy, jue, 13 de jul de 2017 
+
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2aW9sZXRhZ29uemFsZXpnQGhvdG1haWwuY29tIiwianRpIjoiNjY4YjBhZmMtZjg3ZS00NzkxLTg0NWUtNDhmOGNiNGMwYjlhIiwiZXhwIjoxNTA3NzI3NzMyLCJpc3MiOiJBRU1FVCIsImlhdCI6MTQ5OTk1MTczMiwidXNlcklkIjoiNjY4YjBhZmMtZjg3ZS00NzkxLTg0NWUtNDhmOGNiNGMwYjlhIiwicm9sZSI6IiJ9.SgG4v17ucXdGDT_DJXtXf2zc7eoSBN5jp5_GgLMGIuc
+</div>
+
+</div> 
+
+pfffffffffffffffffffffff
+
+empecé tan bien, desarrollé tan mal, solo me animé cuando se piró toda la peña, y ahora es tarde y llego tarde a box. pfffffffffffffff
+
+
+<fecha jue, 13 de jul de 2017 17:25:58 />
+
+<fecha vie, 14 de jul de 2017 14:39:08 >
+
+
+AAAAAAAAAAArrrrrrrrrrrg!!!!
+
+<div class="nota importante"> lo que se recoge de la mongodb en nodejs es igual que un json, pero no es un json (o no reaccionan igual).
+
+Por ejemplo:
+
+- me retorna area
+- lo paso a string y luego a json en jobj
+
+- si printeo area y jobj son iguales
+- si  printeo area[0] y  jobj[0], el primero es undefined
+
+</div>
+
+<fecha lun, 17 de jul de 2017 12:59:14 />
+
+<fecha lun, 17 de jul de 2017 12:59:17 >
+
+
+<div class="nota importante"> GeoJSON.parse: feature: {}, FeatColl: [{]}</div>
+
+LO QUE ESTOY HACIENDO:
+
+- QUIERO AGRUPAR TODOS LOS MARKERS_DE_PANELES EN UNA UNICA GEOJSON_LAYER
+--1º agrupo los ajax results into a featColl
+-- GEOJSON_LAYER tiene opciones tipo oneachfeature
+<div class="referencia"> https://stackoverflow.com/questions/39856959/create-featurecollection-from-multiple-geojson-strings</div>
+<div class="referencia"> http://leafletjs.com/reference-1.1.0.html#geojson</div>
+</div>
+
+
+Me faltaba: la que usa earthquakes... <div class="referencia"> http://savaslabs.com/2015/05/18/mapping-geojson.html</div>
+
+
+<fecha lun, 17 de jul de 2017 16:29:24 />
+
+
+<fecha mar, 18 de jul de 2017 12:16:05 >
+
+<div class="pendiente"> ORGANIZAR MI NODE_APP TALQUE SEPARE:
+
+- MODELS
+- ROUTES
+- CONTROLLERS
+
+</div>
+
+PLAN:
+
+<div class="descgral"> 
+
+Mi trabajo es desarrollar la API que recoge los datos de los paneles y construye las visualizaciones posibles.
+
+Hay una bdd que envía 20 datos cada 5 minutos.
+
+ENTIENDO QUE:
+
+- el conjunto de los 20 datos representa un panel y constituye un GeoJSON Feature
+- todos los paneles son una GeoJSON Feature Collection
+- los datos son estáticos o dinámicos
+- existen rangos de valores para los datos dinámicos, y la combinación de rangos resulta en filtros para los paneles
+- pasados los filtros aparecen distintos GeoJSON Features
+- los grupos de GeoJSON Features iguales son nuevas GFC
+- las GFC pueden sub-filtrarse de acuerdo con los datos estáticos
+
+:::EN EL NODEJS SERVER:
+	- el filtrado se desarrolla en el nodejs server 
+	- siempre se devuelve una GeoJSON Feature Collection
+
+:::EN LA API:
+	- la API recibe GeoJSON Feature Collections  --- ver si las reconoce tal cual, o hay que reconvertirlas --- creo que sí por lo de las coordenadas
+	- cada GFC es una layer disponible para visualización
+	- las GFC se subfiltran en la API a partir de sus datos estáticos con un checkbox de todos ellos
+	- el subfiltrado resulta en nuevas layers visualizables
+	- el check box se combina con un buscador para datos dinámicos
+</div>
+
+<div class="pasos"> 
+<ol>
+	<li>Construir una bdd con 100 paneles diferenciados por su posición y 20 campos</li>
+	<li>Establecer los datos únicos y sus posible valores</li>
+	<li>Establecer los datos dinámicos y sus rangos</li>
+	<li>Establecer 6 clases</li>
+	<li>Programar un reload del documento cada tiempo X con 7 llamadas Ajax vinculadas</li>
+	<li>Definir función para convertir objetos en GFC</li>
+	<li>Definir funciones de filtrado para una GFC</li>
+	<li>Definir un GET para devolver la GFC de todos</li>
+	<li>Definir 6 GET para devolver las GFC principales</li>
+	<li>Recoger cada GFC como capa</li>
+	<li>Mostrar un select control en el mapa para visualizar cada capa</li>
+	<li>Reducir las capas principales con funciones de subfiltrado sobre las GFC</li>
+	<li>Mostrar un checkbox para visualizar las capas reducidas</li>
+	<li>Programas un buscador para encontrar paneles con un valor dinámico determinado dentro de la reducción del checkbox</li>
+</ol>
+</div>
+
+<div class="general">
+  Son 14 pasos.
+
+<div class="paso"> 1. Construir una bdd con 100 paneles diferenciados por su posición y 20 campos
+Un GeoJSON Feature:
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [lat, lng]
+  },
+  "properties": {
+    "property-X": ""
+  }
+}
+
+</div>
+
+<div class="paso"> 2. Establecer los datos únicos y sus posible valores<//div>
+<div class="paso"> 3. Establecer los datos dinámicos y sus rangos<//div>
+<div class="paso"> 4. Establecer 6 clases<//div>
+<div class="paso"> 5. Programar un reload del documento cada tiempo X con 7 llamadas Ajax vinculadas<//div>
+<div class="paso"> 6. Definir función para convertir objetos en GFC<//div>
+<div class="paso"> 7. Definir funciones de filtrado para una GFC<//div>
+<div class="paso"> 8. Definir un GET para devolver la GFC de todos<//div>
+<div class="paso"> 9. Definir 6 GET para devolver las GFC principales<//div>
+<div class="paso"> 10. Recoger cada GFC como capa<//div>
+<div class="paso"> 11. Mostrar un select control en el mapa para visualizar cada capa<//div>
+<div class="paso"> 12. Reducir las capas principales con funciones de subfiltrado sobre las GFC<//div>
+<div class="paso"> 13. Mostrar un checkbox para visualizar las capas reducidas<//div>
+<div class="paso"> 14. Programas un buscador para encontrar paneles con un valor dinámico determinado dentro de la reducción del checkbox<//div>
+
+</div>
+
+<fecha mié, 19 de jul de 2017  8:13:53 />
+
+
+<fecha mié, 19 de jul de 2017  8:13:56 >
+
+Dibujar líneas para:
+
+- temperatura
+- velocidad del viento
+- humedad
+
+... tras muchas vueltas abandono el approach programático (de momento) porque me da vergüenza ocecarme con ello. He metido los valores manualmente enun excel. Me quedo con un solo valor en lugar de max,med,min.
+Tengo valores para un panel. Ahora, multiplicarlos por 100 con variaciones random, y asignarle a cada uno unas coordenadas.
+
+
+-- tengo cateado los geoJsonFeature de un panel relativos a un día entero i.e varian los valores excepto lat,lng, que tengo que recogerlas aun, y asignárselas
+
+--- PANELES HECHOS: PENDIENTE MEJORAR LOS VALORES
+--- VOY A POR ASIGNAR COORDENADAS
+	#	tmp=${a#*_}   # remove prefix ending in "_"
+	#	b=${tmp%_*}   # remove suffix starting with "_"
+# There's also: ## and %% , which remove as much as possible if $prefix or $suffix contain wildcards
+string="/scripts/log/mount_hello_kitty.log";
+prefix="/scripts/log/mount_";
+string=${string#$prefix}; #Remove prefix
+suffix=".log";
+string=${string%$suffix}; #Remove suffix
+#echo $string; #Prints "hello_kitty"
+
+
+<fecha jue, 20 de jul de 2017  9:24:33 />
+
+<fecha jue, 20 de jul de 2017  9:24:37 >
+
+
+<div class="nota importante"> YUHUUUUUUUUUU!!!!!!!!!!!! por fiiiin! encontré el auténtico sort numeric: ls * | sort -k2 -t. -n    ===> sort by 2nd field with . as field separator, then numeric</div>
+
+<div class="nota importante">
+ARRS in BASH && RANDOM CHOOSE:
+
+expressions=("IBDR" "ENDS" "HCEN" "GDFS" "GNFE" "SHEL" "NTRG" "EONE" "IMPN" "VMPN" "ACCE" "NXPN" "HLPN" "SYPN" "AUPN" "GEPN" "FLPN" "EEPN" "PEPN" "EOPN")
+
+selectedexpression=${expressions[$RANDOM % ${#expressions[@]} ]} 
+
+</div>
+
+Una vez que tengo los archivos con un_panel-un_día ¿Cómo los junto? 
+
+Cada feature collection que yo quiero mostrar es por periodos:
+DESCARTADO: sed -ne /{$/,/},$/{p}
+
+<div class="code">
+Con un awkLiner meto todos los paneles: 
+awk 'BEGIN{RS="^},$"; FS="\n" } match($0, /\"periodo\":   1,/){print $0}' * 
+</div>
+
+<fecha vie, 21 de jul de 2017  8:31:00 />
+
+<fecha vie, 21 de jul de 2017  8:31:06 >
+
+TOPOGEOJSON
+<div class="referencia"> https://blog.webkid.io/maps-with-leaflet-and-topojson/</div>
+
+-p preserves properties!!!
+
+Muxo pendiente...
+porcierto it is geo2topo not topojson...
+
+
+<fecha vie, 21 de jul de 2017 15:01:53 />
+
+
+<fecha mié, 26 de jul de 2017  8:25:12 >
+
+Lo que hay:
+
+- Marcar puntos de acuerdo con:
+
+-- valores 3 parámetros
+
+-- compañía y 1 parámetro
+
+-- Buscador: cualquier id, cualquier compañía
+
+LO QUE QUIERO:
+
+-- mostrar las capas con controladores
+-- compañía y cualquier parámetro: integración
+-- buscador limitado a al data set del momento
+
+<div class="code">
+
+layer = new L.xxxJSON(null, {function: function, function1: function1, ... });
+
+functions myfunctions() {};
+
+$.getJSON(xxxData).done(addXxxData);
+
+fucntion addXxxData(xxxData) {
+	layer.addData(xxxData);
+	layer.addTo(map);
+
+</div>
+
+
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ AAAAAARG!!!!!!!!!!!!!!
+
+EMERGENCIA EN EL BUSCADOR!:
+
+Cambiar os markers por default!
+
+<fecha jue, 27 de jul de 2017  8:31:00 />
+
+
+<fecha jue, 27 de jul de 2017  8:31:03 >
+
+Estrategia de los check boxes:
+
+-- Quiero rellenar el arrray cuando clico ver_paneles:
+
+---- el arr se rellena por las 10 a una aparte, y se ajusta en ver_paneles por todas y pequenas
+
+--- ahí compruebo si checked_ALL:
+	--- SÍ? cleanArr -- fillUp Arr
+	--- NO? next
+		--- compruebo si checked_PEQUENAS
+			---- SÍ? -- fillUp Arr with pnas
+			---- NO? -- do nothing

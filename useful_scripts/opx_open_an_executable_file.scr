@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#importar funcion que crea los files
+source opex.fu
+
+#asignar las variables de la funcion
+header="/home/violeta/.vim/sourceText/scr_files"
+
+opex.fu $1

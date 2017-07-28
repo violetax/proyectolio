@@ -1,0 +1,6 @@
+#!/bin/bash
+
+commit=$1
+regex=$2
+
+find . -type f -exec sed -${commit} ${regex} {} \;

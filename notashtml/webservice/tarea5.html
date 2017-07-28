@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pasar JSON por REST a un mapa LEAFLET</title>
+
+ <link rel="stylesheet" href="styles.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<main class="container-fluid">
+
+<section class="1"> 
+<header><h2>Pasos</h2></header>
+
+<article class="1 tarea5">
+	<h3> Inicios</h3> 
+<ol>
+	<li> Llamada al REST-GET por ajax con un botón y GET a json-like string</li>
+	<li> GET a json</li>
+	<li> cargar los valores del json en el mapa leaflet</li>
+</ol>
+
+<div class="general">
+  Bien... <div class="pendiente"> DEscribir los pasos</div>
+  <div class="pendiente"> Ya carga las coord desde html: hacer un post que las recoge y crea otro mapa.</div>
+</div>
+</article>
+
+<article class="2 tarea5">
+	<h3> Avanti a ciegas</h3> 
+	<div class="descgral"> REST NOT FOUND no sé por qué. Continúo programando a ojo.</div>
+
+	<p> Pasos a ojo: </p>
+	<ol>
+		<li> Monto un proyecto nuevo y limpio:
+			<div class="descgral"> El proyecto REST consiste en los siguientes archivos:
+				<ul>
+					<li> web.xml: especifica welcome files, rest path</li>
+					<li> home.html: con un mapa para leaflet, un div para mostrar resultados de los RESTs, botones para llamar a los rests</li>
+					<li> css, jquery lib y js con llamadas a los rests y a leaflet</li>
+					<li> una clase anotada @Path y con funciones jersey annoted</li> en un paquete cualquiera en src
+					<li> </li>javax.json classes
+				</ul></div>
+		</li>
+		<li> El home muestra un mapa centrado con coord estáticas y 3 boton-funciones:
+			<ol>
+				<li>boton_cargartodos:
+					<div class="descgral"> Ajax get call to rest-url con path:cargartodos: return String as html for div. </div>
+				</li>
+				<li> boton_cargartodos:
+					
+					<div class="descgral">Ajax post call to rest-url:
+					*****Intencion es que pase un json object, el Post lo consume como @Consumes(MediaType.APPLICATION_JSON), y ese json object ***COINCIDE CON MI CLASE: Direccion.java, cuya toString es StringBuffer ???
+				*****De momento pasa un String, y se devuelve la misma string.
+				</li>
+				<li>boton_devolverFicha:
+					<div class="descgral">Parecido a boton_cargartodos</div>
+				</li>
+			</ol>
+		</li>
+		<li> Hay preparada una clase Direccion para conversiones json/string de acuerdo con la referencia: <div class="referencia"> https://examples.javacodegeeks.com/enterprise-java/rest/jersey/json-example-with-jersey-jackson/</div></li>
+		<li> **Intención: meter otra class tipo ficha con Service.</li>
+		<li> RestFunctions:
+			***LO PRINCIPAL AHORA ES HACER ESTO FUNCIONAR!!!!!!!!!!!!!!!!!!** <div class="nota importante"> PAra que el rest funcione con la conf jersey de Vogella, el paquete en que está la clase se llama igual que el proycto... <div class="pregunta"> ¿¿¿ Cómo y dónde configuro los paths en mi dynamic web proyect as in Vogella???? </div> </div>
+
+		</li>
+	</ol>
+</article>
+<article class="3 tarea5">
+	<h3> En Marche!</h3> 
+
+	Pasar to&from Jsons.
+	<div class="referencia">  https://stackoverflow.com/questions/14622531/how-to-pass-json-string-to-jersey-rest-web-service-with-post-request</div>
+
+	<div class="general">
+  TRY1: FAIL  415 (Tipo de Medio No Soportado) + AjaxFailed
+  $.ajax({
+	    type: 'POST',
+	    url: url,
+	    data: jsonCoords,
+
+ @POST
+	  @Path("/cargarporpunto")
+	  @Consumes(MediaType.APPLICATION_JSON)
+	  @Produces(MediaType.APPLICATION_JSON)
+	  public String  consumeListaPuntosJSON(final String input) {
+	  return input;
+
+	TRY2: FAIL pero solo AjaxFailed. Con el debug, entrar entra y llega al return. El input arg está correctamente cogidoOB: 
+$.ajax({
+	    type: 'POST',
+	    url: url,
+	    contentType: 'application/json; charset=utf-8',
+	    data: jsonCoords,
+	    dataType: 'json',
+	    cache: false,
+ @POST
+      @Path("/cargarporpunto")
+      @Consumes(MediaType.APPLICATION_JSON)
+      @Produces(MediaType.APPLICATION_JSON)
+      public String  consumeListaPuntosJSON(final String input) {
+      return input;
+
+	  TRY3: FAIL quitando el  @Produces(MediaType.APPLICATION_JSON) y returning String.
+
+
+	  more fails...
+	  no me oceco y aquí lo dejo a las 16:46:07
+	  8 horas (quito los descansos) para bien poco. Si hubiera estado yo sola en casa????? 30 días!
+
+
+	  FAIL^n = ya estaba bien.
+
+	</div>
+
+	<div class="nota"> http://192.168.4.31:3000/api/paneles</div>
+	<div class="nota"> http://192.168.4.31:3000/api/paneles/post</div>
+	<div class="nota"> VER GEOJSON</div>
+
+</article>
+
+</section>
+</main>
+<script type="text/javascript" src="codigo.js"></script>
+</body>
+</html>
+

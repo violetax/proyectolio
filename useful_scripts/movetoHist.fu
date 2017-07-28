@@ -1,0 +1,22 @@
+function movetoHist.fu ()
+
+{
+
+old_fity_file=`ls ${pref}_*${ext} 2>/dev/null` 
+
+if [[ -e $old_fity_file ]]; then
+	new_fity_file=${old_fity_file#${pref}_}
+	mv ${old_fity_file} $scrd/${new_fity_file}
+	if [[ $1 ]]; then
+		$cmd  $1
+		exit
+	fi
+	echo "Un nuevo $fity en la colección! Ver: ${new_fity_file%${pref}_}"
+elif [[ $1 ]]; then
+	$cmd $1
+	exit
+else
+	echo "¡Pero si no hay work files! Usa $cmd \$1!"
+fi
+
+}

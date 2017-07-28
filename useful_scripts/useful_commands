@@ -1,0 +1,2 @@
+sed 'N; /^\(.*\)\n\1$/Power button F7; D'
+http://stackoverflow.com/questions/1251999/how-can-i-replace-a-newline-n-using-sed

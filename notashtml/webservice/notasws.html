@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Montar un REST Web Service</title>
+
+ <link rel="stylesheet" href="styles.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<main class="container-fluid">
+<div class="descgral"> 
+
+</div>
+
+<section class="1"> 
+<header><h2>Cómo se hace</h2></header>
+
+<article class="1">
+	<h3>Copiando el ejercicio de clase</h3> 
+
+<ol>
+	<li> Eclipse -> new Dynamic Web Project</li>
+	<li> Crear packages en JavaResources/src:
+		<ul>
+			<li> api/restfulserers</li>
+			<li> dbms/pojo</li>
+			<li> service/interfaces</li>
+		</ul>
+	</li>
+	<li> Ir creando clases:
+		<ul>
+			<li> Pojo: prueba.java
+				<div class="descgral pojo"> 
+					<ul>
+						<li> Es serializable</li>
+						<li> Tiene private properties</li>
+						<li> <div class="pregunta"> ¿Qué clase de constructores tiene? ¿Con o sin argumentos? ¿Con super o sin super? ¿Para qué sirven dónde? SUPONGO QUE: sirven para los new en el Service y que no necesitan argumentos ( a dif de en un pro donde se vayan a definir queries ??? )
+							About super():
+<div class="referencia"> https://stackoverflow.com/questions/2054022/is-it-unnecessary-to-put-super-in-constructor</div>
+Calling the no-arguments super constructor is just a waste of screen space and programmer time. The compiler generates exactly the same code, whether you write it or not.
+
+class Explicit() {
+    Explicit() {
+        super();
+    }
+}
+
+class Implicit {
+    Implicit() {
+    }
+}
+							</div></li>
+					</ul>
+				</div>
+			</li>
+			<li> Service: CRUD</li>
+			<li> ServiceImpl: con constructor super, list, init()</li>
+			<li> RestController: aquí mavenizo el proyecto y añado un montón de dependencias al pom.
+				<div class="descgral"> RestController:
+				- import a Service
+				- <div class="pendiente">  ACABAR DE DESCRIBIR ESTO</div>
+				</div></li>
+		</ul>
+	
+	</li>
+</ol>
+
+</article>
+
+<article class="2">
+	<h3>Con Jersey</h3> 
+
+	<ol>
+		<li> Web Dynamic Project</li>
+		<li> Copy all libraries in Jersey JAX-RS 2.0 RI bundle into WEB-INF/lib <div class="referencia"> https://jersey.github.io/download.html</div></li>
+		<li> Configure we.xml <div class="referencia"> http://www.vogella.com/tutorials/REST </div></li>
+		<li> Hacer una clase con los REST:
+			<ul>
+				<li>Import javax.ws.rs. ...  </li>
+				<li> @Path: arbitrary name</li>
+				<li> @MEthod: GET, POST, ...  </li>
+				<li> @Produces...</li>
+				<li> return: ¡¡¡ content of my document!!!!!!!!!!!! </li>
+			</ul>
+		</li>
+	</ol>
+
+</article>
+
+</section>
+</main>
+</body>
+</html>
+

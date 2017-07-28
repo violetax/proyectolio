@@ -1,0 +1,24 @@
+#!/bin/bash
+
+action=$1
+
+
+files=~/files.tmp
+dirORIGINAL=~/bupsORIGINAL
+dirEDITED=~/bupsEDITED
+
+
+for file in $(cat ${files})
+do
+	if [ "$action" == "bor" ] 
+	then
+		cp ${file} ${dirORIGINAL}
+	elif [ "$action" == "bed" ]
+	then
+		cp ${file} ${dirEDITED}
+	else
+		echo "ERROR!"
+		echo "rem to run this from src..."
+	fi
+
+done

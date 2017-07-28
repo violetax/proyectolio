@@ -1,0 +1,29 @@
+{
+    type:                   FeatureCollection
+    features:
+    {[
+        type:               Feature
+        geometry:
+        {
+            type:           Point
+            coordinates:    [lat,lng]
+        },
+        properties:
+        {
+            panelId:    {[
+                compania:   String
+                id:         String
+            ]},
+            periodo:    	Number,
+            inclinacion:	Number,
+            orientacion:	Number,
+            energiaMed: 	Number,
+            insolacMed: 	Number,
+            tmpAireMed: 	Number,
+            velVtoMed:  	Number,
+            humedadMed: 	Number
+
+        },
+    ]}
+}
+

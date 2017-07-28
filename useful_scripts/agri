@@ -1,0 +1,5 @@
+#!/bin/bash
+
+termino=$1
+
+find . -type f | xargs grep -i -I ${termino} 2>/dev/null | grep -v "\.svn\/\|fichero binario" | awk 'BEGIN{FS=":"} {print $1}' | sort | uniq 

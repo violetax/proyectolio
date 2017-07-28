@@ -1,0 +1,341 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>GeoApp con GeoJSON, MongoDB y Leafletjs</title>
+
+ <link rel="stylesheet" href="styles.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<main class="container-fluid">
+
+<section class="1"> 
+<header><h2>Montar el entorno</h2></header>
+
+<dl>
+	<dt> Tecnología necesaria</dt>
+	<dd> Nodejs</dd>
+	<dd> MongoDB</dd>
+	<dd> </dd>
+</dl>
+
+
+<div class="nota"> Uyyyy qué atrasada voy con la notas.</div>
+
+<div class="problema nodejs">ajax mostrar después de ajax crear solo funciona si el rpimer ajax fu crear</div>
+</section>
+<section class="2">
+	<header><h2> Formulario modal</h2></header>
+
+	<article class="tarea6 seccion2">
+		<h3> Registrarlo todo de gestion-docente-html5</h3> 
+
+		<dl>
+			<dt> Plan de registro</dt>
+			<dd> Ojear la carpeta doc con info de boiler plate</dd>
+			<dd> Entender los archivos sueltos: babelrc, gulpfile, package.json, humans y robots txt, browserconfig.xml, crossdomain.xml, index y 404 html</dd>
+			<dd> htmls: alumnos, clientes, cursos, profesores</dd>
+			<dd> Entender los contenidos de src: css main y normalize, js generic service, validate, main, librería y particulares </dd>
+			<dd> Nada que ver en: dist/css(styles-min), img</dd>
+		</dl>
+	
+
+<h4> Carpeta doc con info de boiler plate</h4> 
+<div class="general">
+Doc contiene una intro a los archivos básicos de la/una app. La propia carpeta doc es un espacio típico para la cçdocumentación de cualquier proyecto:
+
+.
+├── css
+│   ├── main.css
+│   └── normalize.css
+├── doc
+├── img
+├── js
+│   ├── main.js
+│   ├── plugins.js
+│   └── vendor
+│       ├── jquery.min.js
+│       └── modernizr.min.js
+├── .editorconfig
+├── .htaccess
+├── 404.html
+├── apple-touch-icon.png
+├── browserconfig.xml
+├── index.html
+├── humans.txt
+├── robots.txt
+├── crossdomain.xml
+├── favicon.ico
+├── tile-wide.png
+└── tile.png
+
+</div>
+<h4> Archivos sueltos: babelrc, gulpfile, package.json, humans y robots txt, browserconfig.xml, crossdomain.xml, index y 404 html</h4> 
+<div class="general">
+<h5>├── .editorconfig</h5>
+Mecanismo para mantener estilos de código consistentes entre disstintos editore.
+<h5>├── .htaccess</h5>
+Configuración de servidor web por defecto, de Apache.
+<h5>├── 404.html</h5>
+Página de error con estilo propio.
+<h5>├── browserconfig.xml</h5>
+Configuración relacionada con IE11 y visualización, creo, porque lista pngs.sn
+<h5>├── index.html</h5>
+Punto de inicio de la experiencia de usuario. Se cargan aquí los js, y también algo relacionado con  Google Universal Analytics.
+<h5>├── humans.txt</h5>
+Quién lleva esto, y con qué tecnología: atribuciones nivel 0.
+<h5>├── robots.txt</h5>
+REstriccones de uso a los robots.
+<h5>├── crossdomain.xml</h5>
+Configuración de accesos permitidos para peticiones cruzadas. 
+</div>
+<h4> HTMLs:  alumnos, clientes, cursos, profesores</h4> 
+<div class="general">
+Una carpeta para cada "entidad superior", y cada una de ellas con páginas de: plural, singular y detalle.
+	<dl>
+		<dt> Todas las páginas CARGAN</dt>
+		<dd> En el head:
+		<ul>
+			<li> link rel="stylesheet" href="../dist/css/styles-min.css"</li>
+		</ul></dd>
+		<dd> Antes de cerrar body:
+		<ul>
+			<li> script src="../dist/js/all.min.js"</li>
+		</ul>
+		</dd>
+	</dl>
+<div class="subgeneral">
+<h5> Alumnos</h5>  
+<h6> Plural</h6> 
+<ul>
+	<li>  nav:    ul_ de a hrefs</li>
+	<li> modal:  a href con data-data:
+a title="Crear" href="#" data-toggle="modal" data-target="#myModal"	
+--> de data-target="#myModal" a --> id="myModal" en un div con role="dialog"
+</li>
+<li> div class="modal fade" tabindex="-1" role="dialog" id="myModal"</li>
+<li> form:   dentro de árbol de divs que construyen el modal. Cada campo del form como div class="form-group" con un: <ol>
+		<li> label for=""</li>
+		<li> input type==name==id~=placeholder y class="form-control"</li>
+	</ol></li>
+</ul>
+<h6> Singular</h6> 
+<ul>
+	<li> nav:	repite a hrefs</li>
+	<li> div id="page con header id="page-header", main id ="page-body" con header anunciando formulario, y un div vacio; footer id="page-footer".</li>
+</ul>
+<h6> Detalle</h6> 
+<ul>
+	<li> nav:	repite</li>
+	<li> Título</li>
+	<li> div id="page con header id="page-header", main id ="page-body" vacio, y footer id="page-footer".</li>
+</ul>
+</ div>
+<div class="subgeneral">
+ <h5> Clientes</h5> 
+	</dl>
+<h6> Plural</h6> 
+<ul>
+	<li> nav</li>
+	<li> Se repiten los id en header, main</li>
+	<li> div con a hrefs para creay borrar</li>
+</ul>
+<h6> Singular</h6> 
+<ul>
+	<li> nav</li>
+	<li> div id="page con header id="page-header", main id ="page-body" vacio, y footer id="page-footer"</li>
+</ul>
+<h6> Detalle</h6> 
+<ul>
+	<li> nav</li>
+	<li> Igual que el singular: div id="page con header id="page-header", main id ="page-body" vacio, y footer id="page-footer"</li>
+</ul>
+</div>
+<div class="subgeneral">
+ <h5> Cursos</h5> 
+<h6> Plural</h6> 
+<ul>
+	<li> nav</li>
+	<li> div id="page con header id="page-header", main id ="page-body" con section id=listado, a para crear, borrar y div vacio;  footer id="page-footer"</li>
+</ul>
+<h6> Singular</h6> 
+<ul>
+	<li> nav</li>
+	<li>  div id="page con header id="page-header", main id ="page-body" vacio, y footer id="page-footer"</li>
+</ul>
+<h6> Detalle</h6> 
+<ul>
+	<li> nav</li>
+	<li>  div id="page con header id="page-header", main id ="page-body" vacio, y footer id="page-footer"</li>
+</ul>
+</div>
+<div class="subgeneral">
+ <h5> Profesores</h5> 
+<h6> Plural</h6> 
+<ul>
+    <li> nav</li>
+    <li> div id="page con header id="page-header", main id ="page-body" con section id=listado, a para crear, borrar y div vacio;  footer id="page-footer"</li>
+</ul>
+<h6> Singular</h6> 
+<ul>
+    <li> nav</li>
+    <li>  div id="page con header id="page-header", main id ="page-body" vacio, y footer id="page-footer"</li>
+</ul>
+<h6> Detalle</h6> 
+<ul>
+    <li> nav</li>
+    <li>  div id="page con header id="page-header", main id ="page-body" vacio, y footer id="page-footer"</li>
+</ul>
+</div>
+</div>
+<h4> SRC: css main y normalize, js generic service, validate, main, librería y particulares</h4> 
+<div class="general">
+<div class="subgeneral">
+	<h5> CSS</h5>  
+	<div class="referencia"> https://teamtreehouse.com/community/difference-between-maincss-and-normalizecss</div>
+	Main a place you'd put your main styles in, normalize.css clears up all sorts of cross browser inconsistencies...
+	<h6> main</h6> 
+	<ul>
+		<li> Base styles</li>
+		<li> Browser Upgrade</li>
+		<li> Custom:
+			<ol>
+				<li> #wrapper</li>
+				<li> #page</li>
+				<li> #page-header</li>
+				<li> #page-footer</li>
+				<li> #page-body</li>
+				<li> #contact-form</li>
+				<li> table, main, section, div, footer ... </li>
+				<li> a:hover, a:active, a:link, a:visited, li:hover </li>
+				<li> ...</li>
+			</ol>
+		</li>
+		<li> Responsive Styles
+		@media screen and (max-width : 760px){
+		...
+		</li>
+		<li> Helper classes</li>
+	</ul>
+	<h6> normalize</h6>
+</div>
+<div class="subgeneral">
+ <h5> JS</h5> 
+ <h6> Generic service</h6> 
+<div class="descgral">
+	Es una clase que se exporta:
+	<div class="code">
+		export class GenericService {
+	</div>
+	Tiene un constructor vacio:
+	<div class="code">
+		constructor() {}
+	</div>
+	HAce un AJAX que toma: url, method, data (lo que se transfiere <div class="pregunta"> ¿En cualquier dirección? </div>) y type (la data). Añade otros parámetros: crossDomain, contentType.
+	Este ajax se organiza como PROMISE. 
+	<div class="definicion"> 
+	PROMISE solo es el nombre para la cualidad de los objetos javascript de acceder a métodos de tratamiento posterior y condicionado de datos contenidos en un objeto.
+<div class="referencia"> https://davidwalsh.name/write-javascript-promises</div> 
+	 </div>
+Resumiendo:
+El Generic service es un AJAX para hacer resolve o reject de lo que se transfiere.
+ </div>
+ <h6> Main</h6> 
+<div class="descgral"> 
+	Se hace un "use strict", que previene acciones inesperads. <div class="referencia"> https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it</div>
+	Se import todo desde ./jsnamesinextension:
+	<div class="code">
+import * as alumno from "./alumnos";
+import * as validate from "./validate";
+import * as cliente from "./clientes";
+import * as cursos from "./cursos";
+import * as profesores from "./profesores";
+import * as libreria from "./libreria";
+	</div>
+	Se aliasan los selectores a usar (<div class="code">
+ var $listadoAlumnos =$("#listadoAlumnos");	</div>).
+	Se asignan acciones de acuerdo con la navegación. Esas acciones son funciones que se definen en cualquier js conectado. Ejemplo:
+	<div class="code">
+ if($listadoAlumnos.length) {//estamos en la página de alumnos
+ let p1 = alumno.renderizar(); 
+    p1.then(function (txt) {
+        $listadoAlumnos.find("div.flexcontainer:last-child").append(txt);
+}).catch(function (txt) {
+	</div>
+	Se conecta con una app remota via RESTs a través de una variable que se carga a la vez que la página, y usa el elemento window.location:
+	<div class="definicion">  can be used to get the current page address (URL) and to redirect the browser to a new page <div class="referencia"> https://www.w3schools.com/js/js_window_location.asp</div></div>
+	<div class="code">
+		 let txt= window.location.protocol + '//' + window.location.host+"/gestion-docente/";
+	</div>
+Se añade la función pseudo-estándar serialize. 
+<div class="code">
+$.fn.serializeObject = function() {
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name]) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
+</div>
+<div class="nota"> En main.js se usa jQuery pero no se hace function.rady.</div>
+<div class="nota"> Las funciones de main.js NO se exportan.</div>
+</div>
+ <h6> Validate</h6> 
+ <div class="descgral"> use strict y funciones que se exportan.</div>
+ <h6> Librería</h6> 
+ <div class="descgral"> Una función exportada que sirve para extraer un parámetro de la url:
+	 <div class="code">
+ export function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+	 </div>
+ </div>
+ <h6> Particulares: alumnos</h6> 
+ <div class="descgral">
+<ul>
+	<li> Se importa generic service: el ajax general</li>
+	<li> se establece la url para la ajax call</li>
+	<li> ¡se usan los métodos del java service!
+		Se hace el ajax de forma explícita pero con super., que se refiere al service.GenericService <div class="pregunta"> JS services? </div>, y se le pasan lo parámetros del super.
+		<div class="code">
+  getAll(){
+        return super.ajax(urlAlumnos,"get",null,"text");
+    }
+		</div>
+	</li>
+	<li>
+Se exporta una función !que crea un JavaService de la aplicación remota!
+<div class="code">
+ export function renderizar () {
+let as = new AlumnoService();
+</div>
+Esta función retorna una Promise.
+	</li>
+	<li> Se definen otras funciones sin exportar.</li>
+	<li> Se exporta una clase que es (ni más ni menos que) ¡el Bean!</li>
+</ul>
+ </div>
+ <h6> Particulares: clientes</h6> && <h6> Particulares: cursos</h6> && <h6> Particulares: profesores</h6> son iguales a alumnos.
+</div>
+</div>
+</article>
+
+
+</section>
+</main>
+<script type="text/javascript" src="codigo.js"></script>
+</body>
+</html>

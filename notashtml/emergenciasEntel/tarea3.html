@@ -1,0 +1,383 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tarea 3</title>
+
+ <link rel="stylesheet" href="styles.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<main class="container-fluid">
+<div class="descgral"> 
+Hacer aparecer cuando existe el docu extra, una imágen de documento en el último campo de Voluntarios con la funcionalidad de descargar el documento.
+Para eso en el js añado el atributo actions:"formater" a la pestaña correspondiente. 
+ actions:"formater" por su cuenta añade botones de editar y borrar, pero lo sobreescribimos con una función: jQuery.fn.fmatter.actions = function(cellval,opts, rwd) 
+</div>
+
+<section class="1"> 
+<header><h2>Pasos tarea 3</h2></header>
+
+<ol>
+  	<li>Bup files</li>
+	<li> Add existeDoc to: bean, daoImpl, Controller, js
+	**retroact: Add iddocumentoT07 para la func fn.fmatter.actions que hace un findby</li>
+	<li> Copy-and-edit function fn.fmatter.actions ... </li>
+	<div class="nota">Además de OPERACIÓN-BUP hay que desarrollar una PREOP con check-list para sacar qué VARIABLES, PROPIEDADES, ATRIBUTOS, se van a tocar, y sus dominios de valor... </div>
+</ol>
+
+<div class="general">
+	<dl>
+		<dt> Edits to files:</dt>
+		<ol>
+			<li> XClassBean
+				<dl>
+					<dt> Añadir campos para:</dt>
+					<dd> Load multipart file with metadata</dd> 
+					<dd> Load actual file as bytes to bdd</dd>
+					<dd> Marcador de que existe file</dd>
+					<dd> Id of file para user actions en la app</dd>
+				</dl></li>
+				<li> DaoImpl
+					<ul>
+						<li> Hacer MAPPERS
+							<div class="divli">
+								<dl>
+									<dt> CUESTIONES SOBRE LOS MAPPERS</dt>
+									<dd> Cada mapper se corresponde con un CONSTRUCTOR en el XClassBean</dd>
+									<dd> Los argumentos del constructor pueden:
+									<ul>
+										<li> Recoger un valor de la bdd (resultSet.get...) y asignárselo al arg String del getter</li>
+										<li> Ser null</li>
+									</ul></dd>
+								</dl>
+								<div class="pregunta IMPORTANTE"> ¿Qué implicaciones tiene pasar un arg al mapper como resulset.val o como null? ¿Qué relaciones tiene con la definición del tipo de valor en la bdd? </div>
+							</div>
+						</li>
+						<li> Hacer QUERIES</li>
+						<dl>
+							<dt> Ojo en las queries con: </dt>
+							<dd> El orden de los parámetros</dd>
+							<dd> La sintaxis en general: cuidar que haya espacios entre cada palabra, cuidar las comas</dd>
+						</dl>
+					</ul>
+				</li>
+				<li> Controller
+					<ul>
+						<li> Ajustar constructors: new
+							<ul>
+								<li> new vacio, y se le hacen setters con @PathVariable args. Ejemplo getById</li>
+								<li> new con constructor predefinido y se le pasa cada arg de cualquier manera admitida: con un @RequestParam, un null, o -me imagino- una variable de elaboración propia.
+									<div class="pregunta IMPORTANTE"> Implicaciones de, limitaciones de, requerimientos para, o relaciones con usar null en un costructor del controller.</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+		</ol>
+	</dl>
+</div>
+
+</section>
+
+<section class=2"">
+	<header><h2> Problemas tarea3</h2></header>
+
+	<article class="notas problema tarea3">
+		<h3> Notas varias: </h3> 	
+
+Sobre SQLS y MAPPERS con resultSet.vals y nulls:
+
+- paso al MAPPER:
+	- resultSet.val para:
+		- expe
+		- fincorp
+		- desc
+	- string para:
+		- existeDoc
+	- NULL para:
+		- multipart file
+		- bytes docu
+		- Long idDocu
+
+- SQLS:
+	- add / INSERT:
+		- paso:
+			- 3 resultSet.val para: expe, fincorp y desc
+			- 1 NULL para idDocu
+******CONTENCIOSO********
+
+	- update / UPDATE:
+		- paso:
+			- 3 resultSet.val para: expe, fincorp y desc
+			- 1 NULL para idDocu
+******CONTENCIOSO********
+
+	- find / SELECT t1.col var
+		- paso:
+			- 3 resultSet.val para: expe, fincorp y desc
+			- 1 NULL para idDocu
+******CONTENCIOSO********
+
+Igual de ***CONTENCIOSO** con findAll / SELECT DISTINCT t1.col var, y findAllLike plus un where.append  con 1 NULL para idDocu
+
+***CONTENCIOSO** el findAllCount / SELECT COUNT  porque hay un where.append con 1 NULL para idDocu
+
+SOLUCIÓN??? => el iddocu NOT NULL but RESULTSET.VAL.
+NOPE! aún error.
+SOLUCIÓN??? => PROBANDO A CIEGAS: en el controller.getALL pasar el iddocu como ReqPar. NOPE - regreso a no ReqPar iddocu.
+
+DEBUG:
+- breakpoints @:
+	1º. Controller: getAll
+
+	... gilipollas: dejé de tomar notas y me olvidé lo que hice.
+
+	Ahora carga, pero, igual que ayer, el EDITAR no coge los datos.
+	En la sql de getbyid docut07 es null, iddocut07 también NULL aunque con id asignado. En update NO tiene tal id.
+
+*****NO GUARDA EL PDF: el JS da mensaje de exito, pero en la bdd NO ESTÁ *****
+
+aL DEBUG UPDATE: SE VE QUE NO HA CARGADO EL DOC.
+
+
+SOLUCIÓN A QUE NO CASQUE AL CARGAR: QUITAR EL DISTINCT DE LAS SELECTS CUANDO SE MANEJAN BLOBS, PORQUE CON ESO LO QUE CASCA ES ORACLE. 
+</div>
+
+<div class="pregunta"> 
+
+	En el mapper: return new constrye asignando a cada constr.arg un val bien d la bdd (resultSet) bien un null, bien una var.
+	PERO: en el IF previo para setExisteDoc, ¿cómo relaciona resultSet.getBytes o getString con el campo que queremos???
+	Solo se me ocurre que haga la asignación retroactivamente con el return new.
+
+</div>
+
+<div class="subarticle"> Para el test de existDoc:
+
+	- pruebo a hacerlo con el idDoc coni en el daoImpl:
+	
+	Long iddoc = resultSet.getLong("IDDOCUMENTOT07");
+			if (iddoc != 0) {
+				existeDoc = "true";
+			}
+			<p> El JS me da mensaje de éxito, pero el debug con un BP en rwMap no ha saltado (ni por supuesto hubo operación)., pero el debug con un BP en rwMap no ha saltado (ni por supuesto hubo operación).  </p>
+			<p> Parece que que el rwMap se hace una vez y no se vuelve a hacer.</p>
+			<p> En REC EXTERNOS,al cargar la página se ejecuta el mapRow 1 vez por row, y ExisteDoc es true or false correctamente segun haya o no haya archivo.
+
+</div>
+
+<div class="problema tarea3">
+
+Al subir un documento:
+
+- el mapper se hace bien
+- el js recoge bien el elemento: c:\fakepath\sample_PDF.pdf
+- js da un mensaje de éxito
+- pero el update NO ha recogido na de na
+- con un código en apariencia igual, el update de RecExternos sí lo recoge
+- pero ni siquiera en el update RecExternos se coge de la bdd el preexistente
+
+<div class="pregunta tarea3"> 
+	<p> 
+	¿Qué row mapper se utiliza en cada query? 
+	</p>
+	<p>Solo se usa rowMApper para find, findAllLike y findAll. </p>
+<dl>
+	<dt> Mapper - query en RecExternos</dt>
+	<dd> 
+		<dl>
+			<dt> rwMap con resultSet.getBytes("DOCUMENTOT29") para:</dt>
+			<dd> find</dd>
+			<dd> findAllLike</dd>
+		</dl>
+	<dd> 
+		<dl>
+			<dt> rwMapAll con DOCUMENTOT29 a NULL:</dt>
+			<dd> findAll</dd>
+		</dl>
+	</dd>
+</dl>
+</div>
+
+<p> ¿Con qué query hace el update?</p>
+</div>
+
+<div class="paso"> 
+
+<p> En RECEXT ENTERARME DE: </p>
+<ol>
+<li>qué query actúa cuando se pincha el botón guardar desde Editar y desde Añadir - desde el controller en las funciones:
+
+- modificarDocumento	-- update:
+
+El ARCHIVO ORIGINAL:
+
+String query = "UPDATE Y3229S00 SET IDPLAN_T29=?,IDTIPODOCUMENTO_T29=?,DENOM_CAS_T29=?,DENOM_EUS_T29=?,DOCUMENTO_T29=?,TIPO_T29=?," + "NOMBRE_T29=?,UMODIF_T29=?,FMODIF_T29=?,FBAJA_T29=?,UBAJA_T29=?,FSOLBAJA_T29=?,USOLBAJA_T29=?, OID_T29=?, " + "EXTRADOC_T29=? WHERE IDDOCUMENTO_T29=?";
+
+y3229s00.getDocumento() = CommonsMultipart File
+y3229s00.getNombreT29() = sample.pdf
+existeDoc = null
+ids = Long
+y3225s == null ??
+
+NO HAY MAPPER
+
+Mi ARCHIVO:
+
+NULL POINTER EXCEPTION -> ole, no ha bía tocado el código de modify, y había variables cuyo valor se comprobabaun no teniendo ninguno asignado.
+
+RESUELTO el NPE, pero aun así no me rellena mi extraDoc -> creo que colisionan los campos. LO DEJO.
+<div class="pendiente"> ¿Por qué no salta un msg de campo obligatorio en RECEXT cuando no meto ningún doc??  Incluso si no meto el extra. </div>
+
+- insertarDocumento 	-- add: NO SE PUEDE (???) </li>
+<li> qué rowmapper se encarga: NINGUNO </li>
+<li> POR QUÉ el edit no recoge el file de la bdd --> <div class="pendiente"> ESTUDIAR EL JS DE RECEXT, PORQUE CREO QUE ALGO HAY AHÍ </div></li>
+<li> POR QUÉ el extraDoc no lo sube --- ¿porque colisionan campos y se lía?????????????? </li>
+</ol>
+
+<p> En VOLS ENTERARME DE: </p>
+<ol>
+<li>qué query hace quéi:
+	EDITAR - UPDATE </li>
+<li> qué rowmapper se encarga:
+ DE EDITAR, NINGUNO: NO HAY MAPPER, existeDoc == null</li>
+<li> cómo compara con recExt
+	<ul>
+		<li>VOLS edit -> PUT </li>
+		<li> RECEXT edit -> POST 
+			<div class="definicion"> The fundamental difference between the POST and PUT requests is reflected in the different meaning of the Request-URI. The URI in a POST request identifies the resource that will handle the enclosed entity. That resource might be a data-accepting process, a gateway to some other protocol, or a separate entity that accepts annotations. In contrast, the URI in a PUT request identifies the entity enclosed with the request – the user agent knows what URI is intended and the server MUST NOT attempt to apply the request to some other resource.
+				It’s about the difference between this:
+obj.set_attribute(value) # A POST request.  
+And this:
+obj.attribute = value # A PUT request.  
+<div class="referencia"> http://zacharyvoase.com/2009/07/03/http-post-put-diff/</div> <div class="pregunta"> ¿Por qué unos @RequestMapping llevan value u otros no?</div></div></li>
+		<li> El POST de RECEXT recoge varios @RequestParam, el PUT de VOLS recoge un @RequestBody BEAN</li>
+		<li> RECEXT es un POST, coge @RequestParam, tries byte[] bytesFichero = null;
+** DOCS not tries byte[] bytesFichero = null;
+		</li>
+		<li> RECEXT comprueba usuario y getById, ten update.
+		</li>
+		<li> VOLS comprueba usuario y pasa al update del bean del ReqBody, y dong!
+		</li>
+		<li> ***DOCS construye un bean (, comprueba el usario), le seta el doc del ReqPar y pasa al update (el update de una tabla, entiendo que esta clase no se llama en la creación ex novo de ningún tipo de registro en la bdd? </li>
+	</ul>
+</li>
+<li> POR QUÉ no sube el file a la bdd</li>
+
+<p> Cuestiones: </p>
+<ul>
+	<li> el edit	del RECEXT	es un POST	SIN @ResponseBody y CON valued @RequestMapping(value =</li>
+	<li> el edit	del VOLS	es un PUT	CON @ResponseBody y NOT valued @RequestMapping    </li>
+	<li> el add		del VOLS	es un POST	CON @ResponseBody y NOT valued @RequestMapping    </li>
+</ul>
+</ol>
+
+
+<div class="nota"> El js da mensaje de éxito y recoge el file correctamente con independencia de lo que haga java. </div>
+</div>
+</article>
+
+<article class="notas investigacion tarea3">
+	<h3> Inquisiciones sobre por qué no se sube un archivo</h3> 
+
+	<div class="descgral"> La diferencia encontrada hasta ahora es la presencia de @ResponseBody y @RequestBody, que a su vez tienen que ver con:
+		<ul>
+			<li> La llamada al controlador, porque si los quito, js dice que todo OK pero el debugger ni salta. ***************** PROBAR SI LOS QUITO Y AÑADO VALUE AL @RequestMapping PLUS INCLUIRLO EN EL JQUERY: ejemplo: jQuery("#detailForm_mantRecursosExternos").attr("action","../y32aRecursosExternos/modificarDocumento?R01HNoPortal=true"); para value ="modificarDocumento" **************** </li>
+			<li> " if you have Jackson on your classpath (and have an <mvc:annotation-driven> setup), Spring would convert the incoming JSON to a UserStats object from the post body (because you added the @RequestBody annotation) and it would serialize the returned object to JSON (because you added the @ResponseBody annotation)." <div class="referencia"> https://stackoverflow.com/questions/11291933/requestbody-and-responsebody-annotations-in-spring </div></li>
+			<li> Notar que el multipartFile en el XClassBean astá ANOTADO con @JsonIgnore, y si se lo quito la app FALLA EN EL JS, SIN QUE SALTE EL DEBUGGER, msg: "Se ha producido un error interno" </li>
+		</ul>
+	</div>	
+
+	<div class="subarticle"> PRUEBAS CON @ResponseBody, @RequestBody, value ="name", jQuery:
+
+		<div class="prere" text-indent="-2em" padding-left="2em">
+			<p> Quito @ResponseBody, @RequestBody, añado value ="edit": </p>
+			<p> Debugger NO SALTA, JS: Request method 'PUT' not supported </p>
+		</div>
+
+		<div class="prere" text-indent="-2em" padding-left="2em">
+ 			<p> Quito @ResponseBody, @RequestBody, añado value ="edit", cambio PUT por POST </p>
+			<p> Me sigue saliendo JS: Request method 'PUT' not supported --> ver jQuery: ¡no dice nada de PUT/POST!!!</p>
+			<p> El add ya estaba en POST, aun con @ResponseBody y  @RequestBody</p>
+		</div>
+		<div class="prere" text-indent="-2em" padding-left="2em">
+			 <p> Pongo  @ResponseBody, @RequestBody, añado value ="edit", cambio PUT por POST</p>
+			 <p> Sigue saliendo JS: Request method 'PUT' not supported</p>
+		</div>
+		<div class="prere" text-indent="-2em" padding-left="2em">
+			 <p> Vuelvo al original y añado el siguiente código:</p>
+			 <div class="codigo">
+			byte[] bytesFichero = null;
+
+			// y3207s00.getDocumento() =
+			if (y3207s00.getDocumentoT07() != null) {
+				bytesFichero = y3207s00.getDocumentoT07().getBytes();
+				y3207s00.setDocumento(bytesFichero);
+			}
+			 </div>
+			 <p> Por supuesto: no pasa nada. y3207s00.getDocumentoT07() ES NULL porqueee... la request no la recoge??? </p>
+		</div>
+
+		<div class="paso"> Que por qué el edit del VolMaint no coge el file ---> estudiar los jQueries</div>
+
+		<div class="paso"> Editado el RECEXT para que en la columna del multifile se carguen los bytes. No peta, y el debug del update me aprece igual para el file bueno- que sí se sube a la bdd- que para el malo - todo bien, pero no se sube. Ver el jQuery:
+			<ul>
+				<li> Añado un campo al rup_grid con la label documento y para el extraDoc</li>
+				<li> En fn.fmatter.actions cambio el name del doc bueno, por el mío.</li>
+				<li> ¡¡NO TOCO existeDoc!!! que es lo que parece clave</li>
+				<li> EDITADO RECEXT CONTROLLER: añado esta linita:
+				bytesFichero = extradocT29.getBytes(); 
+				</li>
+			</ul>
+			<p> El RECEXT JS original: en fn.fmatter.actions con docu bueno, existe=="true", y se muestran 6/8 en su columna </p>
+			<p> El RECEXT JS cambio: </p>
+			<p> En fn.fmatter.actions con docu bueno, existe=="false", y se muestran 2/8 en su columna </p>
+			<p> En fn.fmatter.actions con docu malo , existe=="false", y se muestran 2/8 en mi columna </p>
+<p> </p>
+		</div>
+	</div>
+
+	<div class="general">
+  Cómo carga los datos la página RECEXT:
+  - Según haya doc_bueno en la dbb, existeDoc = true or false
+  - coloca el icono del docu_bueno en la col que diga opts.colModel.name en jQuery.fn.fmatter.actions
+  - YO QUIERO QUE LEA EN LA BDD EXTDOC
+  - si subo el docu_malo directamente en la bdd, aparece en la col que diga opts.colModel.name. Osea, que la app lo lee. 
+	</div>
+
+	<div class="solucion">
+ JODEEEEEEEEEEEEEEERRRRR!!!!!!!!!!!! Leer el código paso a paso y confirmar que el flujo de datos es correcto, esa la solución.
+ El archivo en RECEXT se cogía perfectamente, pero en ciero punto yo lo borraba por haber copiado y pegado algo muy simple, pero que no confirmé.
+	</div>
+
+	<div class="problema">AHORA SUBIR UN ARCHIVO EN VOLUNTARIOS:
+	
+		1º/ POR QUÉ (RUP) ACTIONS SACA LOS DEFAULT????????????
+		SUGERENCIA --> NO HAY LOADRECURSOS --> añadir funcionalidad a loadVoluntarios!!!
+
+		2º/ Si uso @RequestBody delante de @RequestParam -> "El método PUT is not supported" SIN entrar al CTRL ponga PUT o POST en él.
+		Si no lo uso, entra al cntr pero NO recoge el docu.
+
+*****CAMBIO LA FUNC EDIT A LO BESTIA Y LA COPIO DE RECEXT, Y AUN: "El método PUT is not supported" SIN entrar al CTRL.
+
+**************EDITADO EL JS COPIADO LADRILLO A LADRILLO Y NO VA NI CAMBIAN LOS ICONOS. YA PASO.
+RECAPITULACIÓN:
+- No muxo. Leí muxo código javascript y jquery:
+- variables y selectores, funciones, htmls en string.
+-- no llegué a usar pero vi: debugger de Javasript.
+	</div>
+	
+
+</article>
+</section>
+
+
+</main>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JSs de RECEXT y VOLUNTS: DESCRIPCIÓN Y COMPARACIÓN</title>
+
+ <link rel="stylesheet" href="styles.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<main class="container-fluid">
+<div class="descgral"> 
+
+</div>
+
+<section class="1"> 
+<header><h2>Descripción de cada JS</h2></header>
+
+<article class="index-dd5 js">
+<h3> JS de RECURSOS EXTERNOS </h3> 
+
+<div class="descgral">
+	<ul>
+		<li> Se abre el archivo con jQuery(function($)</li>
+		<li> variable de idioma con rup -  var idioma=$.rup.lang;</li>
+		<li> test con variables sin declarar de perfil - if (perfil==perfilUG||perfil==perfilUDP||perfil==perfilUGE)</li>
+		<li> Abre la función principal: jQuery(document).ready(function() { </li>
+		<li> tests con variable sin declarar: if (msgError ,  if (msgOk, llaman a funciones jQuery:
+			<ul>
+				<li> .empty() </li>
+				<li> .attr("style", "display:none");</li>
+				<li> .rup_feedback( "option", "delay", null);</li>
+				<li> )[0].prop.jQueryGrid .rup_grid("reloadGrid");</li>
+			</ul>
+		</li>
+		<li> Se describe el rup_grid:
+			<ul>
+				<li> Define variables: hasMaint, loadOnStartUp, width, url, pagerName, rowNum, sortorder, sortname, loadComplete</li>
+				<li> colNames: con strings, o con constantes reconocidas desde:  jQuery.rup.i18n.base. ... . ...</li>
+				<li> colModel: coge el nombre de la propiedad en el XClassBean, editable, edittype, hidden, rupType, etc. </li>
+			</ul>
+		</li>
+		<li> Set parámetros en función .rup_maint:
+			<ul>
+				<li> jQueryGrid = nombre del selector que contendrá el JS html, en este caso una tabla.  </li>
+				<li> una primaryKey = la PK de la tabla en bdd </li>
+				<li> un modelObject = hace referencia a la  tabla en bdd, aunque no por su nombre en bdd</li>
+				<li> otros: detailButtons, searchForm, ... </li>
+				<li> onafterDetailShow: loadRecExternos **EN loadRecExternos ESTÁ LA FUNC TO UPLOAD </li>
+			</ul>
+		</li>
+		<li> // upload fichero </li>	
+		<li> // Upload integrado en formulario </li>
+		<li> function loadRecExternos</li>
+		<li> <p> //obtener documento pdf del grid, según fila seleccionada </p>
+			<p> function obtenerDocumentoRecExternosPDF(idDocumento) </p>
+		</li>
+		<li> function obtenerDocumentoRecExternosPDFImagen(rowid,grid){</li>
+		<li> function activarBotones(rowid, e)</li>
+		<li> function fncGridComplete(e) </li>
+		<li> function ocultarVisualizarBotones(usuario_selecteRow) </li>
+		<li> <p> //upload otros documentos y guardar en base de datos</p></li>
+		<p>  function guardarRecursosExternos()</p></li>
+		<li> AJAX //se ejecuta despues del submit del mantenimiento de recursos externos </li>
+		<li> <p> //mostrar imagen en grid</p></li>
+		<p> jQuery.fn.fmatter.actions = function(cellval,opts, rwd) ***LA QUE COPIÉ ORIGINALMENTE ***</p>
+		<li> <p> //pintar errores de validacion</p>
+			<p> function pintarErrorValidacion(error)</p></li>
+	</ul>
+</div>
+
+
+<div class="general">
+	<p> Código que voy a copiar de RECEXT a VOL:</p>  
+
+	<div class="codigo">
+ onafterDetailShow:loadRecExternos ***EN VOLS onafterDetailShow : loadVoluntarios
+	</div>
+
+	<div class="codigo">
+ // upload fichero
+            jQuery("<input type='hidden' name='tipoDocumento' id='tipoDocumento' value=''/>").insertBefore("#rup-maint_detailInput_detailForm_mantRecursosExternos_denomCasT29");
+            if (idioma == "es") {
+                jQuery("<div style='align:left;float:left;'><input type='button' class='ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' value="+jQuery.rup.i18n.base.GRID_mantDocumentos.mantGuardar+" id='guardarRecursosExternos' onClick='guardarRecursosExternos()' /></div>").insertAfter("button#Guardar");
+            }
+	</div>
+
+	<div class="codigo">
+	// Upload integrado en formulario
+    jQuery('#detailDiv_mantRecursosExternos').rup_upload({
+           fileInput: jQuery("#detailForm_mantRecursosExtenos_documentoT29"),
+           submitFormButton:jQuery("#guardarRecursosExternos"),
+           submitInForm:true
+    });
+	</div>
+
+	<div class="codigo">
+ function loadRecExternos(){
+ // quitar la imagen documento
+ // quitar paginación
+ // variable que se visualiza en tipo de documento
+ // Para el upload de documentos
+
+	jQuery("#detailForm_mantRecursosExternos").attr("enctype","multipart/form-data");
+	jQuery("#detailForm_mantRecursosExternos").attr("method","POST");	
+	jQuery("button#Guardar").attr("style","display:none;visibility:hidden");
+	jQuery("button#Gorde").attr("style","display:none;visibility:hidden");
+	
+	// botones guardar
+		jQuery("input#guardarRecursosExternos").attr("style","display:block;visibility:visible;float:left");
+		jQuery("input#guardarRecursosExternos").attr("value",jQuery.rup.i18n.base.GRID_mantDocumentos.mantGuardar);
+	
+
+	// Edicion de documento
+	if (jQuery("#mantRecursosExternos").rup_maint("getMode")=="edit"){
+		var existeDoc=jQuery("#detailForm_mantRecursosExternos_existeDoc").val();
+		idDocumento=jQuery("#detailForm_mantRecursosExternos_iddocumentoT29").val();
+		if (existeDoc=="true"){
+			var ocl = "onClick=\"obtenerDocumentoRecExternosPDF("+idDocumento+");\"";
+			// var url=obtenerDocumentoPDF('','0');
+			var str = "<div id='divImgDocumento' title='"+jQuery.rup.i18n.base.GRID_mantDocumentos.mantDocverDocumento+"' class='floating_left_pad_right' width='20px'>" +
+				" <laber for='imgDocumento'>"+jQuery.rup.i18n.base.GRID_mantDocumentos.mantDocverDocumento+"</label><br><a href='#' "+ocl+"  ><span class='imagenDocumentoDescargar' style='float:center'></span></a></div>";
+			 jQuery(str).insertBefore("#rup-maint_detailInput_detailForm_mantRecursosExternos_documentoT29");
+		}
+	
+	}
+
+}
+	</div>
+
+	<div class="codigo">
+ //upload otros documentos y guardar en base de datos
+function guardarRecursosExternos(){
+
+    jQuery("#rup-feedback_detail_mantRecursosExternos").empty();
+    jQuery("#rup-feedback_detail_mantRecursosExternos").rup_feedback("close");
+    var errores="";
+    // comprobar si estan todos los campos obligatorios
+    jQuery("#detailForm_mantRecursosExternos_denomCasT29").val()==""?errores=errores+jQuery.rup.i18n.base.rup_maint.denomCas:"";
+    jQuery("#detailForm_mantRecursosExternos_denomEusT29").val(jQuery("#detailForm_mantRecursosExternos_denomCasT29").val());
+
+    if (jQuery("#mantRecursosExternos").rup_maint("getMode")=="new"){
+        jQuery("#detailForm_mantRecursosExternos_documentoT29").val()==""?errores=errores+","+jQuery.rup.i18n.base.GRID_mantDocumentos.mantDocDocumento:"";
+    }
+    var existeErrores=pintarErrorValidacion(errores);
+    if (!existeErrores){
+        // action upload
+
+        jQuery("#detailForm_mantRecursosExternos").attr("method","POST");
+        jQuery("#detailForm_mantRecursosExternos").attr("action","../y32aRecursosExternos/insertarDocumento?R01HNoPortal=true");
+ var selectedRow = jQuery("#mantRecursosExternos")[0].prop.jQueryGrid.rup_grid("getSelectedRows")[0];      
+        var iddocumentoT26=jQuery("#mantRecursosExternos")[0].prop.jQueryGrid.rup_grid("getCol", selectedRow,"iddocumentoT29");
+        // submit del formulario
+        jQuery("#detailForm_mantRecursosExternos_idplanT25").val(jQuery("#detailForm_mantRecursosExternos_idplanT25").val());
+        jQuery("#detailForm_mantRecursosExternos_iddocumentoT29").val(iddocumentoT26);
+        jQuery("#detailForm_mantRecursosExternos_idtipodocumento").val("5");
+        jQuery("#detailForm_mantRecursosExternos_denomEusT29").val(jQuery("#detailForm_mantRecursosExternos_denomCasT29").val());
+        jQuery("#detailForm_mantRecursosExternos").submit();
+    }
+}
+	</div>
+
+	<div class="codigo">
+ //mostrar imagen en grid
+jQuery.fn.fmatter.actions = function(cellval,opts, rwd) {
+    var  str='';
+    if (opts.colModel.name=='documentoT29'){
+        var op ={keys:false, editbutton:false, delbutton:false, editformbutton: false,documentoButton: true};
+        if(!jQuery.fmatter.isUndefined(opts.colModel.formatoptions)) {
+            op = jQuery.extend(op,opts.colModel.formatoptions);
+        }
+        var rowid = opts.rowId, str="",ocl;
+        if(typeof(rowid) =='undefined' || jQuery.fmatter.isEmpty(rowid)) {return "";}
+
+        if (op.documentoButton){
+
+             var existe=rwd['existeDoc'];
+
+             if (existe=="true"){
+                 var grid=opts.gid;
+                var  ocl = "onClick=\"obtenerDocumentoRecExternosPDFImagen(" +rowid+ ",'"+grid+"');\"";
+                 // var url=obtenerDocumentoPDF(rowid,'');
+                    str = str+"<div title='"+jQuery.rup.i18n.base.GRID_mantDocumentos.mantDocverDocumento+"' style='float:center;margin-left:5px;align:center'><a href='#'  "+ocl+" class='external'><span class='imagenDocumento'></span></a></div>";
+             }
+        }
+    }
+	 return   str ;
+};
+	</div>
+
+</div>
+
+</article>
+
+
+</section>
+</main>
+</body>
+</html>
+

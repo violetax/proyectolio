@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source movetoHist.fu
+
+fity=pyfi
+pref=py
+ext=py
+scrd="/home/violeta/filecollections/pyfiles"
+cmd=open_a_works_file.scr
+
+movetoHist.fu $1

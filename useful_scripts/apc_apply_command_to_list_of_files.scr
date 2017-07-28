@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#example usage:
+#chf 'wc -l' ldp*
+
+cmd=$1
+
+shift
+
+if [[ -f $1 ]]; then
+	lista=`cat $1`
+else
+	lista=`ls $@` 
+fi
+
+
+for file in $lista 
+do
+	$cmd $file
+done

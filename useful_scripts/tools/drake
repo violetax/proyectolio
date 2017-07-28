@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#original file content:
+#drip -cp ${DRAKEPATH}/drake.jar drake.core "$@"
+
+#copied from the book:
+drip -cp $(dirname $0)/drake.jar drake.core "$@"

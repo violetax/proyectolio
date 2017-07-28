@@ -1,0 +1,58 @@
+#!/bin/bash
+
+#scripr to tar all new bup files, and update existing ones
+
+#go to folder to cleanup
+#specify ~ is violeta's because anacron root runs this, and otherwise will take ~ as root's home
+cd /home/violeta/bups
+
+#get existing tars, and new bups
+ls *tar >  tarfiles.tmp
+
+#check there're bup files and then proceed to get, edit, search through them.
+
+if ls *bup 1>/dev/null; then
+	
+ls *bup >  bupfiles_long.tmp
+ls -Aa | grep "^\..*bup" > bupfiles_dot.tmp
+
+sed -i 's/=.*//' bupfiles_long.tmp
+sed -i 's/=.*//' bupfiles_dot.tmp
+#sed -i 's/^\.//' bupfiles_long.tmp
+uniq bupfiles_long.tmp bupfiles.tmp
+uniq bupfiles_dot.tmp dotbupfiles.tmp
+
+#for each bup if it is in the tar list, extract and retar/ else tar
+
+for file in `sed -ne 'p' bupfiles.tmp`
+do
+	if grep $file tarfiles.tmp 1>/dev/null
+	then
+		tar -xf ${file}.tar 2>/dev/null && tar -cf ${file}.tar ${file}=* 2>/dev/null
+	else
+		tar -cf ${file}.tar ${file}* 2>/dev/null
+	fi
+
+	rm ${file}=*
+
+done
+
+for file in `sed -ne 'p' dotbupfiles.tmp`
+do
+	if grep ${file#\.} tarfiles.tmp 1>/dev/null
+	then
+		tar -xf ${file#\.}.tar && tar -cf ${file#\.}.tar ${file}=* 
+	else
+		tar -cf ${file#\.}.tar ${file}*
+	fi
+# rm bups 
+rm ${file}=* 
+
+done
+	echo "Updated :-)!"
+#end test if there are bupfile
+fi
+
+rm *tmp
+echo "Script run."
+

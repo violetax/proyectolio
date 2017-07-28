@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Desarrollar REST services de prueba</title>
+
+ <link rel="stylesheet" href="styles.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<main class="container-fluid">
+<div class="descgral"> 
+Está montado un RestService básico (aprendí un montón y sin preguntar!).
+Ahora toca:
+- hacer un method POST
+- un formulario en index.html que recoja unos datos ¿se los mande al rest? ¿y el rest post? los saque por consola.
+- ir a leaflet y probar cosas.
+</div>
+
+<section class="1"> 
+<header><h2>Hacerlo funcionar</h2></header>
+
+<div class="nota"> ¿Qué URLs hay?
+
+	<ol>
+		<li> GENERAL: localhost:port + web.xml? - init-param - param-value: proname - WelcomePages </li>
+		<li> REST: localhost:port + web.xml? - init-param - param-value: proname - web.xml - servlet-mappingt: /rest/ +
+		 @Path[/@PathParam]
+		 **Si el @PAth está repetido se ve que sigue un orden de prioridades:
+		 - entre @Produces(MediaType.TEXT_HTML) y nada, coge @Produces
+		 - entre public String y public Response, sin @Produces ninguno, coge Response
+		</li>
+	</ol>
+	
+Ejemplos:
+
+http://localhost:8080/copia/	#abre index.html
+
+http://localhost:8080/copia/rest/	#lanza @GET
+
+http://localhost:8080/copia/ con FORMULARIO METHOD="POST"	#lanza @POST
+
+<div class="pregunta">
+	<ol>
+		<li> ¿Maneras de lanzar POST más allá de con un formulario?</li>
+		<li> ¿Usos del no necesario en html5 action="" en un form? Sean:
+			<ul>
+				<li> En html5 no hace falta parece que si se usan predefined classes: form-signin, form-control. Si no se usan ¡SÍ hace falta! y lleva el nombre completo de la url desde proname: rest/@Path **NOTA QUE NO HAY "/", Y QUE EN EL CONTROLLER, PATH NO LLEVA rest***</li>
+			</ul>
+		</li>
+	</ol>
+
+</div>
+
+</div>
+
+<div class="general">
+ DONG! 
+ <ul>
+	 <li> Meto el js de jquery como local para que funcione sin cargarlo: IMP! cargarlo en cada página para que funcione... </li>
+	 <li> ajax es una función que toma opcionalmente 3 args. El primero es el resultado de la llamada, en mi caso el resultado de un REST. </li>
+	 <li> a ajax le meto directamente la url a la que llama, y lo que hace en success y en error </li>
+	 <li> llamada por defecto es GET, puedo especificar otro tipo con type. </li>
+	 <li> al POST le paso los request args con data</li>
+ </ul>
+
+
+</div>
+
+
+</section>
+</main>
+</body>
+</html>
+

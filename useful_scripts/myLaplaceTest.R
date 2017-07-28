@@ -1,0 +1,13 @@
+myLaplaceTest=function(x){
+	n=length(x)
+	x.matrix=matrix(rep(x,n),ncol=n,byrow=F)
+	x.matrix[lower.tri(x.matrix)]=0
+	int.sum=apply(x.matrix,2,sum)
+	ext.sum=cumsum(int.sum)
+	int_sum=int.sum[-1]
+	ext_sum=ext.sum[-n]
+	u_num=ext_sum/(1:(n-1))-int_sum/2
+	u_den=int_sum*sqrt(1/(12*(1:(n-1))))
+	u=c(0,u_num/u_den)
+	return(u)
+}

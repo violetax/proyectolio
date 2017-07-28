@@ -1,0 +1,250 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tarea 1</title>
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<main class="container-fluid">
+<section class="1"> 
+<header><h2>Descripción tarea:</h2></header>
+
+<div class="tarea">
+
+Añadir campos para editar sobre la entidad Y32AVoluntarios.
+
+1º/ Añadirlos en la bdd
+
+2º/ Ajustar: 
+	2.1 - el MODEL (XClassBean)
+	2.2 - el MAPPER (dao)
+	2.3 - el controller (plus si quiero meter validaciones, por ejemplo)
+
+3º/ Ampliar el js:
+	3.1 - add colName en el jQuery("#GRID_mantVoluntarios").rup_grid
+		3.1.1 - prev add LABEL in rup.i18n.json
+	3.2 - add colModel:
+			- edittype = text or hidden, for user
+			- rupType = datepicker (especial fechas del gobvas), combo o numeric (no más opciones por lo menos en este js).
+	3.3 - y ya? algo me enseñó de grids hijos, pero no hacíamos nada ahí???
+
+4º/ Ampliar el jsp con un SEARCH BY
+
+</div>
+
+<article class="tarea1 1">
+	<h4>Campos añadidos en la bdd:</h4> 
+	<ul>
+		<li>EXPERIENCIA_T07	-	number</li>
+		<li>FINCORP_T07		-	date</li>
+		<li>DESCWORK_T07	-	varchar</li>
+	</ul>
+</article>
+
+<article class="tarea1 2">
+	<h4>Ajustar el model:</h4> 
+	<p> Añadidos 3 private properties:</p>
+	<p> 
+	private Long experienciaT07;
+	private Date fincorpT07;
+	private String descworkT07;</p>
+
+	<p>Alargado el constructor:</p>
+	<p>
+	... Long experienciaT07, Date fincorpT07, String descworkT07) {
+	...
+	this.experienciaT07 = experienciaT07;
+	this.fincorpT07 = fincorpT07;
+	this.descworkT07 = descworkT07;
+	</p>
+	<p> Añadidos getters and setters, y ampliado el toString.</p>
+
+	<h4>Ajustar el mapper (dao)</h4> 
+	<ol>
+		<li>Add fields to RowMapper rwMap </li>
+		<li>Edit queries: add fields to insert into, add paras as ?, use getters at jdbc.update</li>
+		<div class="pregunta"> ME imagino que la funcionalidad del search va aquí??? </div>
+	</ol>
+
+	
+	<p> Añado:	</p>
+	<p> resultSet.getLong("EXPERIENCIAT07") == 0 ? null
+							: resultSet.getLong("EXPERIENCIAT07"),
+					resultSet.getDate("FINCORP07"),
+					resultSet.getString("DESCWORKT07"));</p>
+	<p> El test se lo añado por la cara.</p>
+	<div class="pregunta"> ¿Qué son los tests del DaoImpl?</div>
+	<div class="problema weblogic">No arrancaba. Me parecía que apuntaba al datasource que no era. Dí muchas vueltas sin hacer nada. Se me ocurrió si sería que el host file se actualiza cada día. HORROR: pregunté. No fui clara respecto a que que quería ese file, en parte porque no era más que una occurrencia insegura. Me miraron mal porque están ocupados y me ignoraron.
+		Abrí la app en Firefox y funcionó. El problema era que en Chrome no va. Toma ya.
+	</div>
+	<h5>Editar las queries</h5> 	
+
+	<ol>
+		<li> INSERT INTO - add 3 getters</li>
+		<li> UPDATE      - add 3 getters</li>
+		<li> <div class="pendiente tarea1"> PENDIENTES: find, remove all or else, findAll, findAllCount, findAllLike, (ObtenerAñosFNac - no), obtenerNumVoluntarios, existeVoluntario, activarVoluntario </div> </li>
+		</ol>
+	
+	<ol>
+		<li> 
+			<h6>  INSERT INTO </h6> 
+				<ol><li> Add 3 ?</li>
+					<li> Add y3207s00.getExperienciaT07(), y3207s00.getFincorpT07(), y3207s00.getDescworkT07());</li></ol>	
+		</li> 
+		<li> 
+			<h6> UPDATE</h6> 
+				<ol><li> Add  EXPERIENCIA_T07=?, FINCORP_T07=?, DESCWORK_T07=?</li>
+				<li> Add y3207s00.getExperienciaT07(), y3207s00.getFincorpT07(), y3207s00.getDescworkT07());</li></ol>	
+		</li>
+	</ol>
+
+
+
+	<h4>Ajustar el controller</h4> 
+
+	<p> En el getAll añado los 3 nuevos campos como: @RequestParam(value = "...", required = false) DataType ..., y posteriormente en el constructor new.</p>
+	<div class="pendiente tarea1">Ampliar la funcionaliddad exportar lçpara añadir los nuevos campos.</div>
+
+</article>
+
+<article class="tarea1 3">
+	<div class="descgral"> 
+3º/ Ampliar el js:
+	3.1 - add colName en el jQuery("#GRID_mantVoluntarios").rup_grid
+		3.1.1 - prev add LABEL in rup.i18n.json
+	3.2 - add colModel:
+			- edittype = text or hidden, for user
+			- rupType = datepicker (especial fechas del gobvas), combo o numeric (no más opciones por lo menos en este js).
+	3.3 - y ya? algo me enseñó de grids hijos, pero no hacíamos nada ahí???
+	</div>
+
+	<ol>
+		<li> 
+			<h6> Add LABEL in rup.i18n.json</h6> 
+			<p> "mantVolExtraExperiencia":"Extra Experiencia",
+		"mantVolExtraFIncorporacion":"Extra F. Incorporación",
+		"mantVolExtraDescripcion":"Extra Descripción"</p>
+		</li>
+		<li> 
+			<h6> Add colName en el jQuery("#GRID_mantVoluntarios").rup_grid</h6> 
+			<p>jQuery.rup.i18n.base.GRID_mantVoluntarios.mantVolExtraExperiencia,
+									jQuery.rup.i18n.base.GRID_mantVoluntarios.mantVolExtraFIncorporacion,
+									jQuery.rup.i18n.base.GRID_mantVoluntarios.mantVolExtraDescripcion
+			</p>
+		</li>
+		<li> 
+			<h6> Add colModel</h6> 
+
+			<p> Un rupType : "numeric" para Long Experiencia.</p>
+			<p> Un rupType : "datepicker" para Date FIncorporacion.</p>
+			<p> Ruptype por defecto para String Descripción.</p>
+
+			<p>
+			
+			{
+										name : "experienciaT07",
+										label : jQuery.rup.i18n.base.GRID_mantVoluntarios.mantVolExtraExperiencia,
+										index : "experienciaT07",
+										width : "75",
+										editable : true,
+										rupType : "numeric",
+										editoptions : {
+											size : "2",
+											maxlength : "2"
+										}
+									},
+									{
+										name : "fincorpT07",
+										label : jQuery.rup.i18n.base.GRID_mantVoluntarios.mantVolExtraFIncorporacion,
+										index : "fincorpT07",
+										editable : true,
+										rupType : "datepicker",
+										editoptions : {
+											size : "10"
+										}
+									},
+									{
+										name : "descworkT07",
+										label : jQuery.rup.i18n.base.GRID_mantVoluntarios.mantVolExtraDescripcion,
+										index : "descworkT07",
+										editable : true,
+										edittype : "text",
+										editoptions : {
+											maxlength : "250"
+										}
+
+									}
+			
+			</p>
+
+		</li>
+	</ol>
+
+	<div class="problema tarea1 estupidez">
+	En getAll:
+	 request.getHeader(JQGridModel) = null pero también = true.
+	 Los únicos files donde aparecen referencias a JQGridModel son los controladores, y 2 scripts en Statics/WebContent/rup/scripts:
+	 - rup.grid-1.1.1.js
+	 - rup.grid-1.2.0.js
+
+	 Pero si ahí cambio el valor de "true" a "false", no hay cambios. 
+
+---
+LEÍA MAL. EL REQUESTHEADER ESTABA BIEN.
+
+	</div>
+
+	<div class="problema tarea1">
+	
+		Por fin DEBUGUEÉ, después de tirarme horas dando vueltas.
+
+		Las queries estaban mal: un guión bajo, un poner los campos después del where, ...
+		Notorio que hay que tener cuidado con DEJAR UN ESPACIO! entre líneas.
+
+		<div class="nota"> 
+			<p>DEBUG: stepover - pasito a pasito, stepinto - entrar al fallo.</p></div>
+			<p>Cursor sobre los argumentos como la e de Exception e, muestra los valores.</p>
+			<p>Cuando el error es de SQL, puede copiarse y llevarse al SQLEditor para ejecutarse
+			(con Ctrl-F7 lo printea bonito).</p>
+			<p> IMPORTANTE en el js, usar jQuery("#slector").rup_date({}); para que funcione.</p> 
+	
+	</div>
+
+
+</article>
+
+<article class="tarea1 4">
+	<h4>Añadir un search by en el jsp</h4> 
+
+	<div class="descgral"> 
+		Se ñade un fieldset con tres divs para recoger info:
+		div1 - recoge un número
+		div2 - recoge una fecha --- se le ofrece con el rup_date
+		div3 - recoge texto
+	<div class="pregunta tarea1 4">¿En qué variable se meten?
+		En la que hace referencia a-se llama igual que la del pojo-bean.
+	</div>
+
+	<div class="problema tarea1 4"> 
+	Recoge los datos y los mete en la bdd:
+		- hay que validar los años de experiencia como integer
+		- LA DATE NO APARECE COMO RUP!!!
+		--- faltaba aplicar rup_date al selector fincorpT07_search!
+	</div>
+
+
+
+</article>
+
+</section>
+</main>
+</body>
+</html>

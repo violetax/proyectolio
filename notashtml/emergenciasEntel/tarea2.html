@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tarea 2</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<main class="container-fluid">
+<div class="descgral"> 
+Añadir funcionalidad de importar un documento a la tabla de Voluntarios:
+- editar el js para que aparezca el botoncito de 'Explorar' (ver editType="file")
+- editar el DaoImpl (el rowMapper y las queries)
+- editar el Controler para que recoja el tipo de dato???
+- y en el futuro: manejar la codificación de E/S a la bdd
+</div>
+
+<section class="1 tarea2"> 
+	<header><h2>Recoger qué copiar de Planes</h2></header>
+
+<div class="general">Y32ARecursosExternosBean:
+<p> Y32ARecursosExternosBean tiene 21 propiedades, mientras que la tabla relacionada solo tiene 15 fields.</p>
+<p> La propiedad que tengo que copiar es la private MultipartFile documentoT29.</p>
+<p> Se usa auxliamente private byte[] documento; que en el mapper hace de documentoT29, y el autético se queda en null. </p>
+<p> También se usa private String existeDoc; pero yo de momento lo dejo en observación.</p>
+<p> public MultipartFile getDocumentoT29 y setDocumentoT29 están anotados con @JsonIgnore.</p>
+<p> Los getter/setters de documeto y existeDoc no tienen anotaciones.</p>
+</div>
+
+
+</section>
+
+<section class="2 tarea2">
+	<div class="problema tarea2">
+	
+	Para subir un archivo en RecursosExternos:
+
+	- hay un campo BLOB en la bdd
+	- hay 3 privates en el Bean:
+		- Multipart docu
+		- bytes[] docub
+		- String haydocu
+
+		Getters/setters de Multipart docu están anotados como @JsonIgnore.
+
+	- En el DaoImpl:
+		- Un rowMapper toma el Multipart como null, y el bytes como DOCU.
+		- Otro rowMapper toma tanto Multipart como bytes  como nulls.
+		- En add/INSERT INTO, al campo BLOB le mete el private BYTES.
+		- En edit/UPDATE, al campo BLOB le mete el private BYTES.
+		- En findAllLike( EL QUE FALLA):
+	**Las asignaciones del SELECT: el campo docu_tabla se asocia con el nombre del bytes DOCU.
+
+	--------
+
+	HAsta aquí bien, pero cuando repito operación en voluntarios:
+	
+	<dl><dt> Errores al programar subir un archivo</dt>
+		<dd> Javascript: Se ha producido un error al recuperar los datos. - las columnas de modelo ESTABAN MAL  </dd>
+		<dd> Java: Controller: findAllLike: service: DaoIml: BadSQLGrammarException: inconsistent datatypes: expected - got BLOB:
+		<ol>
+			<li> en RecExter: el UPDATE tenía los parámetros insertados en mal orden ¡no se puede poner todo al final sin mirar!!!  </li>
+			<li> en Vols: también problema de orden de los paras, y no miré el ROWMAPPER. Cuando le meto un para al mapper con valor i.e. not null, en la query que lo use ese para tiene que ser declarado</li>
+		</ol>
+		</dd>
+		<dd> Javascript: al añadir un nuevo campo, no recoge los datos que introduzco: salta el error "campo obligatorio" con el primero de los campos, apesar de que yo introduzco datos.: BOTON RUP_AÑADIR NO ENTRA AL CONTROLLER PORQUE EL DEBUGGER NO SALTA, ES EL NAVEGADOR EL QUE NO RECOGE LOS DATOS NO SÉ POR QUÉ. - SIN RESOLVER</dd>
+		<dd> Java??? Debug console: TA: Error al realizar el envÃ­o de la petciÃ³n al servicio de metricas Connect to data.intra.integracion.jakina.ejiedes.net:80 [data.intra.integracion.jakina.ejiedes.net/10.190.40.77] failed: Connection timed out: connect url http://data.intra.integracion.jakina.ejiedes.net:80/w43taMetricApiWAR/metricservice/sync/avro/gauge/add</dd>
+		<dd> Las columnas de nombres son diferentes de las columnas de modelo. - ESTABAN MAL </dd>
+	</dl>
+	
+	<p> Falló copiar el campo extra. </p>
+
+	</div>
+
+	<div class="problema tarea2">
+	Las pestañas maint_rup del Voluntarios no lanzan el controlador.
+	¡Sobraba una comilla (coma en cariñoso) en la SQL de fin! Y la encontré rápido, maomenos: debug getById, e=bad SQL. Listo!
+	</div>
+</section>
+
+</main>
+</body>
+</html>
+

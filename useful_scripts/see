@@ -1,0 +1,172 @@
+Creando...
+Error: Project folder '/home/violeta/practicaBastionado/permisoAccesoInternet' is not empty. Please consider using 'android update' instead.
+Updated file /home/violeta/practicaBastionado/permisoAccesoInternet/src/com/mipractica/miandroid/practica.java
+Updated file /home/violeta/practicaBastionado/permisoAccesoInternet/res/values/strings.xml
+Updated file /home/violeta/practicaBastionado/permisoAccesoInternet/res/layout/main.xml
+Updated file /home/violeta/practicaBastionado/permisoAccesoInternet/AndroidManifest.xml
+Updated file /home/violeta/practicaBastionado/permisoAccesoInternet/build.xml
+Updated file /home/violeta/practicaBastionado/permisoAccesoInternet/proguard-project.txt
+/home/violeta/useful_scripts/mkyong.scr: line 50: cd: permisoAccesoInternet: No such file or directory
+mkdir: cannot create directory ‘obj’: File exists
+Importar archivos: AndroidManifest.xml, main.xml, webview.xml
+cp: cannot stat ‘/home/violeta/practicaBastionado/permisoAccesoInternet/../archivos/AndroidManifest.xml’: No such file or directory
+cp: cannot stat ‘/home/violeta/practicaBastionado/permisoAccesoInternet/../archivos/main.xml’: No such file or directory
+cp: cannot stat ‘/home/violeta/practicaBastionado/permisoAccesoInternet/../archivos/webview.xml’: No such file or directory
+Generando keystore...
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days
+	for: CN=violeta, L=leon, ST=spain, C=ES
+[Storing permisoAccesoInternet.keystore]
+Importar archivos: MainActivity.java, WebViewActivity.java
+cp: cannot stat ‘/home/violeta/practicaBastionado/permisoAccesoInternet/../archivos/MainActivity.java’: No such file or directory
+cp: cannot stat ‘/home/violeta/practicaBastionado/permisoAccesoInternet/../archivos/WebViewActivity.java’: No such file or directory
+Creando R.java...
+Configurations:
+ (default)
+ ldpi-v4
+ mdpi-v4
+ hdpi-v4
+ xhdpi-v4
+
+Files:
+  drawable/ic_launcher.png
+    Src: (ldpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-ldpi/ic_launcher.png
+    Src: (mdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-mdpi/ic_launcher.png
+    Src: (hdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-hdpi/ic_launcher.png
+    Src: (xhdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-xhdpi/ic_launcher.png
+  layout/main.xml
+    Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/res/layout/main.xml
+  values/strings.xml
+    Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/res/values/strings.xml
+  AndroidManifest.xml
+    Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/AndroidManifest.xml
+
+Resource Dirs:
+  Type drawable
+    drawable/ic_launcher.png
+      Src: (ldpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-ldpi/ic_launcher.png
+      Src: (mdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-mdpi/ic_launcher.png
+      Src: (hdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-hdpi/ic_launcher.png
+      Src: (xhdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-xhdpi/ic_launcher.png
+  Type layout
+    layout/main.xml
+      Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/res/layout/main.xml
+  Type values
+    values/strings.xml
+      Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/res/values/strings.xml
+Including resources from package: /home/violeta/android-sdk-linux/platforms/android-23/android.jar
+applyFileOverlay for drawable
+applyFileOverlay for layout
+applyFileOverlay for anim
+applyFileOverlay for animator
+applyFileOverlay for interpolator
+applyFileOverlay for transition
+applyFileOverlay for xml
+applyFileOverlay for raw
+applyFileOverlay for color
+applyFileOverlay for menu
+applyFileOverlay for mipmap
+    (new resource id ic_launcher from /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-ldpi/ic_launcher.png)
+    (new resource id ic_launcher from /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-mdpi/ic_launcher.png)
+    (new resource id ic_launcher from /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-hdpi/ic_launcher.png)
+    (new resource id ic_launcher from /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-xhdpi/ic_launcher.png)
+    (new resource id main from /home/violeta/practicaBastionado/permisoAccesoInternet/res/layout/main.xml)
+  Writing symbols for class R.
+Compilando...
+javac: directory not found: /home/violeta/practicaBastionado/permisoAccesoInternet/obj/
+Usage: javac <options> <source files>
+use -help for a list of possible options
+Creando archivo dex...
+
+UNEXPECTED TOP-LEVEL EXCEPTION:
+java.lang.RuntimeException: /home/violeta/practicaBastionado/permisoAccesoInternet/obj: file not found
+	at com.android.dex.util.FileUtils.readFile(FileUtils.java:51)
+	at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:169)
+	at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:144)
+	at com.android.dx.command.dexer.Main.processOne(Main.java:672)
+	at com.android.dx.command.dexer.Main.processAllFiles(Main.java:574)
+	at com.android.dx.command.dexer.Main.runMonoDex(Main.java:311)
+	at com.android.dx.command.dexer.Main.run(Main.java:277)
+	at com.android.dx.command.dexer.Main.main(Main.java:245)
+	at com.android.dx.command.Main.main(Main.java:106)
+1 error; aborting
+Creando archivo apk...
+Processing raw dir '/home/violeta/practicaBastionado/permisoAccesoInternet/bin'
+Found 1 asset file in /home/violeta/practicaBastionado/permisoAccesoInternet/bin
+Configurations:
+ (default)
+ ldpi-v4
+ mdpi-v4
+ hdpi-v4
+ xhdpi-v4
+
+Files:
+  drawable/ic_launcher.png
+    Src: (ldpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-ldpi/ic_launcher.png
+    Src: (mdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-mdpi/ic_launcher.png
+    Src: (hdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-hdpi/ic_launcher.png
+    Src: (xhdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-xhdpi/ic_launcher.png
+  layout/main.xml
+    Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/res/layout/main.xml
+  values/strings.xml
+    Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/res/values/strings.xml
+  AndroidManifest.xml
+    Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/AndroidManifest.xml
+  permisoAccesoInternet.unsigned.apk
+    Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/bin/permisoAccesoInternet.unsigned.apk
+
+Resource Dirs:
+  Type drawable
+    drawable/ic_launcher.png
+      Src: (ldpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-ldpi/ic_launcher.png
+      Src: (mdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-mdpi/ic_launcher.png
+      Src: (hdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-hdpi/ic_launcher.png
+      Src: (xhdpi-v4) /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-xhdpi/ic_launcher.png
+  Type layout
+    layout/main.xml
+      Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/res/layout/main.xml
+  Type values
+    values/strings.xml
+      Src: () /home/violeta/practicaBastionado/permisoAccesoInternet/res/values/strings.xml
+Including resources from package: /home/violeta/android-sdk-linux/platforms/android-23/android.jar
+applyFileOverlay for drawable
+applyFileOverlay for layout
+applyFileOverlay for anim
+applyFileOverlay for animator
+applyFileOverlay for interpolator
+applyFileOverlay for transition
+applyFileOverlay for xml
+applyFileOverlay for raw
+applyFileOverlay for color
+applyFileOverlay for menu
+applyFileOverlay for mipmap
+Processing image: /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-mdpi/ic_launcher.png
+Processing image: /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-ldpi/ic_launcher.png
+Processing image: /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-hdpi/ic_launcher.png
+Processing image: /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-xhdpi/ic_launcher.png
+    (processed image /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-mdpi/ic_launcher.png: 96% size of source)
+    (processed image /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-ldpi/ic_launcher.png: 97% size of source)
+    (processed image /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-hdpi/ic_launcher.png: 97% size of source)
+    (processed image /home/violeta/practicaBastionado/permisoAccesoInternet/res/drawable-xhdpi/ic_launcher.png: 97% size of source)
+    (new resource id ic_launcher from ldpi-v4/drawable/ic_launcher.png #generated)
+    (new resource id ic_launcher from mdpi-v4/drawable/ic_launcher.png #generated)
+    (new resource id ic_launcher from hdpi-v4/drawable/ic_launcher.png #generated)
+    (new resource id ic_launcher from xhdpi-v4/drawable/ic_launcher.png #generated)
+    (new resource id main from /home/violeta/practicaBastionado/permisoAccesoInternet/res/layout/main.xml)
+Opening '/home/violeta/practicaBastionado/permisoAccesoInternet/bin/permisoAccesoInternet.unsigned.apk'
+Writing all files...
+      'AndroidManifest.xml' (compressed 62%)
+      'permisoAccesoInternet.unsigned.apk' (not compressed)
+      'res/drawable-hdpi-v4/ic_launcher.png' (not compressed)
+      'res/drawable-ldpi-v4/ic_launcher.png' (not compressed)
+      'res/drawable-mdpi-v4/ic_launcher.png' (not compressed)
+      'res/drawable-xhdpi-v4/ic_launcher.png' (not compressed)
+      'res/layout/main.xml' (compressed 55%)
+      'resources.arsc' (not compressed)
+Generated 8 files
+Included 0 files from jar/zip files.
+Checking for deleted files
+Done!
+Firmando proyecto...
+jarsigner error: java.lang.RuntimeException: keystore load: /home/violeta/practicaBastionado/permisoAccesoInternet/permisoAccesoInternet.keystore (No such file or directory)
+Zip-alineando...
+Unable to open '/home/violeta/practicaBastionado/permisoAccesoInternet/bin/permisoAccesoInternet.signed.apk' as zip archive

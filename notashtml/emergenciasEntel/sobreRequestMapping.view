@@ -1,0 +1,1688 @@
+./NoraCalleController.java:@RequestMapping(value = "/noracalle")
+./NoraCalleController.java-public class NoraCalleController {
+./NoraCalleController.java-
+--
+./NoraCalleController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./NoraCalleController.java-	public ModelAndView getCreateForm(Model model) {
+./NoraCalleController.java-		model.addAttribute("defaultLanguage",
+--
+./NoraCalleController.java:	@RequestMapping(value = "/comboCalles", method = RequestMethod.GET)
+./NoraCalleController.java-	public @ResponseBody
+./NoraCalleController.java-	List<NoraCalle> getRemoteCombo(
+--
+./NoraCalleController.java:	@RequestMapping(value = "/comboCallesAutocomplete", method = RequestMethod.GET)
+./NoraCalleController.java-	public @ResponseBody
+./NoraCalleController.java-	List<NoraCalle> getRemoteAutocomplete(
+--
+./NoraCalleController.java:	@RequestMapping(value = "/{id}/{calleCod}/{dsO}/{dsE}/{provinciaId}/{municipioId}/{tipoVia}/{tipoViaId}/{estado}", method = RequestMethod.GET)
+./NoraCalleController.java-	public @ResponseBody
+./NoraCalleController.java-	NoraCalle getById(@PathVariable Long id, @PathVariable BigDecimal calleCod,
+--
+./NoraCalleController.java:	@RequestMapping(method = RequestMethod.GET)
+./NoraCalleController.java-	public @ResponseBody
+./NoraCalleController.java-	Object getAll(
+--
+./NoraLocalidadController.java:@RequestMapping (value = "/noralocalidad")
+./NoraLocalidadController.java-
+./NoraLocalidadController.java-public class NoraLocalidadController  {
+--
+./NoraLocalidadController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./NoraLocalidadController.java-	public ModelAndView getCreateForm(Model model) {
+./NoraLocalidadController.java-		model.addAttribute("defaultLanguage",
+--
+./NoraLocalidadController.java:	@RequestMapping(value = "/{id}/{dsO}/{municipioId}/{provinciaId}/{entidadId}", method = RequestMethod.GET)
+./NoraLocalidadController.java-	public @ResponseBody NoraLocalidad getById(@PathVariable Long id, @PathVariable String dsO, @PathVariable String municipioId, @PathVariable String provinciaId, @PathVariable Long entidadId) {
+./NoraLocalidadController.java-		try{
+--
+./NoraLocalidadController.java:	@RequestMapping(method = RequestMethod.GET)
+./NoraLocalidadController.java-	public @ResponseBody Object getAll(
+./NoraLocalidadController.java-	@RequestParam(value = "id", required = false) Long id,
+--
+./NoraLocalidadController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./NoraLocalidadController.java-	public @ResponseBody Long getAllCount(
+./NoraLocalidadController.java-	@RequestParam(value = "noraLocalidad", required = false) NoraLocalidad  filterNoraLocalidad, HttpServletRequest request) {
+--
+./NoraLocalidadController.java:	@RequestMapping(method = RequestMethod.PUT)
+./NoraLocalidadController.java-    public @ResponseBody NoraLocalidad edit(@RequestBody NoraLocalidad noraLocalidad, HttpServletResponse response) {		
+./NoraLocalidadController.java-		try {
+--
+./NoraLocalidadController.java:	@RequestMapping(method = RequestMethod.POST)
+./NoraLocalidadController.java-	public @ResponseBody NoraLocalidad add(@RequestBody NoraLocalidad noraLocalidad) {		
+./NoraLocalidadController.java-        try {
+--
+./NoraLocalidadController.java:	@RequestMapping(value = "/{id}/{dsO}/{municipioId}/{provinciaId}/{entidadId}", method = RequestMethod.DELETE)
+./NoraLocalidadController.java-    public void remove(
+./NoraLocalidadController.java-				@PathVariable Long id,
+--
+./NoraLocalidadController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./NoraLocalidadController.java-	public void removeMultiple(@RequestBody ArrayList<ArrayList<String>> noraLocalidadIds,
+./NoraLocalidadController.java-			HttpServletResponse response) {
+--
+./NoraMunicipioController.java:@RequestMapping(value = "/noramunicipio")
+./NoraMunicipioController.java-public class NoraMunicipioController {
+./NoraMunicipioController.java-
+--
+./NoraMunicipioController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./NoraMunicipioController.java-	public ModelAndView getCreateForm(Model model) {
+./NoraMunicipioController.java-		model.addAttribute("defaultLanguage",
+--
+./NoraMunicipioController.java:	@RequestMapping(value = "/comboMunicipios", method = RequestMethod.GET)
+./NoraMunicipioController.java-	public @ResponseBody
+./NoraMunicipioController.java-	List<NoraMunicipio> getRemoteCombo(
+--
+./NoraMunicipioController.java:	@RequestMapping(value = "/comboMunicipiosAutocomplete", method = RequestMethod.GET)
+./NoraMunicipioController.java-	public @ResponseBody
+./NoraMunicipioController.java-	List<NoraMunicipio> getRemoteAutocomplete(
+--
+./NoraMunicipioController.java:	@RequestMapping(value = "/comboMunicipioById", method = RequestMethod.GET)
+./NoraMunicipioController.java-	public @ResponseBody
+./NoraMunicipioController.java-	List<NoraMunicipio> getRemoteComboMunicipioById(
+--
+./NoraMunicipioController.java:	@RequestMapping(value = "/{id}/{dsO}/{provinciaId}/{comarcaId}", method = RequestMethod.GET)
+./NoraMunicipioController.java-	public @ResponseBody
+./NoraMunicipioController.java-	NoraMunicipio getById(@PathVariable String id, @PathVariable String dsO,
+--
+./NoraMunicipioController.java:	@RequestMapping(method = RequestMethod.GET)
+./NoraMunicipioController.java-	public @ResponseBody
+./NoraMunicipioController.java-	Object getAll(
+--
+./NoraPortalController.java:@RequestMapping(value = "/noraportal")
+./NoraPortalController.java-public class NoraPortalController {
+./NoraPortalController.java-
+--
+./NoraPortalController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./NoraPortalController.java-	public ModelAndView getCreateForm(Model model) {
+./NoraPortalController.java-		model.addAttribute("defaultLanguage",
+--
+./NoraPortalController.java:	@RequestMapping(value = "/comboPortales", method = RequestMethod.GET)
+./NoraPortalController.java-	public @ResponseBody
+./NoraPortalController.java-	List<NoraPortal> getRemoteCombo(
+--
+./NoraPortalController.java:	@RequestMapping(value = "/comboPortalesAutocomplete", method = RequestMethod.GET)
+./NoraPortalController.java-	public @ResponseBody
+./NoraPortalController.java-	List<NoraPortal> getRemoteAutocomplete(
+--
+./NoraPortalController.java:	@RequestMapping(value = "/{id}/{bloque}/{numero}/{bis}/{calleId}/{estado}/{localidadId}/{codigoPostal}/{tramoId}/{acepcion}/{dxEd50}/{dyEd50}/{dxEtrs89}/{dyEtrs89}", method = RequestMethod.GET)
+./NoraPortalController.java-	public @ResponseBody
+./NoraPortalController.java-	NoraPortal getById(@PathVariable Long id, @PathVariable String bloque,
+--
+./NoraPortalController.java:	@RequestMapping(method = RequestMethod.GET)
+./NoraPortalController.java-	public @ResponseBody
+./NoraPortalController.java-	Object getAll(
+--
+./NoraProvinciaController.java:@RequestMapping(value = "/noraprovincia")
+./NoraProvinciaController.java-public class NoraProvinciaController {
+./NoraProvinciaController.java-
+--
+./NoraProvinciaController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./NoraProvinciaController.java-	public ModelAndView getCreateForm(Model model) {
+./NoraProvinciaController.java-		model.addAttribute("defaultLanguage",
+--
+./NoraProvinciaController.java:	@RequestMapping(value = "/comboProvincias", method = RequestMethod.GET)
+./NoraProvinciaController.java-	public @ResponseBody
+./NoraProvinciaController.java-	List<NoraProvincia> getRemoteCombo() {
+--
+./NoraProvinciaController.java:	@RequestMapping(value = "/comboProvinciasAutocomplete", method = RequestMethod.GET)
+./NoraProvinciaController.java-	public @ResponseBody
+./NoraProvinciaController.java-	List<NoraProvincia> getRemoteAutocomplete(
+--
+./NoraProvinciaController.java:	@RequestMapping(value = "/{id}/{dsO}/{autonomiaId}", method = RequestMethod.GET)
+./NoraProvinciaController.java-	public @ResponseBody
+./NoraProvinciaController.java-	NoraProvincia getById(@PathVariable String id, @PathVariable String dsO,
+--
+./NoraProvinciaController.java:	// @RequestMapping(method = RequestMethod.GET)
+./NoraProvinciaController.java-	public @ResponseBody
+./NoraProvinciaController.java-	Object getAll(
+--
+./Y32AAccesosController.java:@RequestMapping(value = "/y3234t00")
+./Y32AAccesosController.java-public class Y32AAccesosController {
+./Y32AAccesosController.java-
+--
+./Y32AAccesosController.java:	@RequestMapping(value = "/validatePath", method = RequestMethod.GET)
+./Y32AAccesosController.java-	public String validatePath(
+./Y32AAccesosController.java-			@RequestParam(value = "indice", required = false) String indice,
+--
+./Y32AAccesosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AAccesosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AAccesosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AAccesosController.java:	@RequestMapping(value = "/{idaccesoT34}", method = RequestMethod.GET)
+./Y32AAccesosController.java-	public @ResponseBody
+./Y32AAccesosController.java-	Y32AAccesosBean getById(@PathVariable Long idaccesoT34) {
+--
+./Y32AAccesosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AAccesosController.java-	public @ResponseBody
+./Y32AAccesosController.java-	Object getAll(
+--
+./Y32AAccesosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AAccesosController.java-	public @ResponseBody
+./Y32AAccesosController.java-	Long getAllCount(
+--
+./Y32AAccesosController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AAccesosController.java-	public @ResponseBody
+./Y32AAccesosController.java-	Y32AAccesosBean edit(@RequestBody Y32AAccesosBean y3234t00,
+--
+./Y32AAccesosController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AAccesosController.java-	public @ResponseBody
+./Y32AAccesosController.java-	Y32AAccesosBean add(@RequestBody Y32AAccesosBean y3234t00) {
+--
+./Y32AAccesosController.java:	@RequestMapping(value = "/{idaccesoT34}", method = RequestMethod.DELETE)
+./Y32AAccesosController.java-	public void remove(@PathVariable Long idaccesoT34,
+./Y32AAccesosController.java-			HttpServletResponse response) {
+--
+./Y32AAccesosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AAccesosController.java-	public void removeMultiple(
+./Y32AAccesosController.java-			@RequestBody ArrayList<ArrayList<String>> y3234t00Ids,
+--
+./Y32AAgrupacionesController.java:@RequestMapping(value = "/y32aAgrupaciones")
+./Y32AAgrupacionesController.java-public class Y32AAgrupacionesController {
+./Y32AAgrupacionesController.java-
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AAgrupacionesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AAgrupacionesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(value = "/{idagrupacionT03}", method = RequestMethod.GET)
+./Y32AAgrupacionesController.java-	public @ResponseBody
+./Y32AAgrupacionesController.java-	Y32AAgrupacionesBean getById(@PathVariable Integer idagrupacionT03) {
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(value = "/comboAnyosConstitucion", method = RequestMethod.GET)
+./Y32AAgrupacionesController.java-	public @ResponseBody
+./Y32AAgrupacionesController.java-	List<Y32AAgrupacionesBean> getRemoteComboAnyos() {
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(value = "/autocompleteAgrupaciones", method = RequestMethod.GET)
+./Y32AAgrupacionesController.java-	public @ResponseBody
+./Y32AAgrupacionesController.java-	List<Y32AAgrupacionesBean> getRemoteAutocomplete(
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(value = "/exportar", method = RequestMethod.GET)
+./Y32AAgrupacionesController.java-	public void exportar(
+./Y32AAgrupacionesController.java-
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AAgrupacionesController.java-	public @ResponseBody
+./Y32AAgrupacionesController.java-	Object getAll(
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AAgrupacionesController.java-	public @ResponseBody
+./Y32AAgrupacionesController.java-	Long getAllCount(
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AAgrupacionesController.java-	public @ResponseBody
+./Y32AAgrupacionesController.java-	void edit(@RequestBody Y32AAgrupacionesBean y3203s00,
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AAgrupacionesController.java-	public @ResponseBody
+./Y32AAgrupacionesController.java-	void add(@RequestBody Y32AAgrupacionesBean y3203s00,
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(value = "/{idagrupacionT03}", method = RequestMethod.DELETE)
+./Y32AAgrupacionesController.java-	public void remove(@PathVariable Integer idagrupacionT03,
+./Y32AAgrupacionesController.java-			HttpServletResponse response, HttpServletRequest request) {
+--
+./Y32AAgrupacionesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AAgrupacionesController.java-	public void removeMultiple(
+./Y32AAgrupacionesController.java-			@RequestBody ArrayList<ArrayList<String>> y3203s00Ids,
+--
+./Y32ACargosController.java:@RequestMapping(value = "/y32aCargos")
+./Y32ACargosController.java-public class Y32ACargosController {
+./Y32ACargosController.java-
+--
+./Y32ACargosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ACargosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ACargosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ACargosController.java:	@RequestMapping(value = "/{idcargoT21}", method = RequestMethod.GET)
+./Y32ACargosController.java-	public @ResponseBody
+./Y32ACargosController.java-	Y32ACargosBean getById(@PathVariable Long idcargoT21) {
+--
+./Y32ACargosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ACargosController.java-	public @ResponseBody
+./Y32ACargosController.java-	Object getAll(
+--
+./Y32ACargosController.java:	@RequestMapping(value = "/comboCargos", method = RequestMethod.GET)
+./Y32ACargosController.java-	public @ResponseBody
+./Y32ACargosController.java-	List<Y32ACargosBean> getRemoteCombo() {
+--
+./Y32ACargosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ACargosController.java-	public @ResponseBody
+./Y32ACargosController.java-	Long getAllCount(
+--
+./Y32ACargosController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32ACargosController.java-	public @ResponseBody
+./Y32ACargosController.java-	Y32ACargosBean edit(@RequestBody Y32ACargosBean y3221s00,
+--
+./Y32ACargosController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ACargosController.java-	public @ResponseBody
+./Y32ACargosController.java-	Y32ACargosBean add(@RequestBody Y32ACargosBean y3221s00) {
+--
+./Y32ACargosController.java:	@RequestMapping(value = "/{idcargoT21}", method = RequestMethod.DELETE)
+./Y32ACargosController.java-	public void remove(@PathVariable Long idcargoT21,
+./Y32ACargosController.java-			HttpServletResponse response) {
+--
+./Y32ACargosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ACargosController.java-	public void removeMultiple(
+./Y32ACargosController.java-			@RequestBody ArrayList<ArrayList<String>> y3221s00Ids,
+--
+./Y32ACarnesController.java:@RequestMapping(value = "/y32aCarnes")
+./Y32ACarnesController.java-public class Y32ACarnesController {
+./Y32ACarnesController.java-
+--
+./Y32ACarnesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ACarnesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ACarnesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ACarnesController.java:	@RequestMapping(value = "/comboCarnes", method = RequestMethod.GET)
+./Y32ACarnesController.java-	public @ResponseBody
+./Y32ACarnesController.java-	List<Y32ACarnesBean> getRemoteCombo(HttpServletRequest request) {
+--
+./Y32ACarnesVolController.java:@RequestMapping(value = "/y32aCarnesVol")
+./Y32ACarnesVolController.java-public class Y32ACarnesVolController {
+./Y32ACarnesVolController.java-
+--
+./Y32ACarnesVolController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ACarnesVolController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ACarnesVolController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ACarnesVolController.java:	@RequestMapping(value = "/{idcarnetT15}/{idvoluntarioT07}", method = RequestMethod.GET)
+./Y32ACarnesVolController.java-	public @ResponseBody
+./Y32ACarnesVolController.java-	Y32ACarnesVolBean getById(@PathVariable Integer idvoluntarioT07,
+--
+./Y32ACarnesVolController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ACarnesVolController.java-	public @ResponseBody
+./Y32ACarnesVolController.java-	Object getAll(
+--
+./Y32ACarnesVolController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ACarnesVolController.java-	public @ResponseBody
+./Y32ACarnesVolController.java-	Long getAllCount(
+--
+./Y32ACarnesVolController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32ACarnesVolController.java-	public @ResponseBody
+./Y32ACarnesVolController.java-	void edit(@RequestBody Y32ACarnesVolBean y3215s00,
+--
+./Y32ACarnesVolController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ACarnesVolController.java-	public @ResponseBody
+./Y32ACarnesVolController.java-	void add(@RequestBody Y32ACarnesVolBean y3215s00,
+--
+./Y32ACarnesVolController.java:	@RequestMapping(value = "/{idcarnetT15}/{idvoluntarioT07}", method = RequestMethod.DELETE)
+./Y32ACarnesVolController.java-	public void remove(@PathVariable Integer idvoluntarioT07,
+./Y32ACarnesVolController.java-			@PathVariable Long idcarnetT15, HttpServletResponse response) {
+--
+./Y32ACarnesVolController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ACarnesVolController.java-	public void removeMultiple(
+./Y32ACarnesVolController.java-			@RequestBody ArrayList<ArrayList<String>> y3215s00Ids,
+--
+./Y32ACursosController.java:@RequestMapping(value = "/y32aCursos")
+./Y32ACursosController.java-public class Y32ACursosController {
+./Y32ACursosController.java-
+--
+./Y32ACursosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ACursosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ACursosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ACursosController.java:	@RequestMapping(value = "/comboCursos", method = RequestMethod.GET)
+./Y32ACursosController.java-	public @ResponseBody
+./Y32ACursosController.java-	List<Y32ACursosBean> getRemoteCombo() {
+--
+./Y32ACursosController.java:	@RequestMapping(value = "/{idcursoT10}", method = RequestMethod.GET)
+./Y32ACursosController.java-	public @ResponseBody
+./Y32ACursosController.java-	Y32ACursosBean getById(@PathVariable Integer idcursoT10) {
+--
+./Y32ACursosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ACursosController.java-	public @ResponseBody
+./Y32ACursosController.java-	Object getAll(
+--
+./Y32ACursosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ACursosController.java-	public @ResponseBody
+./Y32ACursosController.java-	Long getAllCount(
+--
+./Y32ACursosController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32ACursosController.java-	public @ResponseBody
+./Y32ACursosController.java-	Y32ACursosBean edit(@RequestBody Y32ACursosBean y3210s00,
+--
+./Y32ACursosController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ACursosController.java-	public @ResponseBody
+./Y32ACursosController.java-	Y32ACursosBean add(@RequestBody Y32ACursosBean y3210s00,
+--
+./Y32ACursosController.java:	@RequestMapping(value = "/{idcursoT10}", method = RequestMethod.DELETE)
+./Y32ACursosController.java-	public void remove(@PathVariable Integer idcursoT10,
+./Y32ACursosController.java-			HttpServletResponse response, HttpServletRequest request) {
+--
+./Y32ACursosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ACursosController.java-	public void removeMultiple(
+./Y32ACursosController.java-			@RequestBody ArrayList<ArrayList<String>> y3210s00Ids,
+--
+./Y32ACursosVolController.java:@RequestMapping(value = "/y32aCursosVol")
+./Y32ACursosVolController.java-public class Y32ACursosVolController {
+./Y32ACursosVolController.java-
+--
+./Y32ACursosVolController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ACursosVolController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ACursosVolController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ACursosVolController.java:	@RequestMapping(value = "/{idcursoT08}/{idvoluntarioT07}", method = RequestMethod.GET)
+./Y32ACursosVolController.java-	public @ResponseBody
+./Y32ACursosVolController.java-	Y32ACursosVolBean getById(@PathVariable Integer idvoluntarioT07,
+--
+./Y32ACursosVolController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ACursosVolController.java-	public @ResponseBody
+./Y32ACursosVolController.java-	Object getAll(
+--
+./Y32ACursosVolController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ACursosVolController.java-	public @ResponseBody
+./Y32ACursosVolController.java-	Long getAllCount(
+--
+./Y32ACursosVolController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32ACursosVolController.java-	public @ResponseBody
+./Y32ACursosVolController.java-	void edit(@RequestBody Y32ACursosVolBean y3208s00,
+--
+./Y32ACursosVolController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ACursosVolController.java-	public @ResponseBody
+./Y32ACursosVolController.java-	void add(@RequestBody Y32ACursosVolBean y3208s00,
+--
+./Y32ACursosVolController.java:	@RequestMapping(value = "/{idcursoT08}/{idvoluntarioT07}", method = RequestMethod.DELETE)
+./Y32ACursosVolController.java-	public void remove(@PathVariable Integer idvoluntarioT07,
+./Y32ACursosVolController.java-			@PathVariable Integer idcursoT08, HttpServletResponse response) {
+--
+./Y32ACursosVolController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ACursosVolController.java-	public void removeMultiple(
+./Y32ACursosVolController.java-			@RequestBody ArrayList<ArrayList<String>> y3208s00Ids,
+--
+./Y32ADocumentosController.java:@RequestMapping(value = "/y32aDocumentos")
+./Y32ADocumentosController.java-public class Y32ADocumentosController {
+./Y32ADocumentosController.java-
+--
+./Y32ADocumentosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ADocumentosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ADocumentosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ADocumentosController.java:	@RequestMapping(value = "/{iddocumentoT05}/{idagrupacionT03}", method = RequestMethod.GET)
+./Y32ADocumentosController.java-	public @ResponseBody
+./Y32ADocumentosController.java-	Y32ADocumentosBean getById(@PathVariable Integer iddocumentoT05) {
+--
+./Y32ADocumentosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ADocumentosController.java-	public @ResponseBody
+./Y32ADocumentosController.java-	Object getAll(
+--
+./Y32ADocumentosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ADocumentosController.java-	public @ResponseBody
+./Y32ADocumentosController.java-	Long getAllCount(
+--
+./Y32ADocumentosController.java:	 * @RequestMapping(method = RequestMethod.PUT) public @ResponseBody
+./Y32ADocumentosController.java-	 * Y32ADocumentosBean edit(@RequestBody Y32ADocumentosBean y3205s00,
+./Y32ADocumentosController.java-	 * HttpServletResponse response) { try { Y32ADocumentosBean y3205s00Aux =
+--
+./Y32ADocumentosController.java:	 * @RequestMapping(method = RequestMethod.POST) public void add(@RequestBody
+./Y32ADocumentosController.java-	 * Y32ADocumentosBean y3205s00) { try {
+./Y32ADocumentosController.java-	 * 
+--
+./Y32ADocumentosController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ADocumentosController.java-	public @ResponseBody
+./Y32ADocumentosController.java-	void insertarDocumento(
+--
+./Y32ADocumentosController.java:	@RequestMapping(value = "modificarDocumento", method = RequestMethod.POST)
+./Y32ADocumentosController.java-	public @ResponseBody
+./Y32ADocumentosController.java-	void modificarDocumento(
+--
+./Y32ADocumentosController.java:	@RequestMapping(value = "/descargarDocumento", method = RequestMethod.GET)
+./Y32ADocumentosController.java-	public void descargarDocumento(HttpServletRequest request,
+./Y32ADocumentosController.java-			HttpServletResponse response) {
+--
+./Y32ADocumentosController.java:	@RequestMapping(value = "/{iddocumentoT05}/{idagrupacionT03}", method = RequestMethod.DELETE)
+./Y32ADocumentosController.java-	public void remove(@PathVariable Integer iddocumentoT05,
+./Y32ADocumentosController.java-			HttpServletResponse response, HttpServletRequest request) {
+--
+./Y32ADocumentosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ADocumentosController.java-	public void removeMultiple(
+./Y32ADocumentosController.java-			@RequestBody ArrayList<ArrayList<String>> y3205s00Ids,
+--
+./Y32ADocumentosPlanesController.java:@RequestMapping(value = "/y32aDocumentosPlanes")
+./Y32ADocumentosPlanesController.java-public class Y32ADocumentosPlanesController {
+./Y32ADocumentosPlanesController.java-
+--
+./Y32ADocumentosPlanesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ADocumentosPlanesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ADocumentosPlanesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ADocumentosPlanesController.java:	@RequestMapping(value = "/{iddocumentoT33}", method = RequestMethod.GET)
+./Y32ADocumentosPlanesController.java-	public @ResponseBody
+./Y32ADocumentosPlanesController.java-	Y32ADocumentosPlanesBean getById(@PathVariable Long iddocumentoT33) {
+--
+./Y32ADocumentosPlanesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ADocumentosPlanesController.java-	public @ResponseBody
+./Y32ADocumentosPlanesController.java-	Object getAll(
+--
+./Y32ADocumentosPlanesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ADocumentosPlanesController.java-	public @ResponseBody
+./Y32ADocumentosPlanesController.java-	Long getAllCount(
+--
+./Y32ADocumentosPlanesController.java:	@RequestMapping(value = "insertarDocumento", method = RequestMethod.POST)
+./Y32ADocumentosPlanesController.java-	public void insertarDocumento(
+./Y32ADocumentosPlanesController.java-			HttpServletRequest request,
+--
+./Y32ADocumentosPlanesController.java:	// @RequestMapping(method = RequestMethod.POST)
+./Y32ADocumentosPlanesController.java-	/**
+./Y32ADocumentosPlanesController.java-	 * Method 'modificarDocumento'.
+--
+./Y32ADocumentosPlanesController.java:	// @RequestMapping(method = RequestMethod.POST)
+./Y32ADocumentosPlanesController.java:	@RequestMapping(value = "modificarDocumento", method = RequestMethod.POST)
+./Y32ADocumentosPlanesController.java-	public @ResponseBody
+./Y32ADocumentosPlanesController.java-	void modificarDocumento(
+--
+./Y32ADocumentosPlanesController.java:	@RequestMapping(value = "/{iddocumentoT33}", method = RequestMethod.DELETE)
+./Y32ADocumentosPlanesController.java-	public void remove(@PathVariable Long iddocumentoT33,
+./Y32ADocumentosPlanesController.java-			HttpServletResponse response) {
+--
+./Y32ADocumentosPlanesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ADocumentosPlanesController.java-	public void removeMultiple(
+./Y32ADocumentosPlanesController.java-			@RequestBody ArrayList<ArrayList<String>> y3233s00Ids,
+--
+./Y32ADocumentosPlanesController.java:	@RequestMapping(value = "/descargarDocumento", method = RequestMethod.GET)
+./Y32ADocumentosPlanesController.java-	public void descargarDocumento(HttpServletRequest request,
+./Y32ADocumentosPlanesController.java-			HttpServletResponse response) {
+--
+./Y32AEntidadesController.java:@RequestMapping(value = "/y32aEntidades")
+./Y32AEntidadesController.java-public class Y32AEntidadesController {
+./Y32AEntidadesController.java-
+--
+./Y32AEntidadesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AEntidadesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AEntidadesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AEntidadesController.java:	@RequestMapping(value = "/comboEntidades", method = RequestMethod.GET)
+./Y32AEntidadesController.java-	public @ResponseBody
+./Y32AEntidadesController.java-	List<Y32AEntidadesBean> getRemoteCombo() {
+--
+./Y32AEntidadesController.java:	@RequestMapping(value = "/{identidadT09}", method = RequestMethod.GET)
+./Y32AEntidadesController.java-	public @ResponseBody
+./Y32AEntidadesController.java-	Y32AEntidadesBean getById(@PathVariable Long identidadT09) {
+--
+./Y32AEntidadesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AEntidadesController.java-	public @ResponseBody
+./Y32AEntidadesController.java-	Object getAll(
+--
+./Y32AEntidadesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AEntidadesController.java-	public @ResponseBody
+./Y32AEntidadesController.java-	Long getAllCount(
+--
+./Y32AEntidadesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AEntidadesController.java-	public @ResponseBody
+./Y32AEntidadesController.java-	Y32AEntidadesBean edit(@RequestBody Y32AEntidadesBean y3209s00,
+--
+./Y32AEntidadesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AEntidadesController.java-	public @ResponseBody
+./Y32AEntidadesController.java-	Y32AEntidadesBean add(@RequestBody Y32AEntidadesBean y3209s00) {
+--
+./Y32AEntidadesController.java:	@RequestMapping(value = "/{identidadT09}", method = RequestMethod.DELETE)
+./Y32AEntidadesController.java-	public void remove(@PathVariable Long identidadT09,
+./Y32AEntidadesController.java-			HttpServletResponse response) {
+--
+./Y32AEntidadesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AEntidadesController.java-	public void removeMultiple(
+./Y32AEntidadesController.java-			@RequestBody ArrayList<ArrayList<String>> y3209s00Ids,
+--
+./Y32AEspecialidadesController.java:@RequestMapping(value = "/y32aEspecialidades")
+./Y32AEspecialidadesController.java-public class Y32AEspecialidadesController {
+./Y32AEspecialidadesController.java-
+--
+./Y32AEspecialidadesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AEspecialidadesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AEspecialidadesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AEspecialidadesController.java:	@RequestMapping(value = "/{idespecialidadT14}", method = RequestMethod.GET)
+./Y32AEspecialidadesController.java-	public @ResponseBody
+./Y32AEspecialidadesController.java-	Y32AEspecialidadesBean getById(@PathVariable Integer idespecialidadT14) {
+--
+./Y32AEspecialidadesController.java:	@RequestMapping(value = "/comboEspecialidades", method = RequestMethod.GET)
+./Y32AEspecialidadesController.java-	public @ResponseBody
+./Y32AEspecialidadesController.java-	List<Y32AEspecialidadesBean> getRemoteCombo() {
+--
+./Y32AEspecialidadesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AEspecialidadesController.java-	public @ResponseBody
+./Y32AEspecialidadesController.java-	Object getAll(
+--
+./Y32AEspecialidadesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AEspecialidadesController.java-	public @ResponseBody
+./Y32AEspecialidadesController.java-	Long getAllCount(
+--
+./Y32AEspecialidadesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AEspecialidadesController.java-	public @ResponseBody
+./Y32AEspecialidadesController.java-	Y32AEspecialidadesBean edit(@RequestBody Y32AEspecialidadesBean y3214s00,
+--
+./Y32AEspecialidadesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AEspecialidadesController.java-	public @ResponseBody
+./Y32AEspecialidadesController.java-	Y32AEspecialidadesBean add(@RequestBody Y32AEspecialidadesBean y3214s00,
+--
+./Y32AEspecialidadesController.java:	@RequestMapping(value = "/{idespecialidadT14}", method = RequestMethod.DELETE)
+./Y32AEspecialidadesController.java-	public void remove(@PathVariable Integer idespecialidadT14,
+./Y32AEspecialidadesController.java-			HttpServletResponse response, HttpServletRequest request) {
+--
+./Y32AEspecialidadesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AEspecialidadesController.java-	public void removeMultiple(
+./Y32AEspecialidadesController.java-			@RequestBody ArrayList<ArrayList<String>> y3214s00Ids,
+--
+./Y32AEspecialidadesVolController.java:@RequestMapping(value = "/y32aEspecialidadesVol")
+./Y32AEspecialidadesVolController.java-public class Y32AEspecialidadesVolController {
+./Y32AEspecialidadesVolController.java-
+--
+./Y32AEspecialidadesVolController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AEspecialidadesVolController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AEspecialidadesVolController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AEspecialidadesVolController.java:	@RequestMapping(value = "/{idespecialidadT13}/{idvoluntarioT07}", method = RequestMethod.GET)
+./Y32AEspecialidadesVolController.java-	public @ResponseBody
+./Y32AEspecialidadesVolController.java-	Y32AEspecialidadesVolBean getById(@PathVariable Integer idvoluntarioT07,
+--
+./Y32AEspecialidadesVolController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AEspecialidadesVolController.java-	public @ResponseBody
+./Y32AEspecialidadesVolController.java-	Object getAll(
+--
+./Y32AEspecialidadesVolController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AEspecialidadesVolController.java-	public @ResponseBody
+./Y32AEspecialidadesVolController.java-	Long getAllCount(
+--
+./Y32AEspecialidadesVolController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AEspecialidadesVolController.java-	public @ResponseBody
+./Y32AEspecialidadesVolController.java-	void edit(@RequestBody Y32AEspecialidadesVolBean y3213s00,
+--
+./Y32AEspecialidadesVolController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AEspecialidadesVolController.java-	public @ResponseBody
+./Y32AEspecialidadesVolController.java-	void add(@RequestBody Y32AEspecialidadesVolBean y3213s00,
+--
+./Y32AEspecialidadesVolController.java:	@RequestMapping(value = "/{idespecialidadT13}/{idvoluntarioT07}", method = RequestMethod.DELETE)
+./Y32AEspecialidadesVolController.java-	public void remove(@PathVariable Integer idvoluntarioT07,
+./Y32AEspecialidadesVolController.java-			@PathVariable Integer idespecialidadT13,
+--
+./Y32AEspecialidadesVolController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AEspecialidadesVolController.java-	public void removeMultiple(
+./Y32AEspecialidadesVolController.java-			@RequestBody ArrayList<ArrayList<String>> y3213s00Ids,
+--
+./Y32AGruposController.java:@RequestMapping(value = "/y32aGrupos")
+./Y32AGruposController.java-public class Y32AGruposController {
+./Y32AGruposController.java-
+--
+./Y32AGruposController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AGruposController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AGruposController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AGruposController.java:	@RequestMapping(value = "/{idgrupoT12}", method = RequestMethod.GET)
+./Y32AGruposController.java-	public @ResponseBody
+./Y32AGruposController.java-	Y32AGruposBean getById(@PathVariable Integer idgrupoT12) {
+--
+./Y32AGruposController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AGruposController.java-	public @ResponseBody
+./Y32AGruposController.java-	Object getAll(
+--
+./Y32AGruposController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AGruposController.java-	public @ResponseBody
+./Y32AGruposController.java-	Long getAllCount(
+--
+./Y32AGruposController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AGruposController.java-	public @ResponseBody
+./Y32AGruposController.java-	Y32AGruposBean edit(@RequestBody Y32AGruposBean y3212s00,
+--
+./Y32AGruposController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AGruposController.java-	public @ResponseBody
+./Y32AGruposController.java-	Y32AGruposBean add(@RequestBody Y32AGruposBean y3212s00,
+--
+./Y32AGruposController.java:	@RequestMapping(value = "/{idgrupoT12}", method = RequestMethod.DELETE)
+./Y32AGruposController.java-	public void remove(@PathVariable Integer idgrupoT12,
+./Y32AGruposController.java-			HttpServletResponse response, HttpServletRequest request) {
+--
+./Y32AGruposController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AGruposController.java-	public void removeMultiple(
+./Y32AGruposController.java-			@RequestBody ArrayList<ArrayList<String>> y3212s00Ids,
+--
+./Y32AGruposController.java:	@RequestMapping(value = "/comboGrupos", method = RequestMethod.GET)
+./Y32AGruposController.java-	public @ResponseBody
+./Y32AGruposController.java-	List<Y32AGruposBean> getRemoteCombo() {
+--
+./Y32AGruposSanguineosController.java:@RequestMapping(value = "/y32aGruposSanguineos")
+./Y32AGruposSanguineosController.java-public class Y32AGruposSanguineosController {
+./Y32AGruposSanguineosController.java-
+--
+./Y32AGruposSanguineosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AGruposSanguineosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AGruposSanguineosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AGruposSanguineosController.java:	@RequestMapping(value = "/{idgrupsanguineoT19}", method = RequestMethod.GET)
+./Y32AGruposSanguineosController.java-	public @ResponseBody
+./Y32AGruposSanguineosController.java-	Y32AGruposSanguineosBean getById(@PathVariable Long idgrupsanguineoT19) {
+--
+./Y32AGruposSanguineosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AGruposSanguineosController.java-	public @ResponseBody
+./Y32AGruposSanguineosController.java-	Object getAll(
+--
+./Y32AGruposSanguineosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AGruposSanguineosController.java-	public @ResponseBody
+./Y32AGruposSanguineosController.java-	Long getAllCount(
+--
+./Y32AGruposSanguineosController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AGruposSanguineosController.java-	public @ResponseBody
+./Y32AGruposSanguineosController.java-	Y32AGruposSanguineosBean edit(
+--
+./Y32AGruposSanguineosController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AGruposSanguineosController.java-	public @ResponseBody
+./Y32AGruposSanguineosController.java-	Y32AGruposSanguineosBean add(@RequestBody Y32AGruposSanguineosBean y3219s00) {
+--
+./Y32AGruposSanguineosController.java:	@RequestMapping(value = "/{idgrupsanguineoT19}", method = RequestMethod.DELETE)
+./Y32AGruposSanguineosController.java-	public void remove(@PathVariable Long idgrupsanguineoT19,
+./Y32AGruposSanguineosController.java-			HttpServletResponse response) {
+--
+./Y32AGruposSanguineosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AGruposSanguineosController.java-	public void removeMultiple(
+./Y32AGruposSanguineosController.java-			@RequestBody ArrayList<ArrayList<String>> y3219s00Ids,
+--
+./Y32AGruposSanguineosController.java:	@RequestMapping(value = "/comboGruposSanguineos", method = RequestMethod.GET)
+./Y32AGruposSanguineosController.java-	public @ResponseBody
+./Y32AGruposSanguineosController.java-	List<Y32AGruposSanguineosBean> getRemoteCombo() {
+--
+./Y32AGruposVolController.java:@RequestMapping(value = "/y32aGruposVol")
+./Y32AGruposVolController.java-public class Y32AGruposVolController {
+./Y32AGruposVolController.java-
+--
+./Y32AGruposVolController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AGruposVolController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AGruposVolController.java-
+--
+./Y32AGruposVolController.java:	@RequestMapping(value = "/{idgrupoT11}/{idvoluntarioT07}", method = RequestMethod.GET)
+./Y32AGruposVolController.java-	public @ResponseBody
+./Y32AGruposVolController.java-	Y32AGruposVolBean getById(@PathVariable Integer idvoluntarioT07,
+--
+./Y32AGruposVolController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AGruposVolController.java-	public @ResponseBody
+./Y32AGruposVolController.java-	Object getAll(
+--
+./Y32AGruposVolController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AGruposVolController.java-	public @ResponseBody
+./Y32AGruposVolController.java-	Long getAllCount(
+--
+./Y32AGruposVolController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AGruposVolController.java-	public @ResponseBody
+./Y32AGruposVolController.java-	void edit(@RequestBody Y32AGruposVolBean y3211s00,
+--
+./Y32AGruposVolController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AGruposVolController.java-	public @ResponseBody
+./Y32AGruposVolController.java-	void add(@RequestBody Y32AGruposVolBean y3211s00,
+--
+./Y32AGruposVolController.java:	@RequestMapping(value = "/{idgrupoT11}/{idvoluntarioT07}", method = RequestMethod.DELETE)
+./Y32AGruposVolController.java-	public void remove(@PathVariable Integer idvoluntarioT07,
+./Y32AGruposVolController.java-			@PathVariable Integer idgrupoT11, HttpServletResponse response) {
+--
+./Y32AGruposVolController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AGruposVolController.java-	public void removeMultiple(
+./Y32AGruposVolController.java-			@RequestBody ArrayList<ArrayList<String>> y3211s00Ids,
+--
+./Y32AHistPlanesController.java:@RequestMapping(value = "/y32aHistPlanes")
+./Y32AHistPlanesController.java-public class Y32AHistPlanesController {
+./Y32AHistPlanesController.java-
+--
+./Y32AHistPlanesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AHistPlanesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AHistPlanesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AHistPlanesController.java:	@RequestMapping(value = "/{idplanT27}", method = RequestMethod.GET)
+./Y32AHistPlanesController.java-	public @ResponseBody
+./Y32AHistPlanesController.java-	Y32AHistPlanesBean getById(@PathVariable Long idplanT27) {
+--
+./Y32AHistPlanesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AHistPlanesController.java-	public @ResponseBody
+./Y32AHistPlanesController.java-	Object getAll(
+--
+./Y32AHistPlanesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AHistPlanesController.java-	public @ResponseBody
+./Y32AHistPlanesController.java-	Long getAllCount(
+--
+./Y32AHistPlanesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AHistPlanesController.java-	public @ResponseBody
+./Y32AHistPlanesController.java-	Y32AHistPlanesBean edit(@RequestBody Y32AHistPlanesBean y3227t00,
+--
+./Y32AHistPlanesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AHistPlanesController.java-	public @ResponseBody
+./Y32AHistPlanesController.java-	Y32AHistPlanesBean add(@RequestBody Y32AHistPlanesBean y3227t00) {
+--
+./Y32AHistPlanesController.java:	@RequestMapping(value = "/diferenciaHist", method = RequestMethod.GET)
+./Y32AHistPlanesController.java-	public @ResponseBody
+./Y32AHistPlanesController.java-	String diferenciaHist(
+--
+./Y32AHistPlanesController.java:	@RequestMapping(value = "/{idplanT27}", method = RequestMethod.DELETE)
+./Y32AHistPlanesController.java-	public void remove(@PathVariable Long idplanT27,
+./Y32AHistPlanesController.java-			HttpServletResponse response) {
+--
+./Y32AHistPlanesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AHistPlanesController.java-	public void removeMultiple(
+./Y32AHistPlanesController.java-			@RequestBody ArrayList<ArrayList<String>> y3227t00Ids,
+--
+./Y32AIdiomasController.java:@RequestMapping(value = "/y32aIdiomas")
+./Y32AIdiomasController.java-public class Y32AIdiomasController {
+./Y32AIdiomasController.java-
+--
+./Y32AIdiomasController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AIdiomasController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AIdiomasController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AIdiomasController.java:	@RequestMapping(value = "/{ididiomaT18}", method = RequestMethod.GET)
+./Y32AIdiomasController.java-	public @ResponseBody
+./Y32AIdiomasController.java-	Y32AIdiomasBean getById(@PathVariable Long ididiomaT18) {
+--
+./Y32AIdiomasController.java:	@RequestMapping(value = "/comboIdiomas", method = RequestMethod.GET)
+./Y32AIdiomasController.java-	public @ResponseBody
+./Y32AIdiomasController.java-	List<Y32AIdiomasBean> getRemoteCombo(HttpServletRequest request) {
+--
+./Y32AIdiomasController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AIdiomasController.java-	public @ResponseBody
+./Y32AIdiomasController.java-	Object getAll(
+--
+./Y32AIdiomasController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AIdiomasController.java-	public @ResponseBody
+./Y32AIdiomasController.java-	Long getAllCount(
+--
+./Y32AIdiomasController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AIdiomasController.java-	public @ResponseBody
+./Y32AIdiomasController.java-	Y32AIdiomasBean edit(@RequestBody Y32AIdiomasBean y3218s00,
+--
+./Y32AIdiomasController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AIdiomasController.java-	public @ResponseBody
+./Y32AIdiomasController.java-	Y32AIdiomasBean add(@RequestBody Y32AIdiomasBean y3218s00) {
+--
+./Y32AIdiomasController.java:	@RequestMapping(value = "/{ididiomaT18}", method = RequestMethod.DELETE)
+./Y32AIdiomasController.java-	public void remove(@PathVariable Long ididiomaT18,
+./Y32AIdiomasController.java-			HttpServletResponse response) {
+--
+./Y32AIdiomasController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AIdiomasController.java-	public void removeMultiple(
+./Y32AIdiomasController.java-			@RequestBody ArrayList<ArrayList<String>> y3218s00Ids,
+--
+./Y32AIdiomasVolController.java:@RequestMapping(value = "/y32aIdiomasVol")
+./Y32AIdiomasVolController.java-public class Y32AIdiomasVolController {
+./Y32AIdiomasVolController.java-
+--
+./Y32AIdiomasVolController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AIdiomasVolController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AIdiomasVolController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AIdiomasVolController.java:	@RequestMapping(value = "/{ididiomaT17}/{idvoluntarioT07}", method = RequestMethod.GET)
+./Y32AIdiomasVolController.java-	public @ResponseBody
+./Y32AIdiomasVolController.java-	Y32AIdiomasVolBean getById(@PathVariable Integer idvoluntarioT07,
+--
+./Y32AIdiomasVolController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AIdiomasVolController.java-	public @ResponseBody
+./Y32AIdiomasVolController.java-	Object getAll(
+--
+./Y32AIdiomasVolController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AIdiomasVolController.java-	public @ResponseBody
+./Y32AIdiomasVolController.java-	Long getAllCount(
+--
+./Y32AIdiomasVolController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AIdiomasVolController.java-	public @ResponseBody
+./Y32AIdiomasVolController.java-	void edit(@RequestBody Y32AIdiomasVolBean y3217s00,
+--
+./Y32AIdiomasVolController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AIdiomasVolController.java-	public @ResponseBody
+./Y32AIdiomasVolController.java-	void add(@RequestBody Y32AIdiomasVolBean y3217s00,
+--
+./Y32AIdiomasVolController.java:	@RequestMapping(value = "/{ididiomaT17}/{idvoluntarioT07}", method = RequestMethod.DELETE)
+./Y32AIdiomasVolController.java-	public void remove(@PathVariable Integer idvoluntarioT07,
+./Y32AIdiomasVolController.java-			@PathVariable Long ididiomaT17, HttpServletResponse response) {
+--
+./Y32AIdiomasVolController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AIdiomasVolController.java-	public void removeMultiple(
+./Y32AIdiomasVolController.java-			@RequestBody ArrayList<ArrayList<String>> y3217s00Ids,
+--
+./Y32ANotificacionesController.java:@RequestMapping(value = "/y3228s00")
+./Y32ANotificacionesController.java-public class Y32ANotificacionesController {
+./Y32ANotificacionesController.java-
+--
+./Y32ANotificacionesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ANotificacionesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ANotificacionesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ANotificacionesController.java:	@RequestMapping(value = "/{idnotifT28}", method = RequestMethod.GET)
+./Y32ANotificacionesController.java-	public @ResponseBody
+./Y32ANotificacionesController.java-	Y32ANotificacionesBean getById(@PathVariable Long idnotifT28) {
+--
+./Y32ANotificacionesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ANotificacionesController.java-	public @ResponseBody
+./Y32ANotificacionesController.java-	Object getAll(
+--
+./Y32ANotificacionesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ANotificacionesController.java-	public @ResponseBody
+./Y32ANotificacionesController.java-	Long getAllCount(
+--
+./Y32ANotificacionesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32ANotificacionesController.java-	public @ResponseBody
+./Y32ANotificacionesController.java-	void edit(@RequestBody Y32ANotificacionesBean y3228s00,
+--
+./Y32ANotificacionesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ANotificacionesController.java-	public @ResponseBody
+./Y32ANotificacionesController.java-	Y32ANotificacionesBean add(@RequestBody Y32ANotificacionesBean y3228s00) {
+--
+./Y32ANotificacionesController.java:	@RequestMapping(value = "/{idnotifT28}", method = RequestMethod.DELETE)
+./Y32ANotificacionesController.java-	public void remove(@PathVariable Long idnotifT28,
+./Y32ANotificacionesController.java-			HttpServletResponse response) {
+--
+./Y32ANotificacionesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ANotificacionesController.java-	public void removeMultiple(
+./Y32ANotificacionesController.java-			@RequestBody ArrayList<ArrayList<String>> y3228s00Ids,
+--
+./Y32ANotificacionesController.java:	@RequestMapping(value = "/notificacion", method = RequestMethod.GET)
+./Y32ANotificacionesController.java-	public void notificacion(
+./Y32ANotificacionesController.java-			@RequestParam(value = "idplanT28", required = false) Long idplanT28,
+--
+./Y32ANotificacionesController.java:	@RequestMapping(value = "/enviarEmail", method = RequestMethod.GET)
+./Y32ANotificacionesController.java-	public void enviarEmailSubsanar(
+./Y32ANotificacionesController.java-			@RequestParam(value = "idplanT28", required = false) Long idplanT28,
+--
+./Y32AOrganismosController.java:@RequestMapping(value = "/y32aOrganismos")
+./Y32AOrganismosController.java-public class Y32AOrganismosController {
+./Y32AOrganismosController.java-
+--
+./Y32AOrganismosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AOrganismosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AOrganismosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AOrganismosController.java:	@RequestMapping(value = "/{idorganismoT20}", method = RequestMethod.GET)
+./Y32AOrganismosController.java-	public @ResponseBody
+./Y32AOrganismosController.java-	Y32AOrganismosBean getById(@PathVariable Long idorganismoT20) {
+--
+./Y32AOrganismosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AOrganismosController.java-	public @ResponseBody
+./Y32AOrganismosController.java-	Object getAll(
+--
+./Y32AOrganismosController.java:	@RequestMapping(value = "/comboOrganismos", method = RequestMethod.GET)
+./Y32AOrganismosController.java-	public @ResponseBody
+./Y32AOrganismosController.java-	List<Y32AOrganismosBean> getRemoteCombo() {
+--
+./Y32AOrganismosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AOrganismosController.java-	public @ResponseBody
+./Y32AOrganismosController.java-	Long getAllCount(
+--
+./Y32AOrganismosController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AOrganismosController.java-	public @ResponseBody
+./Y32AOrganismosController.java-	Y32AOrganismosBean edit(@RequestBody Y32AOrganismosBean y3220s00,
+--
+./Y32AOrganismosController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AOrganismosController.java-	public @ResponseBody
+./Y32AOrganismosController.java-	Y32AOrganismosBean add(@RequestBody Y32AOrganismosBean y3220s00) {
+--
+./Y32AOrganismosController.java:	@RequestMapping(value = "/{idorganismoT20}", method = RequestMethod.DELETE)
+./Y32AOrganismosController.java-	public void remove(@PathVariable Long idorganismoT20,
+./Y32AOrganismosController.java-			HttpServletResponse response) {
+--
+./Y32AOrganismosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AOrganismosController.java-	public void removeMultiple(
+./Y32AOrganismosController.java-			@RequestBody ArrayList<ArrayList<String>> y3220s00Ids,
+--
+./Y32APerfilesController.java:@RequestMapping(value = "/y32aPerfiles")
+./Y32APerfilesController.java-public class Y32APerfilesController {
+./Y32APerfilesController.java-
+--
+./Y32APerfilesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32APerfilesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32APerfilesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32APerfilesController.java:	@RequestMapping(value = "/{idperfilT02}", method = RequestMethod.GET)
+./Y32APerfilesController.java-	public @ResponseBody
+./Y32APerfilesController.java-	Y32APerfilesBean getById(@PathVariable Long idperfilT02) {
+--
+./Y32APerfilesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32APerfilesController.java-	public @ResponseBody
+./Y32APerfilesController.java-	Object getAll(
+--
+./Y32APerfilesController.java:	@RequestMapping(value = "/comboPerfiles", method = RequestMethod.GET)
+./Y32APerfilesController.java-	public @ResponseBody
+./Y32APerfilesController.java-	List<Y32APerfilesBean> getRemoteCombo(
+--
+./Y32APerfilesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32APerfilesController.java-	public @ResponseBody
+./Y32APerfilesController.java-	Long getAllCount(
+--
+./Y32APerfilesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32APerfilesController.java-	public @ResponseBody
+./Y32APerfilesController.java-	Y32APerfilesBean edit(@RequestBody Y32APerfilesBean y3202s00,
+--
+./Y32APerfilesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32APerfilesController.java-	public @ResponseBody
+./Y32APerfilesController.java-	Y32APerfilesBean add(@RequestBody Y32APerfilesBean y3202s00) {
+--
+./Y32APerfilesController.java:	@RequestMapping(value = "/{idperfilT02}", method = RequestMethod.DELETE)
+./Y32APerfilesController.java-	public void remove(@PathVariable Long idperfilT02,
+./Y32APerfilesController.java-			HttpServletResponse response) {
+--
+./Y32APerfilesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32APerfilesController.java-	public void removeMultiple(
+./Y32APerfilesController.java-			@RequestBody ArrayList<ArrayList<String>> y3202s00Ids,
+--
+./Y32APlanesController.java:@RequestMapping(value = "/y32aPlanes")
+./Y32APlanesController.java-public class Y32APlanesController {
+./Y32APlanesController.java-
+--
+./Y32APlanesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32APlanesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32APlanesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/{idplanT25}", method = RequestMethod.GET)
+./Y32APlanesController.java-	public @ResponseBody
+./Y32APlanesController.java-	Y32APlanesBean getById(@PathVariable Long idplanT25) {
+--
+./Y32APlanesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32APlanesController.java-	public @ResponseBody
+./Y32APlanesController.java-	Object getAll(
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32APlanesController.java-	public @ResponseBody
+./Y32APlanesController.java-	Long getAllCount(
+--
+./Y32APlanesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32APlanesController.java-	public void edit(@RequestBody Y32APlanesBean y3225s00,
+./Y32APlanesController.java-			HttpServletResponse response, HttpServletRequest request) {
+--
+./Y32APlanesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32APlanesController.java-	public @ResponseBody
+./Y32APlanesController.java-	Y32APlanesBean add(@RequestBody Y32APlanesBean y3225s00,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/obtenerPlantilla", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void obtenerPlantilla(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/obtenerPlantillaExcel", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void obtenerPlantillaExcel(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/{idplanT25}", method = RequestMethod.DELETE)
+./Y32APlanesController.java-	public void remove(@PathVariable Long idplanT25,
+./Y32APlanesController.java-
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32APlanesController.java-	public void removeMultiple(
+./Y32APlanesController.java-			@RequestBody ArrayList<ArrayList<String>> y3225s00Ids,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/autocompletePlanes", method = RequestMethod.GET)
+./Y32APlanesController.java-	public @ResponseBody
+./Y32APlanesController.java-	List<Y32APlanesBean> getRemoteAutocomplete(
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/exportar", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void exportar(
+./Y32APlanesController.java-
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/mailingOld", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void mailingOld(
+./Y32APlanesController.java-
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/mailing", method = RequestMethod.POST)
+./Y32APlanesController.java-	public void mailing(
+./Y32APlanesController.java-
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/certificado", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void obtenerCertificado(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/pdfGeneral", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void obtenerPdfGeneral(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/pdfPlantilla", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void obtenerPdfPlantilla(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/solicitarBajaPlanes", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void solicitarBajaPlanes(
+./Y32APlanesController.java-			@RequestParam(value = "idplanesArray", required = false) String idplanesArray,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/enviar", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void enviar(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/subsanar", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void subsanar(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/enviarEmailSubsanar", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void enviarEmailSubsanar(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/enviarSolBaja", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void enviarSolBaja(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/validar", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void validar(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "/enviarEmailValidar", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void enviarEmailValidar(
+./Y32APlanesController.java-			@RequestParam(value = "idplanT25", required = false) Long idplanT25,
+--
+./Y32APlanesController.java:	@RequestMapping(value = "actualizarSession", method = RequestMethod.GET)
+./Y32APlanesController.java-	public void actualizarSession(HttpServletRequest request,
+./Y32APlanesController.java-			HttpServletResponse response) {
+--
+./Y32AProfesionesController.java:@RequestMapping(value = "/y32aProfesiones")
+./Y32AProfesionesController.java-public class Y32AProfesionesController {
+./Y32AProfesionesController.java-
+--
+./Y32AProfesionesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AProfesionesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AProfesionesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AProfesionesController.java:	@RequestMapping(value = "/comboProfesiones", method = RequestMethod.GET)
+./Y32AProfesionesController.java-	public @ResponseBody
+./Y32AProfesionesController.java-	List<Y32AProfesionesBean> getRemoteCombo(HttpServletRequest request) {
+--
+./Y32AProfesionesController.java:	@RequestMapping(value = "/{idprofesionT23}", method = RequestMethod.GET)
+./Y32AProfesionesController.java-	public @ResponseBody
+./Y32AProfesionesController.java-	Y32AProfesionesBean getById(@PathVariable Long idprofesionT23) {
+--
+./Y32AProfesionesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AProfesionesController.java-	public @ResponseBody
+./Y32AProfesionesController.java-	Object getAll(
+--
+./Y32AProfesionesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AProfesionesController.java-	public @ResponseBody
+./Y32AProfesionesController.java-	Long getAllCount(
+--
+./Y32AProfesionesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AProfesionesController.java-	public @ResponseBody
+./Y32AProfesionesController.java-	Y32AProfesionesBean edit(@RequestBody Y32AProfesionesBean y3223s00,
+--
+./Y32AProfesionesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AProfesionesController.java-	public @ResponseBody
+./Y32AProfesionesController.java-	Y32AProfesionesBean add(@RequestBody Y32AProfesionesBean y3223s00) {
+--
+./Y32AProfesionesController.java:	@RequestMapping(value = "/{idprofesionT23}", method = RequestMethod.DELETE)
+./Y32AProfesionesController.java-	public void remove(@PathVariable Long idprofesionT23,
+./Y32AProfesionesController.java-			HttpServletResponse response) {
+--
+./Y32AProfesionesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AProfesionesController.java-	public void removeMultiple(
+./Y32AProfesionesController.java-			@RequestBody ArrayList<ArrayList<String>> y3223s00Ids,
+--
+./Y32ARecursosExternosController.java:@RequestMapping(value = "/y32aRecursosExternos")
+./Y32ARecursosExternosController.java-public class Y32ARecursosExternosController {
+./Y32ARecursosExternosController.java-
+--
+./Y32ARecursosExternosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ARecursosExternosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ARecursosExternosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ARecursosExternosController.java:	@RequestMapping(value = "/{iddocumentoT29}", method = RequestMethod.GET)
+./Y32ARecursosExternosController.java-	public @ResponseBody
+./Y32ARecursosExternosController.java-	Y32ARecursosExternosBean getById(@PathVariable Long iddocumentoT29) {
+--
+./Y32ARecursosExternosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ARecursosExternosController.java-	public @ResponseBody
+./Y32ARecursosExternosController.java-	Object getAll(
+--
+./Y32ARecursosExternosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ARecursosExternosController.java-	public @ResponseBody
+./Y32ARecursosExternosController.java-	Long getAllCount(
+--
+./Y32ARecursosExternosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ARecursosExternosController.java-	public void removeMultiple(
+./Y32ARecursosExternosController.java-			@RequestBody ArrayList<ArrayList<String>> y3229s00Ids,
+--
+./Y32ARecursosExternosController.java:	@RequestMapping(value = "insertarDocumento", method = RequestMethod.POST)
+./Y32ARecursosExternosController.java-	public void insertarDocumento(
+./Y32ARecursosExternosController.java-			HttpServletRequest request,
+--
+./Y32ARecursosExternosController.java:	@RequestMapping(value = "modificarDocumento", method = RequestMethod.POST)
+./Y32ARecursosExternosController.java-	public void modificarDocumento(
+./Y32ARecursosExternosController.java-			HttpServletRequest request,
+--
+./Y32ARecursosExternosController.java:	@RequestMapping(value = "/enviarSolBaja", method = RequestMethod.GET)
+./Y32ARecursosExternosController.java-	public void enviarSolBaja(
+./Y32ARecursosExternosController.java-			@RequestParam(value = "iddocumentoT29", required = false) Long iddocumentoT29,
+--
+./Y32ARecursosExternosController.java:	@RequestMapping(value = "/descargarDocumento", method = RequestMethod.GET)
+./Y32ARecursosExternosController.java-	public void descargarDocumento(HttpServletRequest request,
+./Y32ARecursosExternosController.java-			HttpServletResponse response) {
+--
+./Y32ARecursosExternosController.java:	@RequestMapping(value = "/{iddocumentoT29}", method = RequestMethod.DELETE)
+./Y32ARecursosExternosController.java-	public void remove(@PathVariable Long iddocumentoT29,
+./Y32ARecursosExternosController.java-			HttpServletResponse response) {
+--
+./Y32ARelacionesLaboralesController.java:@RequestMapping(value = "/y32aRelacionesLaborales")
+./Y32ARelacionesLaboralesController.java-public class Y32ARelacionesLaboralesController {
+./Y32ARelacionesLaboralesController.java-
+--
+./Y32ARelacionesLaboralesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ARelacionesLaboralesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ARelacionesLaboralesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ARelacionesLaboralesController.java:	@RequestMapping(value = "/{idrellaboralT22}", method = RequestMethod.GET)
+./Y32ARelacionesLaboralesController.java-	public @ResponseBody
+./Y32ARelacionesLaboralesController.java-	Y32ARelacionesLaboralesBean getById(@PathVariable Long idrellaboralT22) {
+--
+./Y32ARelacionesLaboralesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ARelacionesLaboralesController.java-	public @ResponseBody
+./Y32ARelacionesLaboralesController.java-	Object getAll(
+--
+./Y32ARelacionesLaboralesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ARelacionesLaboralesController.java-	public @ResponseBody
+./Y32ARelacionesLaboralesController.java-	Long getAllCount(
+--
+./Y32ARelacionesLaboralesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32ARelacionesLaboralesController.java-	public @ResponseBody
+./Y32ARelacionesLaboralesController.java-	Y32ARelacionesLaboralesBean edit(
+--
+./Y32ARelacionesLaboralesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ARelacionesLaboralesController.java-	public @ResponseBody
+./Y32ARelacionesLaboralesController.java-	Y32ARelacionesLaboralesBean add(
+--
+./Y32ARelacionesLaboralesController.java:	@RequestMapping(value = "/{idrellaboralT22}", method = RequestMethod.DELETE)
+./Y32ARelacionesLaboralesController.java-	public void remove(@PathVariable Long idrellaboralT22,
+./Y32ARelacionesLaboralesController.java-			HttpServletResponse response) {
+--
+./Y32ARelacionesLaboralesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ARelacionesLaboralesController.java-	public void removeMultiple(
+./Y32ARelacionesLaboralesController.java-			@RequestBody ArrayList<ArrayList<String>> y3222s00Ids,
+--
+./Y32ARelacionesLaboralesController.java:	@RequestMapping(value = "/comboRelaciones", method = RequestMethod.GET)
+./Y32ARelacionesLaboralesController.java-	public @ResponseBody
+./Y32ARelacionesLaboralesController.java-	List<Y32ARelacionesLaboralesBean> getRemoteCombo(HttpServletRequest request) {
+--
+./Y32AResponsablesController.java:@RequestMapping(value = "/y32aResponsables")
+./Y32AResponsablesController.java-public class Y32AResponsablesController {
+./Y32AResponsablesController.java-
+--
+./Y32AResponsablesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AResponsablesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AResponsablesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AResponsablesController.java:	@RequestMapping(value = "/{idrespT31}", method = RequestMethod.GET)
+./Y32AResponsablesController.java-	public @ResponseBody
+./Y32AResponsablesController.java-	Y32AResponsablesBean getById(@PathVariable Long idrespT31) {
+--
+./Y32AResponsablesController.java:	@RequestMapping(value = "/obtenerResponsableTitular", method = RequestMethod.GET)
+./Y32AResponsablesController.java-	public @ResponseBody
+./Y32AResponsablesController.java-	Y32AResponsablesBean obtenerResponsableTitular(
+--
+./Y32AResponsablesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AResponsablesController.java-	public @ResponseBody
+./Y32AResponsablesController.java-	Object getAll(
+--
+./Y32AResponsablesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AResponsablesController.java-	public @ResponseBody
+./Y32AResponsablesController.java-	Long getAllCount(
+--
+./Y32AResponsablesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AResponsablesController.java-	public @ResponseBody
+./Y32AResponsablesController.java-	Y32AResponsablesBean edit(@RequestBody Y32AResponsablesBean y3231s00,
+--
+./Y32AResponsablesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AResponsablesController.java-	public @ResponseBody
+./Y32AResponsablesController.java-	Y32AResponsablesBean add(@RequestBody Y32AResponsablesBean y3231s00,
+--
+./Y32AResponsablesController.java:	@RequestMapping(value = "/{idrespT31}", method = RequestMethod.DELETE)
+./Y32AResponsablesController.java-	public void remove(@PathVariable Long idrespT31,
+./Y32AResponsablesController.java-			HttpServletResponse response) {
+--
+./Y32AResponsablesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AResponsablesController.java-	public void removeMultiple(
+./Y32AResponsablesController.java-			@RequestBody ArrayList<ArrayList<String>> y3231s00Ids,
+--
+./Y32AResponsablesPlanIntegradoController.java:@RequestMapping(value = "/y32aResponsablesPlan")
+./Y32AResponsablesPlanIntegradoController.java-public class Y32AResponsablesPlanIntegradoController {
+./Y32AResponsablesPlanIntegradoController.java-
+--
+./Y32AResponsablesPlanIntegradoController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AResponsablesPlanIntegradoController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AResponsablesPlanIntegradoController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AResponsablesPlanIntegradoController.java:	@RequestMapping(value = "/{idrespT31}", method = RequestMethod.GET)
+./Y32AResponsablesPlanIntegradoController.java-	public @ResponseBody
+./Y32AResponsablesPlanIntegradoController.java-	Y32AResponsablesBean getById(@PathVariable Long idrespT31,
+--
+./Y32AResponsablesPlanIntegradoController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AResponsablesPlanIntegradoController.java-	public @ResponseBody
+./Y32AResponsablesPlanIntegradoController.java-	Object getAll(
+--
+./Y32AResponsablesPlanIntegradoController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AResponsablesPlanIntegradoController.java-	public @ResponseBody
+./Y32AResponsablesPlanIntegradoController.java-	Long getAllCount(
+--
+./Y32AResponsablesPlanIntegradoController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AResponsablesPlanIntegradoController.java-	public @ResponseBody
+./Y32AResponsablesPlanIntegradoController.java-	Y32AResponsablesBean edit(@RequestBody Y32AResponsablesBean y3231s00,
+--
+./Y32AResponsablesPlanIntegradoController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AResponsablesPlanIntegradoController.java-	public @ResponseBody
+./Y32AResponsablesPlanIntegradoController.java-	Y32AResponsablesBean add(@RequestBody Y32AResponsablesBean y3231s00,
+--
+./Y32AResponsablesPlanIntegradoController.java:	@RequestMapping(value = "/{idrespT31}", method = RequestMethod.DELETE)
+./Y32AResponsablesPlanIntegradoController.java-	public void remove(@PathVariable Long idrespT31,
+./Y32AResponsablesPlanIntegradoController.java-			HttpServletResponse response, HttpServletRequest request) {
+--
+./Y32ARestUsuariosController.java:@RequestMapping(value = "/y32aRestUsuarios")
+./Y32ARestUsuariosController.java-public class Y32ARestUsuariosController {
+./Y32ARestUsuariosController.java-
+--
+./Y32ARestUsuariosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ARestUsuariosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ARestUsuariosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ARestUsuariosController.java:	@RequestMapping(value = "/{idrestT37}/{idusuarioT01}", method = RequestMethod.GET)
+./Y32ARestUsuariosController.java-	public @ResponseBody
+./Y32ARestUsuariosController.java-	Y32ARestUsuariosBean getById(@PathVariable Long idrestT37) {
+--
+./Y32ARestUsuariosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ARestUsuariosController.java-	public @ResponseBody
+./Y32ARestUsuariosController.java-	Object getAll(
+--
+./Y32ARestUsuariosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ARestUsuariosController.java-	public @ResponseBody
+./Y32ARestUsuariosController.java-	Long getAllCount(
+--
+./Y32ARestUsuariosController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32ARestUsuariosController.java-	public @ResponseBody
+./Y32ARestUsuariosController.java-	void edit(@RequestBody Y32ARestUsuariosBean y3237s00,
+--
+./Y32ARestUsuariosController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ARestUsuariosController.java-	public @ResponseBody
+./Y32ARestUsuariosController.java-	void add(@RequestBody Y32ARestUsuariosBean y3237s00,
+--
+./Y32ARestUsuariosController.java:	@RequestMapping(value = "/{idrestT37}/{idusuarioT01}", method = RequestMethod.DELETE)
+./Y32ARestUsuariosController.java-	public void remove(@PathVariable Long idrestT37,
+./Y32ARestUsuariosController.java-			HttpServletResponse response) {
+--
+./Y32ARestUsuariosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ARestUsuariosController.java-	public void removeMultiple(
+./Y32ARestUsuariosController.java-			@RequestBody ArrayList<ArrayList<String>> y3237s00Ids,
+--
+./Y32ATablasController.java:@RequestMapping(value = "/y32aTablas")
+./Y32ATablasController.java-public class Y32ATablasController {
+./Y32ATablasController.java-
+--
+./Y32ATablasController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ATablasController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ATablasController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ATablasController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	Object getAll(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	Long getAllCount(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboSexos", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboSexos(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboNivel", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboNiveles(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboTipoUsuarios", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboTipoUsuarios(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboTipoIdent", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboTiposIdent(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboEstadoCivil", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboEstados() {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboActividad", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboActividades(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboActividadExt", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboActividadesExt(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboDestinatario", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboDestinatarios(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboEstado", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboEstadosPlanes(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboRangoOcupantes", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboRangoOcupantes(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboRangoEmpleados", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboRangoEmpleados(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboRangoAlumnos", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboRangoAlumnos(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboResponsables", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboResponsables(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboTiposNotif", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboTiposNotif() {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboRed", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<Y32ATablasBean> getRemoteComboRed() {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboProvincias", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraProvincia> getRemoteComboProvincias() {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboProvinciasExt", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraProvincia> getRemoteComboProvinciasExt(HttpServletRequest request) {
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboMunicipiosExt", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraMunicipio> getRemoteComboMunicipiosExt(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboMunicipios", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraMunicipio> getRemoteComboMunicipios(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboMunicipiosVol", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraMunicipio> getRemoteComboMunicipiosVol(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboMunicipiosAgrup", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraMunicipio> getRemoteComboMunicipiosAgrup(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboMunicipiosTitular", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraMunicipio> getRemoteComboMunicipiosTitular(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboMunicipiosResponsable", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraMunicipio> getRemoteComboMunicipiosResponsable(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboMunicipiosRestUsuarios", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraMunicipio> getRemoteComboMunicipiosRestUsuarios(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboLocalidades", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraLocalidad> getRemoteComboLocalidades(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboCalles", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraCalle> getRemoteComboCalles(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/obtenerDescripcionCalle", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	String getDescripcionCalle(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboPortales", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	List<NoraPortal> getRemoteComboPortales(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/comboCodPostal", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	NoraPortal getRemoteComboCodPostal(
+--
+./Y32ATablasController.java:	@RequestMapping(value = "/getRemoteCombos", method = RequestMethod.GET)
+./Y32ATablasController.java-	public @ResponseBody
+./Y32ATablasController.java-	String getRemoteCombos(HttpServletRequest request) {
+--
+./Y32ATipoDocumentosController.java:@RequestMapping(value = "/y32aTipoDocumentos")
+./Y32ATipoDocumentosController.java-public class Y32ATipoDocumentosController {
+./Y32ATipoDocumentosController.java-
+--
+./Y32ATipoDocumentosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ATipoDocumentosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ATipoDocumentosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ATipoDocumentosController.java:	@RequestMapping(value = "/{idtipodocumentoT06}", method = RequestMethod.GET)
+./Y32ATipoDocumentosController.java-	public @ResponseBody
+./Y32ATipoDocumentosController.java-	Y32ATipoDocumentosBean getById(@PathVariable Long idtipodocumentoT06) {
+--
+./Y32ATipoDocumentosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ATipoDocumentosController.java-	public @ResponseBody
+./Y32ATipoDocumentosController.java-	Object getAll(
+--
+./Y32ATipoDocumentosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ATipoDocumentosController.java-	public @ResponseBody
+./Y32ATipoDocumentosController.java-	Long getAllCount(
+--
+./Y32ATipoDocumentosController.java:	@RequestMapping(value = "/comboTipoDocumentos", method = RequestMethod.GET)
+./Y32ATipoDocumentosController.java-	public @ResponseBody
+./Y32ATipoDocumentosController.java-	List<Y32ATipoDocumentosBean> getRemoteCombo() {
+--
+./Y32ATipoDocumentosController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32ATipoDocumentosController.java-	public @ResponseBody
+./Y32ATipoDocumentosController.java-	Y32ATipoDocumentosBean edit(@RequestBody Y32ATipoDocumentosBean y3206s00,
+--
+./Y32ATipoDocumentosController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ATipoDocumentosController.java-	public @ResponseBody
+./Y32ATipoDocumentosController.java-	Y32ATipoDocumentosBean add(@RequestBody Y32ATipoDocumentosBean y3206s00) {
+--
+./Y32ATipoDocumentosController.java:	@RequestMapping(value = "/{idtipodocumentoT06}", method = RequestMethod.DELETE)
+./Y32ATipoDocumentosController.java-	public void remove(@PathVariable Long idtipodocumentoT06,
+./Y32ATipoDocumentosController.java-			HttpServletResponse response) {
+--
+./Y32ATipoDocumentosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ATipoDocumentosController.java-	public void removeMultiple(
+./Y32ATipoDocumentosController.java-			@RequestBody ArrayList<ArrayList<String>> y3206s00Ids,
+--
+./Y32ATiposAgrupacionesController.java:@RequestMapping(value = "/y32aTipoAgrupaciones")
+./Y32ATiposAgrupacionesController.java-public class Y32ATiposAgrupacionesController {
+./Y32ATiposAgrupacionesController.java-
+--
+./Y32ATiposAgrupacionesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ATiposAgrupacionesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ATiposAgrupacionesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ATiposAgrupacionesController.java:	@RequestMapping(value = "/{idtipoagrupT04}", method = RequestMethod.GET)
+./Y32ATiposAgrupacionesController.java-	public @ResponseBody
+./Y32ATiposAgrupacionesController.java-	Y32ATipoAgrupacionesBean getById(@PathVariable Long idtipoagrupT04) {
+--
+./Y32ATiposAgrupacionesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ATiposAgrupacionesController.java-	public @ResponseBody
+./Y32ATiposAgrupacionesController.java-	Object getAll(
+--
+./Y32ATiposAgrupacionesController.java:	@RequestMapping(value = "/comboTipoAgrupaciones", method = RequestMethod.GET)
+./Y32ATiposAgrupacionesController.java-	public @ResponseBody
+./Y32ATiposAgrupacionesController.java-	List<Y32ATipoAgrupacionesBean> getRemoteCombo() {
+--
+./Y32ATiposAgrupacionesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ATiposAgrupacionesController.java-	public @ResponseBody
+./Y32ATiposAgrupacionesController.java-	Long getAllCount(
+--
+./Y32ATiposAgrupacionesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32ATiposAgrupacionesController.java-	public @ResponseBody
+./Y32ATiposAgrupacionesController.java-	Y32ATipoAgrupacionesBean edit(
+--
+./Y32ATiposAgrupacionesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ATiposAgrupacionesController.java-	public @ResponseBody
+./Y32ATiposAgrupacionesController.java-	Y32ATipoAgrupacionesBean add(@RequestBody Y32ATipoAgrupacionesBean y3204s00) {
+--
+./Y32ATiposAgrupacionesController.java:	@RequestMapping(value = "/{idtipoagrupT04}", method = RequestMethod.DELETE)
+./Y32ATiposAgrupacionesController.java-	public void remove(@PathVariable Long idtipoagrupT04,
+./Y32ATiposAgrupacionesController.java-			HttpServletResponse response) {
+--
+./Y32ATiposAgrupacionesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ATiposAgrupacionesController.java-	public void removeMultiple(
+./Y32ATiposAgrupacionesController.java-			@RequestBody ArrayList<ArrayList<String>> y3204s00Ids,
+--
+./Y32ATiposPlanesController.java:@RequestMapping(value = "/y32aTiposPlanes")
+./Y32ATiposPlanesController.java-public class Y32ATiposPlanesController {
+./Y32ATiposPlanesController.java-
+--
+./Y32ATiposPlanesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ATiposPlanesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ATiposPlanesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ATiposPlanesController.java:	@RequestMapping(value = "/{iddocumentoT26}", method = RequestMethod.GET)
+./Y32ATiposPlanesController.java-	public @ResponseBody
+./Y32ATiposPlanesController.java-	Y32ATiposPlanes getById(@PathVariable Long iddocumentoT26) {
+--
+./Y32ATiposPlanesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ATiposPlanesController.java-	public @ResponseBody
+./Y32ATiposPlanesController.java-	Object getAll(
+--
+./Y32ATiposPlanesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ATiposPlanesController.java-	public @ResponseBody
+./Y32ATiposPlanesController.java-	Long getAllCount(
+--
+./Y32ATiposPlanesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ATiposPlanesController.java-	public void removeMultiple(
+./Y32ATiposPlanesController.java-			@RequestBody ArrayList<ArrayList<String>> y3226s00Ids,
+--
+./Y32ATiposPlanesController.java:	@RequestMapping(value = "insertarDocumento", method = RequestMethod.POST)
+./Y32ATiposPlanesController.java-	public void insertarDocumento(
+./Y32ATiposPlanesController.java-			HttpServletRequest request,
+--
+./Y32ATiposPlanesController.java:	@RequestMapping(value = "modificarDocumento", method = RequestMethod.POST)
+./Y32ATiposPlanesController.java-	public void modificarDocumento(
+./Y32ATiposPlanesController.java-			HttpServletRequest request,
+--
+./Y32ATiposPlanesController.java:	@RequestMapping(value = "/enviarSolBaja", method = RequestMethod.GET)
+./Y32ATiposPlanesController.java-	public void enviarSolBaja(
+./Y32ATiposPlanesController.java-			@RequestParam(value = "iddocumentoT26", required = false) Long iddocumentoT26,
+--
+./Y32ATiposPlanesController.java:	@RequestMapping(value = "/descargarDocumento", method = RequestMethod.GET)
+./Y32ATiposPlanesController.java-	public void descargarDocumento(HttpServletRequest request,
+./Y32ATiposPlanesController.java-			HttpServletResponse response) {
+--
+./Y32ATiposPlanesController.java:	@RequestMapping(value = "/{iddocumentoT26}", method = RequestMethod.DELETE)
+./Y32ATiposPlanesController.java-	public void remove(@PathVariable Long iddocumentoT26,
+./Y32ATiposPlanesController.java-			HttpServletResponse response) {
+--
+./Y32ATitulacionesController.java:@RequestMapping(value = "/y32aTitulaciones")
+./Y32ATitulacionesController.java-public class Y32ATitulacionesController {
+./Y32ATitulacionesController.java-
+--
+./Y32ATitulacionesController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32ATitulacionesController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32ATitulacionesController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32ATitulacionesController.java:	@RequestMapping(value = "/comboTitulaciones", method = RequestMethod.GET)
+./Y32ATitulacionesController.java-	public @ResponseBody
+./Y32ATitulacionesController.java-	List<Y32ATitulacionesBean> getRemoteCombo(HttpServletRequest request) {
+--
+./Y32ATitulacionesController.java:	@RequestMapping(value = "/{idtitulacionT24}", method = RequestMethod.GET)
+./Y32ATitulacionesController.java-	public @ResponseBody
+./Y32ATitulacionesController.java-	Y32ATitulacionesBean getById(@PathVariable Long idtitulacionT24) {
+--
+./Y32ATitulacionesController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32ATitulacionesController.java-	public @ResponseBody
+./Y32ATitulacionesController.java-	Object getAll(
+--
+./Y32ATitulacionesController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32ATitulacionesController.java-	public @ResponseBody
+./Y32ATitulacionesController.java-	Long getAllCount(
+--
+./Y32ATitulacionesController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32ATitulacionesController.java-	public @ResponseBody
+./Y32ATitulacionesController.java-	Y32ATitulacionesBean edit(@RequestBody Y32ATitulacionesBean y3224s00,
+--
+./Y32ATitulacionesController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32ATitulacionesController.java-	public @ResponseBody
+./Y32ATitulacionesController.java-	Y32ATitulacionesBean add(@RequestBody Y32ATitulacionesBean y3224s00) {
+--
+./Y32ATitulacionesController.java:	@RequestMapping(value = "/{idtitulacionT24}", method = RequestMethod.DELETE)
+./Y32ATitulacionesController.java-	public void remove(@PathVariable Long idtitulacionT24,
+./Y32ATitulacionesController.java-			HttpServletResponse response) {
+--
+./Y32ATitulacionesController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32ATitulacionesController.java-	public void removeMultiple(
+./Y32ATitulacionesController.java-			@RequestBody ArrayList<ArrayList<String>> y3224s00Ids,
+--
+./Y32AUsuariosController.java:@RequestMapping(value = "/y32aUsuarios")
+./Y32AUsuariosController.java-public class Y32AUsuariosController {
+./Y32AUsuariosController.java-
+--
+./Y32AUsuariosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AUsuariosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AUsuariosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AUsuariosController.java:	@RequestMapping(value = "/{idusuarioT01}", method = RequestMethod.GET)
+./Y32AUsuariosController.java-	public @ResponseBody
+./Y32AUsuariosController.java-	Y32AUsuariosBean getById(@PathVariable Integer idusuarioT01) {
+--
+./Y32AUsuariosController.java:	@RequestMapping(value = "/userpass", method = RequestMethod.POST)
+./Y32AUsuariosController.java-	public void getByUserPass(
+./Y32AUsuariosController.java-			@RequestParam(value = "j_username", required = false) String loginT01,
+--
+./Y32AUsuariosController.java:	@RequestMapping(value = "/eraseCookie", method = RequestMethod.GET)
+./Y32AUsuariosController.java-	public void eraseCookie(
+./Y32AUsuariosController.java-			@RequestParam(value = "cabeceraUsuario", required = false) String cabeceraUsuario,
+--
+./Y32AUsuariosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AUsuariosController.java-	public @ResponseBody
+./Y32AUsuariosController.java-	Object getAll(
+--
+./Y32AUsuariosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AUsuariosController.java-	public @ResponseBody
+./Y32AUsuariosController.java-	Long getAllCount(
+--
+./Y32AUsuariosController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AUsuariosController.java-	public @ResponseBody
+./Y32AUsuariosController.java-	Y32AUsuariosBean edit(@RequestBody Y32AUsuariosBean y3201s00,
+--
+./Y32AUsuariosController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AUsuariosController.java-	public @ResponseBody
+./Y32AUsuariosController.java-	Y32AUsuariosBean add(@RequestBody Y32AUsuariosBean y3201s00,
+--
+./Y32AUsuariosController.java:	@RequestMapping(value = "/{idusuarioT01}", method = RequestMethod.DELETE)
+./Y32AUsuariosController.java-	public void remove(@PathVariable Integer idusuarioT01,
+./Y32AUsuariosController.java-			HttpServletResponse response, HttpServletRequest request) {
+--
+./Y32AUsuariosController.java:	@RequestMapping(value = "/removeSolBaja", method = RequestMethod.POST)
+./Y32AUsuariosController.java-	public void removeSolBaja(HttpServletRequest request,
+./Y32AUsuariosController.java-			HttpServletResponse response) {
+--
+./Y32AUsuariosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AUsuariosController.java-	public void removeMultiple(
+./Y32AUsuariosController.java-			@RequestBody ArrayList<ArrayList<String>> y3201s00Ids,
+--
+./Y32AUsuariosController.java:	@RequestMapping(value = "/comboUsuariosLectura", method = RequestMethod.GET)
+./Y32AUsuariosController.java-	public @ResponseBody
+./Y32AUsuariosController.java-	List<Y32AUsuariosBean> getRemoteCombo() {
+--
+./Y32AVoluntariosController.java:@RequestMapping(value = "/y32aVoluntarios")
+./Y32AVoluntariosController.java-public class Y32AVoluntariosController {
+./Y32AVoluntariosController.java-
+--
+./Y32AVoluntariosController.java:	@RequestMapping(value = "maint", method = RequestMethod.GET)
+./Y32AVoluntariosController.java-	public ModelAndView getCreateForm(Model model) {
+./Y32AVoluntariosController.java-		model.addAttribute("defaultLanguage",
+--
+./Y32AVoluntariosController.java:	@RequestMapping(value = "/{idvoluntarioT07}", method = RequestMethod.GET)
+./Y32AVoluntariosController.java-	public @ResponseBody
+./Y32AVoluntariosController.java-	Y32AVoluntariosBean getById(@PathVariable Integer idvoluntarioT07) {
+--
+./Y32AVoluntariosController.java:	@RequestMapping(method = RequestMethod.GET)
+./Y32AVoluntariosController.java-	public @ResponseBody
+./Y32AVoluntariosController.java-	Object getAll(
+--
+./Y32AVoluntariosController.java:	@RequestMapping(value = "/count", method = RequestMethod.GET)
+./Y32AVoluntariosController.java-	public @ResponseBody
+./Y32AVoluntariosController.java-	Long getAllCount(
+--
+./Y32AVoluntariosController.java:	@RequestMapping(method = RequestMethod.PUT)
+./Y32AVoluntariosController.java-	public @ResponseBody
+./Y32AVoluntariosController.java-	void edit(@RequestBody Y32AVoluntariosBean y3207s00,
+--
+./Y32AVoluntariosController.java:	@RequestMapping(method = RequestMethod.POST)
+./Y32AVoluntariosController.java-	public @ResponseBody
+./Y32AVoluntariosController.java-	void add(@RequestBody Y32AVoluntariosBean y3207s00,
+--
+./Y32AVoluntariosController.java:	@RequestMapping(value = "/{idvoluntarioT07}", method = RequestMethod.DELETE)
+./Y32AVoluntariosController.java-	public void remove(@PathVariable Integer idvoluntarioT07,
+./Y32AVoluntariosController.java-			HttpServletResponse response, HttpServletRequest request) {
+--
+./Y32AVoluntariosController.java:	@RequestMapping(value = "/deleteAll", method = RequestMethod.POST)
+./Y32AVoluntariosController.java-	public void removeMultiple(
+./Y32AVoluntariosController.java-			@RequestBody ArrayList<ArrayList<String>> y3207s00Ids,
+--
+./Y32AVoluntariosController.java:	@RequestMapping(value = "/comboAnyosFechaNacimiento", method = RequestMethod.GET)
+./Y32AVoluntariosController.java-	public @ResponseBody
+./Y32AVoluntariosController.java-	List<Y32AVoluntariosBean> getRemoteComboAnyos() {
+--
+./Y32AVoluntariosController.java:	@RequestMapping(value = "/exportar", method = RequestMethod.GET)
+./Y32AVoluntariosController.java-	public void exportar(
+./Y32AVoluntariosController.java-			@RequestParam(value = "idagrupacionT07", required = false) Integer idagrupacionT07,
+--
+./Y32AVoluntariosController.java:	@RequestMapping(value = "/myaction", method = RequestMethod.GET)
+./Y32AVoluntariosController.java-	public @ResponseBody
+./Y32AVoluntariosController.java-	void mycambio(@RequestBody Y32AVoluntariosBean y3207s00,

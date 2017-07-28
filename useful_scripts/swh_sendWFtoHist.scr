@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source movetoHist.fu
+
+fity=shscr
+pref=wo
+ext=scr
+scrd="/home/violeta/filecollections/scrfiles"
+cmd=open_a_works_file.scr
+
+movetoHist.fu $1

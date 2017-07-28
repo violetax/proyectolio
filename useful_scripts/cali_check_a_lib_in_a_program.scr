@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Where? "
+read dir
+echo "What?"
+read lib
+
+for prog in `ls ${dir}`
+do
+	progfp=${dir}/$prog
+	if [[ -f $progfp ]]; then
+		res=`ldd $progfp | grep $lib` 
+			if [[ $res != '' ]]; then
+			echo $progfp
+			echo $res
+		fi
+	fi
+done
+

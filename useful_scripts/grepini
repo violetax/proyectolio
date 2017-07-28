@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+term=$1
+
+find . -type f | xargs grep -I -i ${term}  2>/dev/null | grep -v "\.svn\|\.settin\|target\|build\|test\|classes" 2>/dev/null

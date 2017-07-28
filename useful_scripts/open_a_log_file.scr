@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#asignar las variables de la funcion, del header, del dest dir
+cold="/home/violeta/filecollections/logs"
+
+#tomar dir name de origen
+dir=`pwd | xargs -i basename {}` 
+ext=log
+file=${dir}.${ext}
+
+vim $file
+exit

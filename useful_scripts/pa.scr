@@ -1,0 +1,5 @@
+#!/bin/bash
+
+var=$1
+
+env | grep --color=auto $var

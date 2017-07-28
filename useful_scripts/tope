@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cmd=$1
+
+top -c -p $(pgrep -d',' -f ${cmd})

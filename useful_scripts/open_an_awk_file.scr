@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#importar funcion que crea los files
+source creaFile.fu
+
+#asignar las variables de la funcion, del header, del dest dir
+pref=awk
+ext=awk
+header="/home/violeta/.vim/sourceText/awk_files"
+cold="/home/violeta/filecollections/awkfiles"
+
+creaFile.fu $1

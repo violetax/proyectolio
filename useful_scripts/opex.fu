@@ -1,0 +1,15 @@
+function opex.fu ()
+
+{
+
+file=${1}
+
+touch $file
+
+chmod u+x $file 
+
+vim -c "so $header | wq" $file 
+
+vim $file 
+
+}

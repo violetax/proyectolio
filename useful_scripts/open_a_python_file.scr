@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#importar funcion que crea los files
+source creaFile.fu
+
+#asignar las variables de la funcion
+pref=py
+ext=py
+header="/home/violeta/.vim/sourceText/py.header"
+cold="/home/violeta/filecollections/pyfiles"
+
+creaFile.fu $1

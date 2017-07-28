@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+term=$1
+dir=$(pwd)
+
+#find . -type f | xargs grep -I ${term} | grep -v "\.svn\|\.settin\|target\|build\|test\|classes" 2>/dev/null
+find . -type f | xargs grep -I ${term} | grep -v "node_modules" 2>/dev/null
